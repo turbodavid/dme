@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="crm_lead_view_opportunity">
+			<field name="name">lead.view</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_oppor" />
+			<field name="arch" type="xml">
+				<field name="categ_ids" position="after">
+					<field name="contract_type"/>
+					<field name="status_operation"/>
+					<field name="status_credit"/>
+					<field name="status_sales"/>
+				</field>
+				<field name="partner_id" position="before">
+					<field name="currency_lead"/>
+				</field>
+			</field>
+		</record>
+		<record model= "ir.ui.view" id="crm_case_kanban_view_leads_2">
+			<field name="name">lead.view.kanban</field>
+			<field name="model">crm.lead</field>
+			<field name= "inherit_id" ref = "crm.crm_case_kanban_view_leads"/>
+			<field name="arch" type="xml">
+                <xpath expr="//div[contains(@class, 'oe_kanban_content')]/div/t/b/field[@name='company_currency']" position="replace">
+                    <field name = "currency_lead"/>                    
+				</xpath>
+			</field>
+		</record>
+	</data>
+</openerp>

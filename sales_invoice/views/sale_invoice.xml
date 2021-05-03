@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+       <record model="ir.ui.view" id="account_invoice_form">
+            <field eval="30" name="priority"/>
+            <field name="name">Account Invoice</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form" />
+            <field name="arch" type="xml">
+				<field name="user_id" position = "attributes">
+					<attribute name = "required">1</attribute>
+					<attribute name = "on_change">onchange_user_id(user_id)</attribute>
+				</field>
+				<field name="section_id" position = "attributes">
+					<attribute name = "required">1</attribute>
+				</field>             
+           </field>
+        </record>
+    </data>
+</openerp>

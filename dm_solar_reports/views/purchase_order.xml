@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record model="ir.ui.view" id="view_purchase_order_form_inherit">
+			<field eval="30" name="priority"/>
+            <field name="name">View Purchase Order Form</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form" />
+            <field name="arch" type="xml">				
+				<field name="notes" position="replace">
+					<field name="notes" class="oe_inline" placeholder="Notes..."/>
+				</field>
+				<field name="partner_ref" position="replace">
+					<field name="partner_ref" string= "Attention to"/>
+				</field>
+				<notebook position= "before">
+					<group>
+						<field name= "lang"/>
+						<field name= "type_picking" attrs="{'readonly': [('state','in', ['confirmed','done','approved'])]}" on_change="onchange_type_picking(type_picking, partner_id, warehouse_id)" widget="selection" />
+					</group>
+					<group colspan="4" col="4">	
+						<field name= "place_site" placeholder="Place" attrs="{'readonly': [('state','in', ['confirmed','done','approved'])]}"/>
+						<field name= "street_site" placeholder ="Street" attrs="{'readonly': [('state','in', ['confirmed','done','approved'])]}"/>
+						<field name= "colony_site" placeholder="Colony" attrs="{'readonly': [('state','in', ['confirmed','done','approved'])]}"/>
+						<field name= "city_id_site" placeholder="City..." on_change="on_change_city(city_id_site)" attrs="{'readonly': [('state','in', ['confirmed','done','approved'])]}"/>
+						<field name= "number_site" placeholder="Number" attrs="{'readonly': [('state','in', ['confirmed','done','approved'])]}"/>
+						<field name= "zip_site" placeholder="zip" attrs="{'readonly': [('state','in', ['confirmed','done','approved'])]}"/>
+						<field name= "state_id_site" placeholder="State" attrs="{'readonly': [('state','in', ['confirmed','done','approved'])]}"/>
+						<field name= "phone_site" placeholder ="Phone" attrs="{'readonly': [('state','in', ['confirmed','done','approved'])]}"/>
+					</group>
+				</notebook>
+			</field>
+		</record>
+	</data>
+</openerp>
+
+	

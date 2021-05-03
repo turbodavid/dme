@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record model="ir.ui.view" id="view_partner_form_MORSA">
+			<field eval="30" name="priority"/>
+            <field name="name">Partner MORSA</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="arch" type="xml">
+				<notebook position="inside">
+					<page string="MORSA">
+						<group>
+                    		<separator string="Business" />
+		                    <group colspan="4" col="4">
+								<field name="business_name" />
+								<field name="commercial_email" />
+								<field name="curp" />
+								<field name="course_business" />
+								<field name="geophysics_address" />
+								<field name="clasificacion"/>
+							</group>
+		                    <group colspan="4" col="4">
+								<field name="purchasing_manager" />
+								<field name="payment_responsible" />
+							</group>
+                    		<separator string="Photos" />
+		                    <group colspan="4" col="4">
+								<field name="photo_business" widget='image' class="oe_left oe_avatar"/>
+								<field name="photo_IFE" widget='image' class="oe_left oe_avatar"/>
+								<field name="photo_authorized_signature" widget='image' class="oe_left oe_avatar"/>
+							</group>
+		                    <group colspan="4" col="4">
+								<field name="birthday_date" attrs="{'invisible': [('is_company','=', True)]}" />
+								<field name="aniversary_date" attrs="{'invisible': [('is_company','=', False)]}" />
+							</group>
+                    		<separator string="Review Schedule" />
+		                    <group colspan="4" col="4">
+								<field name="review_date" colspan="2"/>
+								<field name="review_morning_hours" placeholder="00:00" />
+								<field name="review_afternoon_hours" placeholder="00:00" />
+							</group>
+                    		<separator string="Payment Schedule" />
+		                    <group colspan="4" col="4">
+								<field name="payment_date"/>
+								<field name="payment_morning_hours" placeholder="00:00" />
+								<field name="payment_afternoon_hours" placeholder="00:00" />
+							</group>
+						</group>
+					</page>
+				</notebook>
+            </field>
+        </record>
+    </data>
+</openerp>

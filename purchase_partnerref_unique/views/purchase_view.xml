@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record model="ir.ui.view" id="purchase_order_form_2">
+			<field name="name">Purchase order form</field>
+			<field name="model">purchase.order</field>
+			<field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+				<field name="partner_ref" position="replace">
+					<field name="partner_ref" attrs="{'required':True}"/>
+				</field>
+			</field>
+		</record>
+	</data>
+</openerp>

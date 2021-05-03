@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model= "ir.actions.act_window" id="collection_action">
+			<field name="name">Collection Address</field>
+			<field name="res_model">collection.address</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem id="collection_menu" name="Collection Address"
+		parent="base.menu_config_address_book"
+		action="collection_action" />
+
+<!-- VISTA FORM -->
+
+		<record model= "ir.ui.view" id = "collection_form_view">
+			<field name="name">collection.form</field>
+			<field name= "model">collection.address</field>
+			<field name="arch" type="xml">
+			<form string="Collection Form" version="7.0">
+				<sheet>	
+					<separator string= " Address "/>
+					<group colspan="2" col="2">			
+							<field name= "contact_site" placeholder="Contact"/>
+							<field name= "place_site" placeholder="Place"/>
+							<field name= "street_site" placeholder ="Street"/>
+							<field name= "colony_site" placeholder="Colony" />
+							<field name= "city_id_site" placeholder="City..." on_change="on_change_city(city_id_site)"/>
+							<field name= "number_site" placeholder="Number"/>
+							<field name= "zip_site" placeholder="zip"/>
+							<field name= "state_id_site" placeholder="State"/>
+							<field name= "phone_site" placeholder ="Phone" />
+					</group>					
+				</sheet>			
+			</form>
+			</field>
+		</record>
+<!-- VISTA TREE -->
+		
+		<record model= "ir.ui.view" id= "collection_tree_view">
+			<field name="name">collection.tree</field>
+			<field name= "model">collection.address</field>
+			<field name="arch" type="xml">
+				<tree string= "Collection Address" >
+					<field name= "place_site"/>
+                    <field name ="contact_site"/>
+					<field name= "campo_function"/>
+				</tree>
+			</field>
+		</record>
+	</data>
+</openerp>
+		

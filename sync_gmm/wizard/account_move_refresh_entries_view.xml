@@ -1,0 +1,55 @@
+<openerp>
+    <data>
+        <record id="account_move_refresh_entries_view" model="ir.ui.view">
+            <field name="name">account.move.refresh.entries.view.form</field>
+            <field name="model">account.move.refresh.entries.view</field>
+            <field name="arch" type="xml">
+                <form string="Actualizar Vista para Polizas Contables" >
+                    <p class="oe_grey">
+                        Una vez que el proceso termine, los movimientos contables
+                        serán actualizados en el reporte de Anaĺisis de Polizas.
+                    </p>
+                    <footer>
+                        <button string="Confirmar Actualizacion" name="refresh_view_confirm" type="object" default_focus="1" class="oe_highlight"/>
+                        or
+                        <button string="Cancelar" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <act_window id="action_account_move_refresh_entries_view_confirm"
+            multi="True"
+            key2="client_action_multi" name="Actualizar Analisis de Polizas"
+            res_model="account.move.refresh.entries.view" src_model="account.move"
+            view_mode="form" target="new" view_type="form" />
+
+        <record id="account_move_refresh_diot_view" model="ir.ui.view">
+            <field name="name">account.move.refresh.diot.view.form</field>
+            <field name="model">account.move.refresh.diot.view</field>
+            <field name="arch" type="xml">
+                <form string="Actualizar DIOT para Polizas Contables" >
+                    <p class="oe_grey">
+                        Este proceso recalcula las bases de impuestos para la DIOT.
+                        Una vez que el proceso termine, los movimientos contables
+                        que afectan la DIOT seran actualizados.
+                    </p>
+                    <footer>
+                        <button string="Confirmar Actualizacion" name="refresh_diot_confirm" type="object" default_focus="1" class="oe_highlight"/>
+                        or
+                        <button string="Cancelar" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <act_window id="action_account_move_refresh_diot_view_confirm"
+            multi="True"
+            key2="client_action_multi" name="Recalcular DIOT en Polizas"
+            res_model="account.move.refresh.diot.view" src_model="account.move"
+            view_mode="form" target="new" view_type="form" />
+
+    </data>
+
+
+</openerp>

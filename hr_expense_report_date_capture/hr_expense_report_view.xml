@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+		<!--Hereda el tree view y agrega el campo date capture-->
+		<record model="ir.ui.view" id="hr_expense_view_hr_expense_report_tree_inherit">
+            <field name="name">hr.expense.view.hr.expense.report.tree.inherit</field>
+            <field name="model">hr.expense.report</field>
+			<field name="priority" eval="17"/>
+			<field name="type">tree</field>
+            <field name="inherit_id" ref="hr_expense.view_hr_expense_report_tree"/>
+            <field name="arch" type="xml">
+                <field name="price_total" position="after">
+					<field name="date_capture" invisible="1"/>
+                </field>
+            </field>
+        </record>
+
+		<!--Hereda el Buscador de Informe Analisis de Gastos-->
+        <record model="ir.ui.view" id="hr_expense_view_hr_expense_report_search_inherit">
+            <field name="name">hr.expense.view.hr.expense.report.search.inherit</field>
+            <field name="model">hr.expense.report</field>
+			<field name="priority" eval="17"/>
+            <field name="inherit_id" ref="hr_expense.view_hr_expense_report_search"/>
+            <field name="arch" type="xml">
+				<xpath expr="//filter[@string='Year']" position="after">
+                    <filter string="Fecha Captura" icon="terp-go-year" context="{'group_by':'date_capture'}" help="Fecha Captura"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

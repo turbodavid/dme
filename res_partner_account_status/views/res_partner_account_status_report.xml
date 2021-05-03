@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+      <report id="reports_sacsa_aeroo_account_status" 
+                model="res.partner.account.status"
+                name="res.partner.account.status.report.aeroo"
+                string="Partner account status"
+                report_type = "aeroo" />
+    </data>    
+</openerp>

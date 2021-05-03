@@ -1,0 +1,4 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_dm_solar_reports,access_dm_solar_reports,model_dm_solar_reports,group_manager_dm_solar_reports,1,1,1,1
+access_collection_address,access_collection_address,model_collection_address,group_manager_dm_solar_reports,1,1,1,1
+access_collection_type,access_collection_type,model_collection_type,group_manager_dm_solar_reports,1,1,1,1

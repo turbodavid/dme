@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_operating_unit_form_gmm" model="ir.ui.view">
+            <field name="name">operating.unit.form.gmm</field>
+            <field name="model">operating.unit</field>
+            <field name="inherit_id" ref="operating_unit.view_operating_unit_form"/>
+            <field name="arch" type="xml">
+                <field name="partner_id" position="after">
+                    <field name="ip_address" />
+                </field>
+                <field name="ip_address" position="after">
+                    <field name="data_base" />
+                </field>
+            </field>
+        </record>
+     </data>
+</openerp>

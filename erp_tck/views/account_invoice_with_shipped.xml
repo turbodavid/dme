@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="view_invoice_line_tree_with_shipped_erp_tck">
+			<field name="name">View Invoice Tree with Shipped</field>
+			<field name="model">account.invoice</field>
+			<field name="inherit_id" ref="account.invoice_tree"/>
+			<field name="arch" type="xml">
+				<field name="state" position="after">
+				    <field name="delivered_purchase" invisible="context.get('type') == 'out_invoice'"/>
+				</field>
+			</field>
+		</record>
+	</data>
+</openerp>

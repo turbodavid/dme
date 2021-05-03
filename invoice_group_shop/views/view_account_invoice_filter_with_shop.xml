@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="account.view_account_invoice_filter_with_shop">
+			<field name="name">account.view.account.invoice.filter.with.shop</field>
+			<field name="model">account.invoice</field>
+			<field name="inherit_id" ref="account.view_account_invoice_filter"/>
+			<field name="arch" type="xml">
+				<group expand="0" string="Group By...">
+					<filter string="Shop" icon="terp-partner" domain="[]" context="{'group_by':'shop_group'}"/>
+                </group>
+            </field>
+		</record>
+	</data>
+</openerp>

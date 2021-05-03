@@ -1,0 +1,35 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* invoice_validate_unique
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-12 18:25+0000\n"
+"PO-Revision-Date: 2016-04-12 12:27-0800\n"
+"Last-Translator: Jorge Medina <jorge.medina@dmesoluciones.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. module: invoice_validate_unique
+#: constraint:account.invoice:0
+#: code:addons/invoice_validate_unique/models/account_invoice.py:70
+#, python-format
+msgid ""
+"Error ! Account Invoice must be with an unique value for Partner/Supplier "
+"Invoice Number"
+msgstr ""
+"Error ! La factura debe de estar con un valor único para Proveedor y Numero "
+"de Factura."
+
+#. module: invoice_validate_unique
+#: code:_description:0
+#: model:ir.model,name:invoice_validate_unique.model_account_invoice
+#, python-format
+msgid "Invoice"
+msgstr "Factura"

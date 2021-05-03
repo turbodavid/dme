@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    <!--id = stock. se pone el modulo para hacer referencia al original-->
+    <report id="stock.report_picking_list_out" model="stock.picking.out" 
+        name="stock.picking.list.out" rml="picking_out_tecnika/report/picking_out_tecnika.rml" 
+        usage="default" string="Picking Out"/>
+    </data>
+</openerp>

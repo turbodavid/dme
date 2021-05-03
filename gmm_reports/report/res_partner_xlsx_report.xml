@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report
+            id="partner_xlsx"
+            model="res.partner"
+            string="Print to XLSX"
+            report_type="qweb-pdf"
+            name="res.partner.xlsx"
+            file="res.partner.xlsx"
+            attachment_use="False"
+        />
+    </data>
+</openerp>

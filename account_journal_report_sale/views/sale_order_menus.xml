@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- menuitems -->
+        <menuitem id="reports_journal_sales"
+            name ="Generic Reports"
+            parent="base.menu_base_partner"
+	    sequence="20"/>
+	<menuitem id="reports_journal_sales_partner_balance"
+	    name="Partner Balance"
+            parent="reports_journal_sales"
+            action="account_financial_report_webkit.action_account_partner_balance_menu_webkit" />
+	<menuitem id="reports_journal_sales_aged_partner_balance"
+	    name="Aged Partner Balance Report"
+            parent="reports_journal_sales"
+            action="account_financial_report_webkit.action_account_aged_trial_balance_menu_webkit" />
+	<menuitem id="reports_journal_sales_partner_ledger"
+	    name="Partner Ledger"
+            parent="reports_journal_sales"
+            action="account_financial_report_webkit.action_account_partners_ledger_menu_webkit" />
+	<menuitem id="reports_journal_sales_open_invoices_report"
+	    name="Open Invoices Report"
+            parent="reports_journal_sales"
+            action="account_financial_report_webkit.action_account_open_invoices_menu_webkit" />
+    </data>
+</openerp>

@@ -1,0 +1,691 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* dm_solar_reports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-12 20:30+0000\n"
+"PO-Revision-Date: 2015-03-12 13:34-0800\n"
+"Last-Translator: Jorge Medina <jorge.medina@dmesoluciones.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: dm_solar_reports
+#: field:collection.address,zip_site:0
+#: field:purchase.order,zip_site:0
+msgid "Zip"
+msgstr "C.P."
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "SEGURO DE MERCANCIA SOLICITADO POR EL CLIENTE:"
+msgstr "SEGURO DE MERCANCIA SOLICITADO POR EL CLIENTE:"
+
+#. module: dm_solar_reports
+#: code:addons/dm_solar_reports/picking.py:46
+#, python-format
+msgid "You can't generate csv file, because this document don't have move lines."
+msgstr "No puede generar el archivo csv, porque este documento no tiene lineas de movimiento."
+
+#. module: dm_solar_reports
+#: field:sale.order,freight_destination_v:0
+msgid "Freight Destination"
+msgstr "Flete Destino "
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Estado:"
+msgstr "Estado:"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "Colonia :"
+msgstr "Colonia :"
+
+#. module: dm_solar_reports
+#: field:sale.order,delivery_time:0
+msgid "Delivery time"
+msgstr "Tiempo de Entrega"
+
+#. module: dm_solar_reports
+#: selection:sale.order,type_service:0
+msgid "Recolección"
+msgstr "Recolección"
+
+#. module: dm_solar_reports
+#: view:sale.order:0
+msgid "Collection Site"
+msgstr "Lugar de Recolección"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "GRUPO ECOLOGICO RGK S.A.P.I. DE CV"
+msgstr "GRUPO ECOLOGICO RGK S.A.P.I. DE CV"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Nombre de quien recibe mercancia"
+msgstr "Nombre de quien recibe mercancia"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "# O.C. DMSolar:"
+msgstr "# O.C. DMSolar:"
+
+#. module: dm_solar_reports
+#: view:collection.address:0
+#: model:ir.actions.act_window,name:dm_solar_reports.collection_action
+#: model:ir.ui.menu,name:dm_solar_reports.collection_menu
+#: view:sale.order:0
+#: field:sale.order,collection_address_id:0
+msgid "Collection Address"
+msgstr "Dirección de Recolección"
+
+#. module: dm_solar_reports
+#: code:addons/dm_solar_reports/picking.py:51
+#: report:stock.picking.list.out:0
+#, python-format
+msgid "Serial Number"
+msgstr "No. de serie"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+#: report:stock.picking.list.out:0
+msgid "C.P.:"
+msgstr "C.P.:"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Ciudad:"
+msgstr "Ciudad:"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Dirección"
+msgstr "Dirección"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Referencias:"
+msgstr "Referencias:"
+
+#. module: dm_solar_reports
+#: model:ir.actions.report.xml,name:dm_solar_reports.report_purchase_order
+#: model:ir.model,name:dm_solar_reports.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Instrucción"
+msgstr "Instrucción"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Colonia:"
+msgstr "Colonia:"
+
+#. module: dm_solar_reports
+#: view:sale.order:0
+msgid "Childs"
+msgstr "Childs"
+
+#. module: dm_solar_reports
+#: field:sale.order,reference:0
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "LUGAR DE RECOLECCIÓN"
+msgstr "LUGAR DE RECOLECCIÓN"
+
+#. module: dm_solar_reports
+#: view:collection.address:0
+#: field:collection.address,colony_site:0
+#: view:purchase.order:0
+#: field:purchase.order,colony_site:0
+msgid "Colony"
+msgstr "Colonia"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Num:"
+msgstr "Num:"
+
+#. module: dm_solar_reports
+#: field:crm.helpdesk,folio:0
+msgid "Helpdesk Reference"
+msgstr "Folio"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Lugar:"
+msgstr "Lugar:"
+
+#. module: dm_solar_reports
+#: field:sale.order,budget_valid:0
+msgid "Budget valid for "
+msgstr "Presupuesto Válido por"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "Net Price"
+msgstr "Precio neto"
+
+#. module: dm_solar_reports
+#: model:ir.model,name:dm_solar_reports.model_stock_picking_out
+#: model:ir.model,name:dm_solar_reports.model_stock_picking_out_inh
+msgid "Delivery Orders"
+msgstr "Albaranes de salida"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Fecha de envio:"
+msgstr "Fecha de envio:"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Tipo de Servicio:"
+msgstr "Tipo de Servicio:"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "IVA :"
+msgstr "IVA :"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "DMSOLAR RESPONSIBLE:"
+msgstr "DMSOLAR RESPONSABLE:"
+
+#. module: dm_solar_reports
+#: view:collection.type:0
+#: model:ir.actions.act_window,name:dm_solar_reports.collection_type_action
+#: model:ir.ui.menu,name:dm_solar_reports.collection_type_menu
+msgid "Collection Type"
+msgstr "Tipo de Recolección"
+
+#. module: dm_solar_reports
+#: view:collection.address:0
+#: view:purchase.order:0
+msgid "City..."
+msgstr "Ciudad..."
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Telefono:"
+msgstr "Telefono:"
+
+#. module: dm_solar_reports
+#: view:purchase.order:0
+msgid "Attention to"
+msgstr "Atención a"
+
+#. module: dm_solar_reports
+#: view:collection.address:0
+#: field:collection.address,state_id_site:0
+#: view:purchase.order:0
+#: field:purchase.order,state_id_site:0
+msgid "State"
+msgstr "Estado"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "VALOR TOTAL DE MERCANCIA:"
+msgstr "VALOR TOTAL DE MERCANCIA:"
+
+#. module: dm_solar_reports
+#: model:ir.model,name:dm_solar_reports.model_stock_picking
+msgid "Picking List"
+msgstr "Albarán"
+
+#. module: dm_solar_reports
+#: model:ir.model,name:dm_solar_reports.model_collection_address
+msgid "collection.address"
+msgstr "collection.address"
+
+#. module: dm_solar_reports
+#: field:sale.order,merchandise_insurance:0
+msgid "Merchandise insurance request by the client "
+msgstr "Seguro de Mercancia Solicitado por el Cliente "
+
+#. module: dm_solar_reports
+#: model:res.groups,name:dm_solar_reports.group_manager_dm_solar_reports
+msgid " DmSolar Reports"
+msgstr " DmSolar Reports"
+
+#. module: dm_solar_reports
+#: field:sale.order,scaffold:0
+msgid "scaffold"
+msgstr "Tarima"
+
+#. module: dm_solar_reports
+#: selection:sale.order,freight_destination_v:0
+msgid "SI"
+msgstr "SI"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "Total :"
+msgstr "Total :"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Lugar y Fecha de Entrega"
+msgstr "Lugar y Fecha de Entrega"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Teléfono :"
+msgstr "Teléfono :"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "PURCHASE ORDER #"
+msgstr "ORDEN DE COMPRA #"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "GUADALAJARA, JALISCO. MÉXICO"
+msgstr "GUADALAJARA, JALISCO. MÉXICO"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Num.:"
+msgstr "Num.:"
+
+#. module: dm_solar_reports
+#: selection:sale.order,type_service:0
+msgid "Flete Nacional"
+msgstr "Flete Nacional"
+
+#. module: dm_solar_reports
+#: view:purchase.order:0
+msgid "Notes..."
+msgstr "Notas.."
+
+#. module: dm_solar_reports
+#: view:collection.address:0
+#: field:collection.address,place_site:0
+#: view:purchase.order:0
+#: field:purchase.order,place_site:0
+msgid "Place"
+msgstr "Lugar"
+
+#. module: dm_solar_reports
+#: field:sale.order,client_ref:0
+msgid "Client Reference"
+msgstr "Referencia del cliente"
+
+#. module: dm_solar_reports
+#: view:stock.picking.out:0
+msgid "CSV"
+msgstr "CSV"
+
+#. module: dm_solar_reports
+#: field:sale.order,unloading_maneuvers:0
+msgid "unloading maneuvers"
+msgstr "Maniobras de Descarga"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Empresa:"
+msgstr "Empresa:"
+
+#. module: dm_solar_reports
+#: field:sale.order,type_service:0
+msgid "Type Of Service"
+msgstr "Tipo de Servicio"
+
+#. module: dm_solar_reports
+#: model:ir.model,name:dm_solar_reports.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Telefono :"
+msgstr "Telefono :"
+
+#. module: dm_solar_reports
+#: view:collection.address:0
+#: field:collection.address,contact_site:0
+#: view:sale.order:0
+#: field:sale.order,contact_logistic:0
+#: field:sale.order,contact_site:0
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: dm_solar_reports
+#: model:ir.actions.report.xml,name:dm_solar_reports.report_picking_list_out
+msgid "Instruction Boarding"
+msgstr "Instruccion de Embarque"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "TARIMA:"
+msgstr "TARIMA:"
+
+#. module: dm_solar_reports
+#: field:sale.order,childs_list:0
+msgid "Contacts"
+msgstr "Contactos"
+
+#. module: dm_solar_reports
+#: view:stock.picking.out:0
+msgid "Export CSV"
+msgstr "Exportar CSV"
+
+#. module: dm_solar_reports
+#: view:collection.address:0
+msgid " Address "
+msgstr "Dirección"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "Attention to:"
+msgstr "Atención a:"
+
+#. module: dm_solar_reports
+#: constraint:collection.type:0
+msgid "You can't check both options!"
+msgstr "¡No puede seleccionar ambas opciones!"
+
+#. module: dm_solar_reports
+#: view:collection.address:0
+#: view:purchase.order:0
+msgid "zip"
+msgstr "c.p."
+
+#. module: dm_solar_reports
+#: selection:sale.order,freight_destination_v:0
+msgid "NO"
+msgstr "NO"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "Shipping address for goods:"
+msgstr "Dirección de Envío"
+
+#. module: dm_solar_reports
+#: view:sale.order:0
+msgid "Information Logistic"
+msgstr "Información Logistica"
+
+#. module: dm_solar_reports
+#: view:collection.address:0
+#: field:collection.address,phone_site:0
+#: view:purchase.order:0
+#: field:purchase.order,phone_site:0
+#: field:sale.order,phone_collection:0
+#: field:sale.order,phone_logistic:0
+msgid "Phone"
+msgstr "Teléfono"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "AV. NIÑOS HEROES #2825-A, COL. JARDINES DEL BOSQUE"
+msgstr "AV. NIÑOS HEROES #2825-A, COL. JARDINES DEL BOSQUE"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "Tel."
+msgstr "Tel."
+
+#. module: dm_solar_reports
+#: field:purchase.order,lang:0
+msgid "Language"
+msgstr "Idioma"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "WWW.DMSOLAR.MX"
+msgstr "WWW.DMSOLAR.MX"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "MANIOBRAS DE DESCARGA:"
+msgstr "MANIOBRAS DE DESCARGA:"
+
+#. module: dm_solar_reports
+#: model:ir.model,name:dm_solar_reports.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Vendedor:"
+msgstr "Vendedor:"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "NOTES:"
+msgstr "NOTAS:"
+
+#. module: dm_solar_reports
+#: code:addons/dm_solar_reports/picking.py:51
+#: report:purchase.order:0
+#: report:stock.picking.list.out:0
+#, python-format
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: dm_solar_reports
+#: model:ir.model,name:dm_solar_reports.model_crm_claim
+msgid "Claim"
+msgstr "Reclamación"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "RFC: GER120614MZ4"
+msgstr "RFC: GER120614MZ4"
+
+#. module: dm_solar_reports
+#: selection:sale.order,type_service:0
+msgid "Flete Local"
+msgstr "Flete Local"
+
+#. module: dm_solar_reports
+#: code:addons/dm_solar_reports/res_company.py:55
+#, python-format
+msgid "Bank Accounts"
+msgstr "Cuentas Bancarias"
+
+#. module: dm_solar_reports
+#: view:collection.address:0
+#: field:collection.address,number_site:0
+#: view:purchase.order:0
+#: field:purchase.order,number_site:0
+msgid "Number"
+msgstr "Número"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Firma y número de identificación Oficial"
+msgstr "Firma y número de identificación Oficial"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "Request for Quotation N°"
+msgstr "Solicitud de presupuesto Nº"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "CUSTOMER INFORMATION"
+msgstr "INFORMACIÓN DEL CLIENTE"
+
+#. module: dm_solar_reports
+#: field:collection.address,city_id_site:0
+#: field:purchase.order,city_id_site:0
+msgid "City"
+msgstr "Ciudad"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Calle:"
+msgstr "Calle:"
+
+#. module: dm_solar_reports
+#: view:collection.type:0
+#: field:collection.type,supplier_data:0
+msgid "Supplier data"
+msgstr "Datos del Proveedor"
+
+#. module: dm_solar_reports
+#: field:crm.claim,folio:0
+msgid "Claim Reference"
+msgstr "Folio"
+
+#. module: dm_solar_reports
+#: model:ir.model,name:dm_solar_reports.model_crm_helpdesk
+msgid "Helpdesk"
+msgstr "Mesa de ayuda"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "Unit Price"
+msgstr "Precio unidad"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Productos a enviar:"
+msgstr "Productos a enviar:"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "EMBARCADOR"
+msgstr "EMBARCADOR"
+
+#. module: dm_solar_reports
+#: model:ir.model,name:dm_solar_reports.model_dm_solar_reports
+msgid "dm.solar.reports"
+msgstr "dm.solar.reports"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+#: report:stock.picking.list.out:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: dm_solar_reports
+#: field:collection.address,campo_function:0
+msgid "Address"
+msgstr "Dirección"
+
+#. module: dm_solar_reports
+#: view:collection.type:0
+#: field:collection.type,pack_data:0
+msgid "Pack data"
+msgstr "Datos de Paquetería"
+
+#. module: dm_solar_reports
+#: view:collection.type:0
+#: field:collection.type,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Contacto:"
+msgstr "Contacto:"
+
+#. module: dm_solar_reports
+#: code:addons/dm_solar_reports/res_company.py:55
+#, python-format
+msgid "Bank Account"
+msgstr "Cuenta Bancaria"
+
+#. module: dm_solar_reports
+#: code:addons/dm_solar_reports/picking.py:51
+#, python-format
+msgid "Product"
+msgstr "Producto"
+
+#. module: dm_solar_reports
+#: code:addons/dm_solar_reports/picking.py:46
+#, python-format
+msgid "Stock Out"
+msgstr "Albaranes de salida"
+
+#. module: dm_solar_reports
+#: view:sale.order:0
+msgid "Logistic"
+msgstr "Logística"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "Sub Total :"
+msgstr "Sub Total :"
+
+#. module: dm_solar_reports
+#: view:collection.address:0
+msgid "Collection Form"
+msgstr "Forma de Recolección"
+
+#. module: dm_solar_reports
+#: help:purchase.order,lang:0
+msgid "Language for document that will be printed, If not, it will be English."
+msgstr "Idioma de documento que se va a imprimir , si no, será Inglés ."
+
+#. module: dm_solar_reports
+#: code:addons/dm_solar_reports/sale_order.py:112
+#, python-format
+msgid "7 dias hábiles"
+msgstr "7 dias hábiles"
+
+#. module: dm_solar_reports
+#: field:stock.picking,filename:0
+#: field:stock.picking.out,filename:0
+msgid "File Name"
+msgstr "Nombre archivo"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "DATE:"
+msgstr "FECHA:"
+
+#. module: dm_solar_reports
+#: view:sale.order:0
+msgid "Payment Term"
+msgstr "Terminos de Pago "
+
+#. module: dm_solar_reports
+#: view:collection.address:0
+#: field:collection.address,street_site:0
+#: view:purchase.order:0
+#: field:purchase.order,street_site:0
+msgid "Street"
+msgstr "Calle"
+
+#. module: dm_solar_reports
+#: report:stock.picking.list.out:0
+msgid "Email:"
+msgstr "Correo Electrónico:"
+
+#. module: dm_solar_reports
+#: report:purchase.order:0
+msgid "Company:"
+msgstr "Compañia:"
+
+#. module: dm_solar_reports
+#: field:stock.picking,data:0
+#: field:stock.picking.out,data:0
+msgid "File"
+msgstr "Archivo"
+
+#. module: dm_solar_reports
+#: field:purchase.order,type_picking:0
+msgid "Type of Picking"
+msgstr "Tipo de Recolección"
+
+#. module: dm_solar_reports
+#: model:ir.model,name:dm_solar_reports.model_collection_type
+msgid "collection.type"
+msgstr "collection.type"
+

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<openerp>
+    <data>
+        <!-- Sale Order -->
+        <record model="ir.ui.view" id="view_order_form_line_price_unit_readonly">
+        <field eval="30" name="priority"/>
+        <field name="name">Sale Order Form Readonly Price Unit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="groups_id" eval="[(6, 0, [ref('product_unit_price_disabled.group_product_unit_price_disabled')])]"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']/tree//field[@name='price_unit']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree//field[@name='price_unit']" position="after">
+                <field name="unit_price_ff" attrs="{'readonly': 1}"/>
+            </xpath>
+        </field>
+        </record>
+    </data>
+</openerp>

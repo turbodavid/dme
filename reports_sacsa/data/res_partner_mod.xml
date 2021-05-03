@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <openerp>
+        <data noupdate="0">
+            <record id="ref_partner_mod_Banamex" model="res.partner.mod">
+                <field name="name">Banamex</field>
+                <field name="mod_empresa"></field>
+                <field name="mod_sucursal">7004</field>
+                <field name="mod_cuenta">2038162</field>
+                <field name="de_clabe">002746700420381628</field>
+            </record>
+            <record id="ref_partner_mod_Banorte" model="res.partner.mod">
+                <field name="name">Banorte</field>
+                <field name="mod_empresa">02088</field>
+                <field name="mod_sucursal">1136</field>
+                <field name="mod_cuenta">0111003321</field>
+                <field name="de_clabe">072746001110033216</field>
+            </record>
+        </data>
+    </openerp>

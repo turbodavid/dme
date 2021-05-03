@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+       <record model="ir.ui.view" id="mrp_production_form_view_mrp_final_qty">
+            <field eval="40" name="priority"/>
+            <field name="name">MRP Production</field>
+            <field name="model">mrp.production</field>
+            <field name="inherit_id" ref="mrp.mrp_production_form_view" />
+            <field name="arch" type="xml">
+                <xpath expr="/form/sheet/notebook/page[@string='Scheduled Products']/field[@name='product_lines']" position="replace">
+                    <field name="product_lines" on_change = "save_production_lines(product_lines)" >
+                         <tree>
+                            <field name="product_id"/>
+                            <field name="product_theoric_qty"/>
+                            <field name="final_qty"/>
+                            <field name="product_qty" string="Real Quantity"/>
+                            <field name="product_uom" groups="product.group_uom"/>
+                            <field name="product_uos_qty" groups="product.group_uos"/>
+                            <field name="product_uos" groups="product.group_uos"/>
+                         </tree>
+                    </field>
+                </xpath>
+            </field>
+        </record>
+        <!--Lines MRP Wizard-->
+        <record model="ir.ui.view" id="mrp_production_product_form_final_theoric">            
+            <field name="name">MRP Production Product Line</field>
+            <field name="model">mrp.production.product.line</field>
+            <field name="inherit_id" ref="mrp.mrp_production_product_form_view" />
+            <field name="arch" type="xml">
+                <xpath expr="/form/group/field[@name='product_qty']" position="attributes">
+                     <attribute name="invisible">1</attribute>
+                     <attribute name="String">Real Quantity</attribute>
+                </xpath>
+                <xpath expr="/form/group/field[@name='product_qty']" position="before">
+                    <field name="final_qty" on_change = "onchange_final_qty(final_qty, product_theoric_qty)"/>                    
+                    <field name="product_theoric_qty" readonly="1"/>
+                    <field name="product_qty_ff" />
+                </xpath>                
+                <xpath expr="/form/group/field[@name='product_uos']" position="after">
+                    <group colspan="4">
+                        <div class="openerp_msj">
+                            <field name="msj_theoric_real" readonly="1" nolabel="1"/>
+                        </div>                        
+                    </group>
+                </xpath>
+            </field>
+        </record>
+        <!--MRP Production-->
+        <record model="ir.ui.view" id="mrp_production_form_view_mrp_standar_price">
+            <field eval="30" name="priority"/>
+            <field name="name">MRP Production</field>
+            <field name="model">mrp.production</field>
+            <field name="inherit_id" ref="mrp.mrp_production_form_view" />
+            <field name="arch" type="xml">
+                <field name="date_planned" position="before">
+                    <field name="standard_price" attrs="{'invisible':[('state', '!=', 'done')]}" />
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>

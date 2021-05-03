@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!-- Account Balance Reporting -->
+        <record id="wizard_account_balance_reporting_excel" model="ir.ui.view">
+            <field name="name">Corporate Excel Reports</field>
+            <field name="model">account.balance.reporting.excel.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Corporate Reports to Generate in Excel">
+                    <sheet>
+                        <group colspan="2" col="2">
+                            <field name="balance_report_id"
+                                   required="context.get('reportmode') != 'single'"
+                                   invisible="context.get('reportmode') == 'single'"
+                            />
+                            <field name="profitloss_report_id"
+                                   required="context.get('reportmode') != 'single'"
+                                   invisible="context.get('reportmode') == 'single'"
+                             />
+                            <field name="profitloss_by_branch_report_id"
+                                   invisible="context.get('reportmode') == 'single'"
+                            />
+                            <field name="expenses_report_id"
+                                   invisible="context.get('reportmode') == 'single'"
+                             />
+                            <field name="corporate_report_id"
+                                   invisible="context.get('reportmode') == 'single'"
+                             />
+                            <field name="any_report_id"
+                                   required="context.get('reportmode') == 'single'"
+                                   invisible="context.get('reportmode') != 'single'"/>
+                            <field name="report" required="True" />
+                        </group>
+                        <group string="Up to Periods">
+                            <group>
+                                <field name="upto_current_period"/>
+                            </group>
+                            <group>
+                                <field name="upto_previous_period"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button name="do_excel_report" string="Generate Excel" type="object"
+                                context="{'active_id': active_id}"
+                                default_focus="1" class="oe_highlight"
+                        />
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <!--Action-->
+        <record id="action_account_balance_reporting_excel" model="ir.actions.act_window">
+            <field name="name">Excel for Corporate Rerports</field>
+            <field name="res_model">account.balance.reporting.excel.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="wizard_account_balance_reporting_excel"/>
+        </record>
+
+        <act_window id="action_wizard_account_balance_reporting_excel_more_tree"
+            multi="True"
+            key2="client_action_multi" name="Informe Corporativo"
+            res_model="account.balance.reporting.excel.wizard" src_model="account.balance.reporting"
+            view_mode="form" target="new" view_type="form" context="{'reportmode': 'single'}"/>
+
+         <act_window name="Informe Corporativo"
+                    res_model="account.balance.reporting.excel.wizard"
+                    src_model="account.balance.reporting"
+                    view_mode="form"
+                    target="new"
+                    id="action_wizard_account_balance_reporting_excel_more_form"
+                    context="{'reportmode': 'single'}"
+         />
+
+               <!-- Menu -->
+        <menuitem id="menu_account_balance_reporting_excel"
+                  parent="account.menu_finance_gmm_reports"
+                  name="Excel Corporate Reports" sequence="25"
+                  action="action_account_balance_reporting_excel"
+        />
+
+    </data>
+</openerp>

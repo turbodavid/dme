@@ -1,0 +1,4 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_nutrive_gastos,access_nutrive_gastos,model_nutrive_gastos,account.group_account_manager,1,1,1,1
+access_production_product,access_production_product,model_production_product,account.group_account_manager,1,1,1,1
+acces_journal_details,acces_journal_details,model_journal_details,account.group_account_manager,1,1,1,1

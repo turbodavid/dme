@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report auto="False" id="l10n_mx_facturae_report_webkit2" model="account.invoice" 
+                name="account.invoice.facturae.webkit" 
+                rml="erp_tck/report/account_print_invoice.mako"
+                string="Facturación Electrónica" report_type="webkit" header="0" usage="default" attachment ="(object.state in ('open','paid')) and (object.fname_invoice and (object.fname_invoice + ''))" attachment_use="1" multi="0" />
+
+        <!-- we do not use report tag has we can not set header ref -->
+        <!--<record id="l10n_mx_facturae_report_webkit2" model="ir.actions.report.xml">
+            <field name="report_type">webkit</field>
+            <field name="report_name">account.invoice.facturae.webkit</field>
+            <field eval="[(6,0,[])]" name="groups_id"/>
+            <field eval="0" name="multi"/>
+            <field eval="0" name="auto"/>
+            <field eval="0" name="header"/>
+            <field eval="1" name="attachment_use"/>
+            <field name="attachment">(object.state in ('open','paid')) and (object.fname_invoice and (object.fname_invoice + ''))</field>
+            <field name="model">account.invoice</field>
+            <field name="type">ir.actions.report.xml</field>
+            <field name="name">Factura Electronica 2</field>
+            <field name="report_rml">erp_tck/report/account_print_invoice.mako</field>
+            <field name="report_file">erp_tck/report/account_print_invoice.mako</field>
+        </record>-->
+        
+        <record id="property_l10n_mx_facturae_report_webkit2" model="ir.property">
+            <field name="name">l10n_mx_facturae_report_webkit2</field>
+            <field name="fields_id" ref="report_webkit.field_ir_act_report_xml_webkit_header"/>
+            <field eval="'ir.header_webkit,'+str(ref('erp_tck.ir_header_webkit_ERP_TCK'))" model="ir.header_webkit" name="value"/>
+            <field eval="'ir.actions.report.xml,'+str(ref('erp_tck.l10n_mx_facturae_report_webkit2'))" model="ir.actions.report.xml" name="res_id"/>
+        </record>  
+        <!--<record id="report_l10n_mx_facturae_report_webkit2" model="ir.values">
+            <field name="name">Factura Electronica ERP</field>
+            <field name="model">account.invoice</field>
+            <field name="key2">client_print_multi</field>
+            <field name="value" eval="'ir.actions.report.xml,%d'%l10n_mx_facturae_report_webkit2"/>
+        </record>-->
+    </data>     
+</openerp>

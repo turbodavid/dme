@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>     
+        <!-- WIZARD EMPLOYEE EXPENSES   -->
+        <record id="wizard_employee_expenses_report" model="ir.ui.view">
+            <field name="name">Viaticos de Empleados</field>
+            <field name="model">employee.expenses.report</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Informe de Vaticos de Empleados">
+                    <sheet> 
+                        <group colspan="2" col="2">
+                            <field name="date_start" required="True" />
+                            <field name="date_end" required="True" />
+                            <field name="acc_employee"/>
+                            <field name="acc_expense_parent"></field>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button name="expenses_report" string="Execute" type="object" default_focus="1" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field> 
+        </record>
+
+        <!--Action-->
+        <record id="action_employee_expenses_report" model="ir.actions.act_window">
+            <field name="name">Gastos de Empledos</field>
+            <field name="res_model">employee.expenses.report</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="wizard_employee_expenses_report"></field>
+        </record>
+
+        <!-- Menu -->
+        <menuitem action="action_employee_expenses_report" id="menu_employee_expenses_report" parent="hr.menu_hr_reporting" sequence="20"/>
+    </data>
+</openerp>

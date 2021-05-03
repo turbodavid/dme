@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!-- action windows -->
+        <record model="ir.actions.act_window" id="asset_fix_list_action">
+            <field name="name">Asset FIX</field>
+            <field name="res_model">account.asset.fix</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>   
+            <field name="target">new</field>         
+        </record>
+        <!-- menuitems -->
+        <menuitem id="asset_fix_submenu" name="Asset Fix" parent="account_asset.menu_finance_assets" action="asset_fix_list_action" />
+        <!-- Wizard -->
+        <record model="ir.ui.view" id="asset_fix_form_view">
+            <field name="name">account asset fix form</field>
+            <field name="model">account.asset.fix</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="ASSET Form" version="7.0">
+                    <group>
+                        <label string="Click on process button below to start the process:[Compute and Confirm]"/>
+                    </group>
+                    <footer>
+                        <button name="action_compute_draft" string="Process" type="object" icon="gtk-apply"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+	</data>
+</openerp>

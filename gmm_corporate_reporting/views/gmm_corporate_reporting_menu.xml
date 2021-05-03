@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!-- Menu -->
+        <menuitem id="menu_account_balance_reporting_excel"
+                  parent="account.menu_finance_gmm_reports"
+                  name="Excel Corporate Reports" sequence="25"
+                  action="account.balance.reporting.excel.wizard.action_account_balance_reporting_excel"
+        />
+    </data>
+</openerp>

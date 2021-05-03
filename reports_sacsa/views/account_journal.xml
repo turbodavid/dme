@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!-- Add instructor field to existing view -->
+        <record model="ir.ui.view" id="view_account_journal_partner_address">
+            <field name="name">account journal partner address</field>
+            <field name="model">account.journal</field>
+            <field name="inherit_id" ref="account.view_account_journal_form" />
+            <field name="arch" type="xml">
+                <field name="sequence_id" position="after">
+                    <field name="partner_address_id"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <template id="assets_backend" name="mrp_change_prod_qty_assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/mrp_change_prod_qty/static/src/css/class.css"/>
+            </xpath>
+        </template>
+    </data>     
+</openerp>

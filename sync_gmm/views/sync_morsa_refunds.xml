@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!--Windows-->
+          <!-- action windows -->
+        <record model= "ir.actions.act_window" id="sync_morsa_refunds_action">
+            <field name="name">Información de Sincronización</field>
+            <field name="res_model">sync.morsa.refunds</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,search</field>
+        </record>
+
+        <record id="sync_morsa_refunds_view_filter" model="ir.ui.view">
+            <field name="name">sync.morsa.refunds.select</field>
+            <field name="model">sync.morsa.refunds</field>
+            <field name="arch" type="xml">
+                <search string="Search Operations">
+                    <filter name="incomes" string="Ingresos" domain="[('invoice_type','=','in_payment')]" help="Pagos de Clientes"/>
+                    <filter name="custrefunds" string="NC Clientes" domain="[('invoice_type','=','out_invoice')]" help="Notas de Credito de Clientes"/>
+                    <filter name="supprefunds" string="NC Proveedores" domain="[('invoice_type','=','in_invoice')]" help="Notas Credito Provedores"/>
+                    <filter name="relativepartnerincome" string="Ingresos PR" domain="[('acc_relative_partner_id','!=', False ),('invoice_type', '=', 'in_payment')]" help="Ingresos Partes Relacionadas"/>
+                    <filter name="relativepartnerrefund" string="NC PR" domain="[('acc_relative_partner_id','!=', False ),('invoice_type', '=', 'out_invoice')]" help="Notas Credito Partes Relacionadas"/>
+                    <separator/>
+                    <field name="partner_id" operator="child_of"/>
+                    <group expand="0" string="Group By...">
+                        <filter string="Empresa" icon="terp-partner" domain="[]" context="{'group_by':'partner_id'}"/>
+                        <filter string="Unidad" icon="terp-personal" domain="[]"  context="{'group_by':'operating_unit_id'}"/>
+                        <filter string="Tipo Docto" icon="terp-folder-orange" domain="[]" context="{'group_by':'num_mov'}"/>
+                        <filter string="Status" icon="terp-stock_effects-object-colorize" domain="[]"  context="{'group_by':'state'}"/>
+                        <filter string="Fecha" icon="terp-go-month" domain="[]"  context="{'group_by':'date_refund'}"/>
+                    </group>
+               </search>
+            </field>
+        </record>
+
+        <record model= "ir.ui.view" id= "sync_morsa_refunds_tree_view_dos">
+            <field name="name">Operaciones Sincronizadas</field>
+            <field name= "model">sync.morsa.refunds</field>
+            <field name="arch" type="xml">
+                <tree string= "Operaciones Sincronizadas" create="false"> <!-- delete="false">-->
+                    <field name= "date_refund"/>
+                    <field name= "partner_id_internal"/>
+                    <field name= "partner_vat"/>
+                    <field name= "num_mov"/>
+                    <field name= "serie_invoice_number"/>
+                    <field name= "serie_refund_number"/>
+                    <field name= "amount_untaxed" sum="SubTotal"/>
+                    <field name= "amount_taxes" sum="Impuestos"/>
+                    <field name= "amount_total" sum="Total"/>
+                </tree>
+            </field>
+            <field name="search_view_id" ref="sync_morsa_refunds_view_filter"/>
+        </record>
+         <!-- SEARCH GMM SYNC SALES LOG
+        <record id="view_sync_gmm_sales_log_search" model="ir.ui.view">
+        <field name="name">Sync GMM SALES LOG Search</field>
+        <field name="model">sync.sales.log</field>
+        <field name="arch" type="xml">
+            <search string="Search Sync GMM Sales Log">
+                <<field name="order_id"/>
+                <field name="partner_id" string="Supplier" filter_domain="[('partner_id', 'child_of', self)]"/>
+                <group expand="1" string="Group By...">
+                <filter icon="terp-gtk-jump-to-rtl" string="Unidad Operativa" domain="[]" context="{'group_by' :'operating_unit'}"/>
+                <filter icon="terp-gtk-jump-to-rtl" string="Tipo Docto" domain="[]" context="{'group_by' :'tipo'}"/>
+                <filter string="Fecha" icon="terp-partner" domain="[]" context="{'group_by' : 'write_date'}" />
+                </group>
+            </search>
+        </field>
+        </record>
+        -->
+        <record model= "ir.actions.act_window" id="sync_morsa_refunds_action">
+            <field name="name">Operaciones Registradas</field>
+            <field name="res_model">sync.morsa.refunds</field>
+            <field name="view_type">form</field>
+           <field name="view_mode">tree,search,form</field>
+        </record>
+
+        <!-- menuitems -->
+        <menuitem id="sync_morsa_refunds_menu_item" name="Operaciones Registradas"
+            parent="sync_MORSA_menu"
+            action="sync_morsa_refunds_action" />
+
+    </data>
+</openerp>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <openerp>
+        <data noupdate="0">
+        <record id="vohtax2" model="account.tax.template">
+                <field name="chart_template_id" ref="voh_chart_template"/>
+                <field name="name">IVA(16%) VENTAS</field>
+                <field name="amount">0.16</field>
+                <field name="type">percent</field>
+                <field name="description">IVA(16%) VENTAS VOH</field>
+                <field name="base_code_id" ref="l10n_mx.vat_code_base_due"/>
+                <field name="tax_code_id" ref="l10n_mx.vat_code_due_tva"/>
+                <field name="ref_base_code_id" ref="l10n_mx.vat_code_receivable_net"/>
+                <field name="ref_tax_code_id" ref="l10n_mx.vat_code_payable"/>
+                <field name="type_tax_use">sale</field>
+                <!--<field name="account_collected_id" ref="cuenta2202113000"/>
+                <field name="account_paid_id" ref="cuenta2202113000"/>-->
+            </record>
+            <record id="vohtax3" model="account.tax.template">
+                <field name="chart_template_id" ref="voh_chart_template"/>
+                <field name="name">RET IVA FLETES 4%</field>
+                <field name="amount">-0.04000</field>
+                <field name="type">percent</field>
+                <field name="description">RET IVA FLETES 4% VOH</field>
+                <field name="base_code_id" ref="l10n_mx.vat_code_base_due"/>
+                <field name="tax_code_id" ref="l10n_mx.vat_code_due_tva"/>
+                <field name="ref_base_code_id" ref="l10n_mx.vat_code_receivable_net"/>
+                <field name="ref_tax_code_id" ref="l10n_mx.vat_code_payable"/>
+                <field name="type_tax_use">purchase</field>
+                <!--<field name="account_collected_id" ref="cuenta2201116000"/>
+                <field name="account_paid_id" ref="cuenta2201116000"/>-->
+            </record>
+            <record id="vohtax4" model="account.tax.template">
+                <field name="chart_template_id" ref="voh_chart_template"/>
+                <field name="name">RET IVA HON 10.67%</field>
+                <field name="amount">-0.10667</field>
+                <field name="type">percent</field>
+                <field name="description">RET IVA HON 10.67% VOH</field>
+                <field name="base_code_id" ref="l10n_mx.vat_code_base_due"/>
+                <field name="tax_code_id" ref="l10n_mx.vat_code_due_tva"/>
+                <field name="ref_base_code_id" ref="l10n_mx.vat_code_receivable_net"/>
+                <field name="ref_tax_code_id" ref="l10n_mx.vat_code_payable"/>
+                <field name="type_tax_use">purchase</field>
+                <!--<field name="account_collected_id" ref="cuenta2201116000"/>
+                <field name="account_paid_id" ref="cuenta2201116000"/>-->
+            </record>
+            <record id="vohtax5" model="account.tax.template">
+                <field name="chart_template_id" ref="voh_chart_template"/>
+                <field name="name">RET IVA COM 10.67%</field>
+                <field name="amount">-0.10667</field>
+                <field name="type">percent</field>
+                <field name="description"> RET IVA COM 10.67% VOH </field>
+                <field name="base_code_id" ref="l10n_mx.vat_code_base_due"/>
+                <field name="tax_code_id" ref="l10n_mx.vat_code_due_tva"/>
+                <field name="ref_base_code_id" ref="l10n_mx.vat_code_receivable_net"/>
+                <field name="ref_tax_code_id" ref="l10n_mx.vat_code_payable"/>
+                <field name="type_tax_use">purchase</field>
+                <!--<field name="account_collected_id" ref="cuenta2201118000"/>
+                <field name="account_paid_id" ref="cuenta2201118000"/>-->
+            </record>
+            <record id="vohtax6" model="account.tax.template">
+                <field name="chart_template_id" ref="voh_chart_template"/>
+                <field name="name">RET IVA ARR 10.67%</field>
+                <field name="amount">-0.10667</field>
+                <field name="type">percent</field>
+                <field name="description">RET IVA ARR 10.67% VOH</field>
+                <field name="base_code_id" ref="l10n_mx.vat_code_base_due"/>
+                <field name="tax_code_id" ref="l10n_mx.vat_code_due_tva"/>
+                <field name="ref_base_code_id" ref="l10n_mx.vat_code_receivable_net"/>
+                <field name="ref_tax_code_id" ref="l10n_mx.vat_code_payable"/>
+                <field name="type_tax_use">purchase</field>
+                <!--<field name="account_collected_id" ref="cuenta2201118000"/>
+                <field name="account_paid_id" ref="cuenta2201118000"/>-->
+            </record>
+            <record id="vohtax7" model="account.tax.template">
+                <field name="chart_template_id" ref="voh_chart_template"/>
+                <field name="name">RET ISR ARR 10%</field>
+                <field name="amount">-0.10000</field>
+                <field name="type">percent</field>
+                <field name="description">RET ISR ARR 10% VOH</field>
+                <field name="base_code_id" ref="l10n_mx.vat_code_base_due"/>
+                <field name="tax_code_id" ref="l10n_mx.vat_code_due_tva"/>
+                <field name="ref_base_code_id" ref="l10n_mx.vat_code_receivable_net"/>
+                <field name="ref_tax_code_id" ref="l10n_mx.vat_code_payable"/>
+                <field name="type_tax_use">purchase</field>
+                <!--<field name="account_collected_id" ref="cuenta2201118000"/>
+                <field name="account_paid_id" ref="cuenta2201118000"/>-->
+            </record>
+            <record id="vohtax8" model="account.tax.template">
+                <field name="chart_template_id" ref="voh_chart_template"/>
+                <field name="name"> RET ISR HON 10% </field>
+                <field name="amount"> -0.10000 </field>
+                <field name="type">percent</field>
+                <field name="description">IRET ISR HON 10% VOH</field>
+                <field name="base_code_id" ref="l10n_mx.vat_code_base_due"/>
+                <field name="tax_code_id" ref="l10n_mx.vat_code_due_tva"/>
+                <field name="ref_base_code_id" ref="l10n_mx.vat_code_receivable_net"/>
+                <field name="ref_tax_code_id" ref="l10n_mx.vat_code_payable"/>
+                <field name="type_tax_use">purchase</field>
+                <!--<field name="account_collected_id" ref="cuenta2201118000"/>
+                <field name="account_paid_id" ref="cuenta2201118000"/>-->
+            </record>
+            <!--Default es el ultimo insertado de type_tax_use-->
+            <record id="vohtax9" model="account.tax.template">
+                <field name="chart_template_id" ref="voh_chart_template"/>
+                <field name="name">IVA(16%) COMPRAS</field>
+                <field name="amount">0.16000 </field>
+                <field name="type">percent</field>
+                <field name="description">IVA(16%) COMPRAS VOH</field>
+                <field name="base_code_id" ref="l10n_mx.vat_code_base_due"/>
+                <field name="tax_code_id" ref="l10n_mx.vat_code_due_tva"/>
+                <field name="ref_base_code_id" ref="l10n_mx.vat_code_receivable_net"/>
+                <field name="ref_tax_code_id" ref="l10n_mx.vat_code_payable"/>
+                <field name="type_tax_use">purchase</field>
+                <!--<field name="account_collected_id" ref="cuenta1151004000"/>
+                <field name="account_paid_id" ref="cuenta1151004000"/>-->
+            </record>
+        </data>
+    </openerp>

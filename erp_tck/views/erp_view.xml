@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!--MRP Production-->
+		<record model="ir.ui.view" id="view_mrp_production_erp_tck_form">
+			<field eval="30" name="priority"/>
+            <field name="name">View MRP Production Form ERP TCK</field>
+            <field name="model">mrp.production</field>
+            <field name="inherit_id" ref="mrp.mrp_production_form_view" />
+            <field name="arch" type="xml">			
+                <!--319  = Scrap Products, 318 = Consume Products -->
+                <xpath expr="//field[@name='move_lines']/tree/button[@string='Scrap Products']" position="replace" >
+                </xpath>
+                <xpath expr="//field[@name='move_lines']/tree/button[@string='Consume Products']" position="replace" >
+                    <button name="%(stock.move_consume)d" string="Consume Products" type="action" icon="gtk-go-forward" context="{'consume': True}" states="draft,waiting,confirmed,assigned" confirm="Are you sure you want to do this?"/>
+                </xpath>
+			</field>
+		</record>
+
+        <!-- Sale Order -->
+        <record model="ir.ui.view" id="sale_margin_sale_order_line_erp_tck_form">
+		<field eval="30" name="priority"/>
+        <field name="name">Sale Order Line margin Form ERP TCK</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale_margin.sale_margin_sale_order_line_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']/tree//field[@name='purchase_price']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree//field[@name='purchase_price']" position="after">
+                <field name="purchase_price_ff" attrs="{'readonly': True}"/>
+            </xpath>
+        </field>
+        </record>
+
+        <!-- Product -->
+        <record model="ir.ui.view" id="view_normal_procurement_locations_erp_tck_form">
+		<field eval="30" name="priority"/>
+        <field name="name">Product Form ERP TCK</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="stock.view_normal_procurement_locations_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@string='Stock and Expected Variations']//button[@string='update']" position="replace">
+            </xpath>
+        </field>
+        </record>
+
+        <!-- CRM Lead-->
+        <record model="ir.ui.view" id="view_crm_tree_id_erp_tck_tree">
+		<field eval="30" name="priority"/>
+        <field name="name">CRM Lead Tree Id ERP TCK</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_case_tree_view_oppor"/>
+        <field name="arch" type="xml">
+            <field name="create_date" position="before">
+                <field name="id" />
+            </field>
+        </field>
+        </record>
+	</data>
+</openerp>

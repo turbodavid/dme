@@ -1,0 +1,7 @@
+<openerp>
+	<data>
+		<record id="group_manager_tecnika_reports" model="res.groups">
+			<field name="name">Tecnika Reports</field>
+		</record>
+	</data>
+</openerp>

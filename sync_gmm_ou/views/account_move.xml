@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<!--Wizard Account Move - UUIDs -->
+		<record model="ir.ui.view" id="wizard_account_move_uuid">
+			<field name="name">Account Move UUID</field>
+			<field name="model">account.move</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="UUID" version="7.0">
+					<!-- <field name="account_move_ids" widget="one2many_list" colspan="4" nolabel="1" attrs="{'readonly':1}"> -->
+					<field name="account_move_ids" widget="one2many_list" colspan="4" nolabel="1" context="{'account_move_ids': active_id}">
+						<tree editable='bottom'>
+							<!-- <field name="uuid_view"></field> -->
+							<field name="uuid"></field>
+						</tree>
+					</field>
+					<footer>
+						<button name="save_uuid" type="object" string="Save UUID" class="oe_highlight" />
+						<button string="Cancel" class="oe_link" special="cancel" />
+					</footer>
+				</form>
+			</field>
+		</record>
+		<!--UUID ACCOUNT MOVE FOR REFRESH FIELD-->
+		<record model="ir.ui.view" id="view_move_form_uuid">
+			<field name="name">Account Move</field>
+			<field name="model">account.move</field>
+			<field name="inherit_id" ref="account.view_move_form" />
+			<field name="arch" type="xml">
+				<notebook position="inside">
+					<!--HIDDEN-->
+					<page string="UUID" attrs="{'invisible':1}">
+						<group>
+							<field name="account_move_ids" colspan="4" nolabel="1" widget="one2many_list" attrs="{'readonly':1}">
+								<tree editable="bottom">
+									<field name ="fn_uuid"></field>
+								</tree>
+							</field>
+						</group>
+					</page>
+					<!--BUTTON FOR WIZARD ACCOUNT MOVE -UUIDs-->
+					<page string="UUID">
+						<group>
+							<button name="browse_uuid_move" string="UUIDs" class="oe_highlight" icon="STOCK_OPEN" type="object"  context="{'active_id': active_id}" />
+						</group>
+					</page>
+				</notebook>
+				<xpath expr="//field[@name='line_id']/tree//field[@name='reconcile_partial_id']" position="after">
+					<button name="browse_uuid" string="UUIDs" class="oe_highlight" icon="STOCK_OPEN" type="object"  context="{'line_id': line_id}" />
+				</xpath>
+        	</field>
+		</record>
+	</data>
+</openerp>

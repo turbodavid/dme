@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		 <record id="view_picking_form_changed" model="ir.ui.view">
+				    <field name="name">stock.picking.form.changed</field>
+				    <field name="model">stock.picking.out</field>
+					<field name="inherit_id" ref="stock.view_picking_form" />
+				    <field eval="12" name="priority"/>
+				    <field name="arch" type="xml">
+						<field name="origin" position="after">
+							<field name="location_dest_id_change" on_change = "on_changed_location(location_dest_id_change)"/>
+						</field>
+					</field>
+		</record>
+	</data>
+</openerp>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+		<!--Accion-->
+		<record model="ir.actions.act_window" id="pos_create_invoice">
+			<field name="name">All pos order for invoice</field>
+			<field name="res_model">pos.invoice</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>   
+            <field name="target">new</field>         
+		</record>		
+		<!--Forma--> 
+		<record model="ir.ui.view" id="pos_create_invoice_form_view">
+			<field name="name">pos.invoice.form</field>
+			<field name="model">pos.invoice</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Create Invoices" version="7.0">
+		            <group string= "Filters" col="5">
+		                <field name="date_start"/>
+		                <field name="date_end"/>
+						<button name="search_pos" string="Search" type="object" icon="STOCK_FIND"/>
+		            </group>
+					<group string= "Invoice ">
+						<field name="partner_id"/>
+						<field name="date_invoice"/>
+					</group>
+					<group string="POS Orders">
+						<field name="pos_order_ids" nolabel="1" widget="many2many">
+						</field>
+					</group>
+                    <footer>
+						<button name="create_pos_invoice" string="Create" type="object" icon="gtk-apply"/>				
+						<button string="Cancel" type="special" special="cancel" icon="gtk-cancel"/>
+					</footer>
+				</form>
+			</field>
+		</record>  
+ 		<!-- Menu-->
+        <menuitem id="menu_pos_create_invoice" 
+			name ="Create Invoices"
+			parent="point_of_sale.menu_point_of_sale" action="pos_create_invoice" sequence="3"/> 		  
+    </data>
+</openerp>

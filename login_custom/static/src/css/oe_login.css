@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* Sobreescribo la clase para modificar el tamaño y la posicion*/
+.openerp .oe_login .oe_login_logo { 
+	position:absolute;
+	top: -80%;
+	left:10%;
+	height:150px;
+	width:250px;
+}
+/*Sobreescribo la clase de la imagen, para editar que el tamaño de la imagen del logo de cada empresa se ajuste al tamaño de el div*/
+.openerp .oe_login .oe_login_logo img {
+	 height:100%;
+	 width:100%;
+}

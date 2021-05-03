@@ -1,0 +1,438 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sync_gmm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0rc5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-13 18:04+0000\n"
+"PO-Revision-Date: 2017-02-13 11:07-0800\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. module: sync_gmm
+#: field:sync.morsa.account,account_analytic_id:0
+msgid "Account Analytic"
+msgstr "Cuenta Analítica"
+
+#. module: sync_gmm
+#: field:sync.morsa.account,account_contpaq:0
+#: field:sync.morsa.log,account_contpaq:0
+msgid "Account Contpaq"
+msgstr "Cuenta Contpaq"
+
+#. module: sync_gmm
+#: model:ir.model,name:sync_gmm.model_account_move
+msgid "Account Entry"
+msgstr "Entrada Contable"
+
+#. module: sync_gmm
+#: field:account.move.uuid,account_move_id:0
+msgid "Account Move"
+msgstr "Account Move"
+
+#. module: sync_gmm
+#: field:sync.morsa.rel,account_move_id:0
+msgid "Account Move Id"
+msgstr "Account Move Id"
+
+#. module: sync_gmm
+#: field:account.move.uuid,account_move_line_id:0
+msgid "Account Move Line"
+msgstr "Account Move Line"
+
+#. module: sync_gmm
+#: field:account.move.line,account_move_line_ids:0
+msgid "Account Move Line UUID"
+msgstr "Account Move Line UUID"
+
+#. module: sync_gmm
+#: field:account.move,account_move_ids:0
+msgid "Account Move UUID"
+msgstr "Account Move UUID"
+
+#. module: sync_gmm
+#: field:sync.morsa.account,account_openerp_sync:0
+msgid "Account OpenERP"
+msgstr "Cuenta  OpenERP"
+
+#. module: sync_gmm
+#: field:sync.morsa.account,account_openerp:0
+msgid "Account OpenERP Rel"
+msgstr "Cuenta OpenERP Relacionada"
+
+#. module: sync_gmm
+#: field:sync.morsa.rel,account_move_line_id:0
+msgid "Account move line Id"
+msgstr "Account move line Id"
+
+#. module: sync_gmm
+#: model:ir.model,name:sync_gmm.model_account_analytic_account
+msgid "Analytic Account"
+msgstr "Cuenta analítica"
+
+#. module: sync_gmm
+#: view:account.move:sync_gmm.wizard_account_move_uuid
+#: view:account.move.line:sync_gmm.wizard_account_move_line_uuid
+msgid "Cancel"
+msgstr "Cancela"
+
+#. module: sync_gmm
+#: view:sync.morsa:sync_gmm.sync_gmm_form_view_pp
+msgid "Click on process below to Create..."
+msgstr "Presione en botón Procesar debajo para crear"
+
+#. module: sync_gmm
+#: view:sync.morsa:sync_gmm.sync_gmm_form_view_pp
+msgid "Click on process below to Update..."
+msgstr "Presione en procesar para actualizar..."
+
+#. module: sync_gmm
+#: view:sync.morsa.account:sync_gmm.sync_morsa_accounts_form_view
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: sync_gmm
+#: field:account.move.uuid,create_uid:0 field:sync.morsa,create_uid:0
+#: field:sync.morsa.account,create_uid:0
+#: field:sync.morsa.conexion,create_uid:0 field:sync.morsa.log,create_uid:0
+#: field:sync.morsa.log.generic,create_uid:0
+#: field:sync.morsa.policy,create_uid:0 field:sync.morsa.rel,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: sync_gmm
+#: field:account.move.uuid,create_date:0 field:sync.morsa,create_date:0
+#: field:sync.morsa.account,create_date:0
+#: field:sync.morsa.conexion,create_date:0 field:sync.morsa.log,create_date:0
+#: field:sync.morsa.log.generic,create_date:0
+#: field:sync.morsa.policy,create_date:0 field:sync.morsa.rel,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: sync_gmm
+#: selection:sync.morsa.account,state:0
+msgid "Done"
+msgstr "Realizado"
+
+#. module: sync_gmm
+#: selection:sync.morsa.account,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: sync_gmm
+#: field:sync.morsa.account,enterprise:0 field:sync.morsa.policy,enterprise:0
+msgid "Enterprise"
+msgstr "Empresa"
+
+#. module: sync_gmm
+#: help:sync.morsa.account,account_openerp:0
+msgid "Example: XXX-XX-X-XX"
+msgstr "Ejemplo: XXX-XX-X-XX"
+
+#. module: sync_gmm
+#: field:sync.morsa.account,folio:0 field:sync.morsa.log,folio:0
+#: field:sync.morsa.rel,folio:0
+msgid "Folio"
+msgstr "Folio"
+
+#. module: sync_gmm
+#: selection:sync.morsa.account,enterprise:0
+msgid "GMM"
+msgstr "GMM"
+
+#. module: sync_gmm
+#: help:sync.morsa.account,enterprise:0
+msgid ""
+"GMM: contpaq_openerp_morsa_gmm \n"
+"MOR: contpaq_openerp_morsa_mor \n"
+"VOH: contpaq_openerp_morsa_voh\n"
+" Example: GMM"
+msgstr ""
+"GMM: contpaq_openerp_morsa_gmm \n"
+"MOR: contpaq_openerp_morsa_mor \n"
+"VOH: contpaq_openerp_morsa_voh\n"
+" Example: GMM"
+
+#. module: sync_gmm
+#: field:account.move,guid:0 field:account.move.line,guid:0
+msgid "GUID"
+msgstr "GUID"
+
+#. module: sync_gmm
+#: view:sync.morsa.log:sync_gmm.view_sync_morsa_log_search
+msgid "Group By..."
+msgstr "Agrupar por..."
+
+#. module: sync_gmm
+#: field:account.move.uuid,guid_ref:0
+msgid "Guid Ref"
+msgstr "Referencia Guid"
+
+#. module: sync_gmm
+#: field:account.move.uuid,id:0 field:sync.morsa,id:0
+#: field:sync.morsa.account,id:0 field:sync.morsa.conexion,id:0
+#: field:sync.morsa.log,id:0 field:sync.morsa.log.generic,id:0
+#: field:sync.morsa.policy,id:0 field:sync.morsa.rel,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: sync_gmm
+#: model:ir.model,name:sync_gmm.model_account_move_line
+msgid "Journal Items"
+msgstr "Elementos diario"
+
+#. module: sync_gmm
+#: field:account.move.uuid,write_uid:0 field:sync.morsa,write_uid:0
+#: field:sync.morsa.account,write_uid:0 field:sync.morsa.conexion,write_uid:0
+#: field:sync.morsa.log,write_uid:0 field:sync.morsa.log.generic,write_uid:0
+#: field:sync.morsa.policy,write_uid:0 field:sync.morsa.rel,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: sync_gmm
+#: field:account.move.uuid,write_date:0 field:sync.morsa,write_date:0
+#: field:sync.morsa.account,write_date:0
+#: field:sync.morsa.conexion,write_date:0 field:sync.morsa.log,write_date:0
+#: field:sync.morsa.log.generic,write_date:0
+#: field:sync.morsa.policy,write_date:0 field:sync.morsa.rel,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: sync_gmm
+#: view:sync.morsa.log.generic:sync_gmm.sync_morsa_log_generic_tree_view
+msgid "Log"
+msgstr "Log"
+
+#. module: sync_gmm
+#: model:ir.actions.act_window,name:sync_gmm.sync_morsa_log_generic_type_action
+msgid "Log MORSA"
+msgstr "Log MORSA"
+
+#. module: sync_gmm
+#: model:ir.ui.menu,name:sync_gmm.sync_MORSA_menu_log
+msgid "Log Partner/Product"
+msgstr "Log Clientes/Productos"
+
+#. module: sync_gmm
+#: model:ir.ui.menu,name:sync_gmm.sync_MORSA_menu_policy_log
+msgid "Log Policy"
+msgstr "Log de Pólizas"
+
+#. module: sync_gmm
+#: selection:sync.morsa.account,enterprise:0
+msgid "MOR"
+msgstr "MOR"
+
+#. module: sync_gmm
+#: field:sync.morsa.log,message:0 field:sync.morsa.log.generic,message:0
+msgid "Message"
+msgstr "Mensaje"
+
+#. module: sync_gmm
+#: view:sync.morsa:sync_gmm.sync_gmm_form_view_pp
+msgid "Module Sync Info Partner/Product"
+msgstr "Módulo para sincronizar información Clientes/Productos"
+
+#. module: sync_gmm
+#: view:sync.morsa.policy:sync_gmm.sync_gmm_form_view_policy
+msgid "Module Sync Policy"
+msgstr "Módulo Sincronizar Pólizas"
+
+#. module: sync_gmm
+#: field:sync.morsa.log.generic,morsa_code:0
+msgid "Morsa Code"
+msgstr "Código MORSA"
+
+#. module: sync_gmm
+#: field:sync.morsa.account,name:0
+msgid "Name"
+msgstr "Nombre Cuenta Contpaq"
+
+#. module: sync_gmm
+#: field:sync.morsa.log.generic,openerp_code:0
+msgid "OpenERP Code"
+msgstr "Código OpenERP"
+
+#. module: sync_gmm
+#: view:sync.morsa:sync_gmm.sync_gmm_form_view_pp
+#: field:sync.morsa.account,partner_id:0
+msgid "Partner"
+msgstr "Cliente"
+
+#. module: sync_gmm
+#: model:ir.ui.menu,name:sync_gmm.sync_MORSA_menu_partner_product
+msgid "Partner/Product"
+msgstr "Clientes/Productos"
+
+#. module: sync_gmm
+#: field:sync.morsa.log,period:0 field:sync.morsa.policy,period:0
+msgid "Period"
+msgstr "Periodo"
+
+#. module: sync_gmm
+#: model:ir.ui.menu,name:sync_gmm.sync_MORSA_menu_policy
+msgid "Policy"
+msgstr "Póliza"
+
+#. module: sync_gmm
+#: view:sync.morsa.log:sync_gmm.sync_morsa_log_tree_view
+msgid "Policy Log"
+msgstr "Log de Pólizas"
+
+#. module: sync_gmm
+#: view:sync.morsa.account:sync_gmm.sync_morsa_accounts_form_view
+msgid "Save Sync"
+msgstr "Graba Sync"
+
+#. module: sync_gmm
+#: view:account.move:sync_gmm.wizard_account_move_uuid
+#: view:account.move.line:sync_gmm.wizard_account_move_line_uuid
+msgid "Save UUID"
+msgstr "Guardar UUID"
+
+#. module: sync_gmm
+#: view:sync.morsa.log:sync_gmm.view_sync_morsa_log_search
+msgid "Search Sync MORSA Log"
+msgstr "Búsqueda Log sincronizar MORSA"
+
+#. module: sync_gmm
+#: field:sync.morsa.account,state:0
+msgid "Status"
+msgstr "Estatus"
+
+#. module: sync_gmm
+#: view:sync.morsa.policy:sync_gmm.sync_gmm_form_view_policy
+msgid "Sync"
+msgstr "Sincronizar"
+
+#. module: sync_gmm
+#: model:ir.actions.act_window,name:sync_gmm.sync_morsa_accounts_type_action
+#: view:sync.morsa.account:sync_gmm.sync_morsa_accounts_form_view
+#: view:sync.morsa.account:sync_gmm.sync_morsa_accounts_tree_view
+msgid "Sync Account"
+msgstr "Cuenta Sincronizada"
+
+#. module: sync_gmm
+#: model:ir.ui.menu,name:sync_gmm.sync_MORSA_menu_sync_accounts
+msgid "Sync Accounts"
+msgstr "Cuentas Sincronizadas"
+
+#. module: sync_gmm
+#: model:ir.ui.menu,name:sync_gmm.sync_MORSA_menu
+msgid "Sync MORSA"
+msgstr "Sincronizar MORSA"
+
+#. module: sync_gmm
+#: view:sync.morsa:sync_gmm.sync_gmm_form_view_pp
+#: view:sync.morsa.policy:sync_gmm.sync_gmm_form_view_policy
+msgid "Sync MORSA Form"
+msgstr "Forma Sincronizar MORSA"
+
+#. module: sync_gmm
+#: model:ir.actions.act_window,name:sync_gmm.sync_morsa_list_action_pp
+#: model:res.groups,name:sync_gmm.group_sync_morsa_partner_product
+msgid "Sync MORSA Partner/Product"
+msgstr "Sincronizar Clientes/Productos MORSA"
+
+#. module: sync_gmm
+#: model:ir.actions.act_window,name:sync_gmm.sync_morsa_list_action_policy
+#: model:res.groups,name:sync_gmm.group_sync_morsa_policy
+msgid "Sync MORSA Policy"
+msgstr "Sincronizar Pólizas MORSA"
+
+#. module: sync_gmm
+#: field:account.analytic.account,sync_morsa_account_id:0
+msgid "Sync Morsa Account Id"
+msgstr "Sync Morsa Account Id"
+
+#. module: sync_gmm
+#: field:sync.morsa.rel,sync_move_id:0
+msgid "Sync Move Id"
+msgstr "Sync Move Id"
+
+#. module: sync_gmm
+#: view:account.move:sync_gmm.view_move_form_uuid
+#: view:account.move:sync_gmm.wizard_account_move_uuid
+#: field:account.move,uuid:0
+#: view:account.move.line:sync_gmm.wizard_account_move_line_uuid
+#: field:account.move.line,uuid:0 field:account.move.uuid,fn_uuid:0
+#: field:account.move.uuid,uuid:0 field:account.move.uuid,uuid_view:0
+msgid "UUID"
+msgstr "UUID"
+
+#. module: sync_gmm
+#: view:account.move:sync_gmm.view_move_form_uuid
+msgid "UUIDs"
+msgstr "UUIDs"
+
+#. module: sync_gmm
+#: view:sync.morsa.account:sync_gmm.sync_morsa_accounts_form_view
+msgid "Unconfirm"
+msgstr "Desconfirmar"
+
+#. module: sync_gmm
+#: selection:sync.morsa.account,enterprise:0
+msgid "VOH"
+msgstr "VOH"
+
+#. module: sync_gmm
+#: help:sync.morsa.policy,enterprise:0
+msgid ""
+"Write the code for enterprise \n"
+"GMM: contpaq_openerp_morsa_gmm \n"
+"MOR: contpaq_openerp_morsa_mor \n"
+"VOH: contpaq_openerp_morsa_voh\n"
+" Example: GMM"
+msgstr ""
+"Escribe el código para la Empresa \n"
+"GMM: contpaq_openerp_morsa_gmm \n"
+"MOR: contpaq_openerp_morsa_mor \n"
+"VOH: contpaq_openerp_morsa_voh\n"
+"Ejemplo: GMM"
+
+#. module: sync_gmm
+#: view:sync.morsa.log:sync_gmm.view_sync_morsa_log_search
+msgid "account contpaq"
+msgstr "cuenta contpaq"
+
+#. module: sync_gmm
+#: field:sync.morsa.log,db:0
+msgid "db"
+msgstr "base datos"
+
+#. module: sync_gmm
+#: view:sync.morsa.log:sync_gmm.view_sync_morsa_log_search
+msgid "folio"
+msgstr "folio"
+
+#. module: sync_gmm
+#: view:sync.morsa.log:sync_gmm.view_sync_morsa_log_search
+msgid "message"
+msgstr "Mensaje"
+
+#. module: sync_gmm
+#: help:sync.morsa.policy,period:0
+msgid "mmaaaa"
+msgstr "mmaaaa"
+
+#. module: sync_gmm
+#: field:sync.morsa.log.generic,name:0
+msgid "name"
+msgstr "name"
+
+#. module: sync_gmm
+#: view:sync.morsa.log:sync_gmm.view_sync_morsa_log_search
+msgid "period"
+msgstr "Periodo"
+
+#. module: sync_gmm
+#: model:ir.actions.act_window,name:sync_gmm.sync_morsa_log_type_action
+msgid "sync MORSA Log"
+msgstr "Log Sincronizar MORSA"

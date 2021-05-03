@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+       <record model="ir.ui.view" id="product_pricelist_view_payment_term">
+            <field eval="30" name="priority"/>
+            <field name="name">Pricelist</field>
+            <field name="model">product.pricelist</field>
+            <field name="inherit_id" ref="product.product_pricelist_view" />
+            <field name="arch" type="xml">
+                <field name="company_id" position="after">
+                    <field name="payment_term"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>

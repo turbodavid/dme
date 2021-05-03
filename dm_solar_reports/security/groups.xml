@@ -1,0 +1,7 @@
+<openerp>
+	<data>
+		<record id="group_manager_dm_solar_reports" model="res.groups">
+			<field name="name"> DmSolar Reports</field>
+		</record>
+	</data>
+</openerp>

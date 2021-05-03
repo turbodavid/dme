@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="crm_claim_view_form">
+			<field eval="30" name="priority"/>
+			<field name="name">CRM Claim Form View</field>
+			<field name="model">crm.claim</field>
+			<field name="inherit_id" ref="crm_claim.crm_case_claims_form_view" />
+			<field name="arch" type="xml">
+				<xpath expr="//sheet[@string='Claims']/group" position="before">
+					<h1>
+						<field name="folio" class="oe_inline" readonly="1"/>
+					</h1>
+				</xpath>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="crm_claim_view_tree">
+			<field eval="30" name="priority"/>
+			<field name="name">CRM Claim Tree View</field>
+			<field name="model">crm.claim</field>
+			<field name="inherit_id" ref="crm_claim.crm_case_claims_tree_view" />
+			<field name="arch" type="xml">
+				<field name="name" position="before">
+					<field name="folio"/>					
+				</field>
+			</field>
+		</record>
+	</data>
+</openerp>

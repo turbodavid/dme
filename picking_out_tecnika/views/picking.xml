@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+    <record model="ir.ui.view" id="view_stock_picking_out_inherit">
+        <field name="name">Stock Picking Out</field>
+        <field name="model">stock.picking.out</field>
+        <field name="inherit_id" ref="stock.view_picking_form" />
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+        <field name="stock_journal_id" position="after">
+            <field name="user_authorized" string="Authorized" attrs="{'readonly': [('state','in', ['done'])]}" required="1"/>
+            <field name="user_received" string="Received" attrs="{'readonly': [('state','in', ['done'])]}" required="1"/>
+        </field>
+        </field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,2 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+acces_picking_out_tecnika,acces_picking_out_tecnika,model_stock_picking_out,group_manager_tecnika_reports,1,1,1,1

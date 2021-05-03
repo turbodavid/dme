@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="wizard_account_voucher_check">
+            <field name="name">Wizard Account Voucher Check Print</field>
+            <field name="model">account.voucher.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+				<form string="Print Check" version="7.0">					
+					<group col="4">
+						<field name="name" required="1"/>
+					</group>
+					<footer>
+						<button name="print_wizard_check" string ="print" type="object" class="oe_highlight" icon="gtk-print"></button>
+						or
+						<button string ="cancel" class="oe_link" special="cancel"></button>
+					</footer>
+				</form>
+            </field>
+        </record>
+    </data>
+</openerp>

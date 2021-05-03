@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_account_list_code_sat_group">
+            <field name="name">Tree View Account List Code SAT Group</field>
+            <field name="model">account.account</field>
+            <field name="inherit_id" ref="account.view_account_list"/>
+            <field name="arch" type="xml">
+                <field name="debit" position="replace"/>
+                <field name="credit" position="replace"/>
+                <field name="balance" position="replace"/>
+                <field name="company_currency_id" position="replace">
+                    <field name="code_sat_group_function"/>
+                </field>
+            </field>
+        </record>
+
+        <!-- VISTA DE CUENTAS CONTABLES PARA QUE SERA RAPIDA SIN CALCULAR LOS BALANCES-->
+        <record id="view_account_gain_loss_tree_no_balance" model="ir.ui.view">
+           <field name="name">Trew View Account List Code SAT Group</field>
+            <field name="model">account.account</field>
+            <field name="inherit_id" ref="account.view_account_gain_loss_tree"/>
+                <field name="arch" type="xml">
+                    <field name="exchange_rate" position="replace">
+                        <field name="type" />
+                    </field>
+                    <field name="foreign_balance" position="replace"/>
+                    <field name="adjusted_balance" position="replace"/>
+                    <field name="balance" position="replace"/>
+                    <field name="unrealized_gain_loss" position="replace"/>
+                    <field name="currency_id" position="replace">
+                        <field name="code_sat_group_function"/>
+                    </field>
+                    <xpath expr="//tree" position="attributes">
+                        <attribute name="colors">blue:type == 'view';black:type in ('other','receivable','payable','consolidation');gray:type == 'closed'</attribute>
+                    </xpath>
+                </field>
+        </record>
+
+        <!--
+        <record id="view_account_analytic_account_tree_nobalance" model="ir.ui.view">
+            <field name="name">account.analytic.account.tree.nobalance</field>
+            <field name="model">account.analytic.account</field>
+            <field name="inherit_id" ref="account.view_account_analytic_account_tree"/>
+            <field name="arch" type="xml">
+                <field name="complete_name" position="replace">
+                    <field name="name" />
+                </field>
+                <field name="code" position="replace"/>
+                    <field name="parent_id" />
+                </field>
+                <field name="debit" position="replace"/>
+                <field name="credit" position="replace"/>
+                <field name="balance" position="replace"/>
+
+            </field>
+        </record>
+        -->
+    </data>
+</openerp>

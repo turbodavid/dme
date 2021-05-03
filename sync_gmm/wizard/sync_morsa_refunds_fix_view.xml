@@ -1,0 +1,29 @@
+<openerp>
+    <data>
+       <record id="sync_morsa_refunds_fix_view" model="ir.ui.view">
+            <field name="name">sync.morsa.refunds.fix.form</field>
+            <field name="model">sync.morsa.refunds.fix</field>
+            <field name="arch" type="xml">
+                <form string="Corregir Notas de Crédito" >
+                    <p class="oe_grey">
+                        Las Notas de Crédito de Clientes que fueron sincronizadas sin
+                        tener asignadas las facturas a las que se aplicarán, presentan
+                        inconsistencias cuando las facturas son asignadas y se vuelven
+                        a sincronizar. Este proceso detecta y corrige estos escenarios.
+                    </p>
+                    <footer>
+                        <button string="Corregir Notas Crédito" name="customers_refunds_fix" type="object" default_focus="1" class="oe_highlight"/>
+                        or
+                        <button string="Cancelar" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <act_window id="action_sync_morsa_refunds_fix_view"
+            multi="True"
+            key2="client_action_multi" name="Corregir Notas Cŕedito"
+            res_model="sync.morsa.refunds.fix" src_model="sync.morsa.refunds"
+            view_mode="form" target="new" view_type="form" />
+    </data>
+</openerp>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<openerp>
+    <data>
+        <record model="res.groups" id="group_product_unit_price_disabled">
+            <field name="name">Product/Sale Order Unit Price Disabled</field>
+        </record>
+    </data>
+</openerp>

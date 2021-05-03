@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!-- Menu -->
+        <menuitem id="menu_gmm_cfdi_supplier_payment_parent"
+                  parent="account.menu_finance_payables"
+                  name="CFDI Pagos" sequence="150"
+                  />
+        <menuitem id="menu_gmm_cfdi_supplier_payment"
+                  parent="menu_gmm_cfdi_supplier_payment_parent"
+                  name="Pagos" sequence="5"
+                  action="action_view_gmm_cfdi_supplier_payment"
+        />
+
+        <menuitem id="menu_gmm_cfdi_supplier_payment_credits_notrel"
+                  parent="menu_gmm_cfdi_supplier_payment_parent"
+                  name="NC Sin Doctos" sequence="10"
+                  action="action_view_gmm_cfdi_supplier_payment_credits_notrel"
+        />
+
+    </data>
+</openerp>

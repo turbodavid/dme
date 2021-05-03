@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <!-- Sequences for CRM Help Desk -->
+        <record id="seq_type_crm_helpdesk_folio" model="ir.sequence.type">
+            <field name="name">CRM HelpDesk</field>
+            <field name="code">crm.helpdesk</field>
+        </record>
+
+        <record id="seq_crm_helpdesk_folio" model="ir.sequence">
+            <field name="name">CRM HelpDesk</field>
+            <field name="code">crm.helpdesk</field>
+            <field name="prefix">HD</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+  		<!-- Sequences for CRM Claim -->
+        <record id="seq_type_crm_claim_folio" model="ir.sequence.type">
+            <field name="name">CRM Claim</field>
+            <field name="code">crm.claim</field>
+        </record>
+
+        <record id="seq_crm_claim_folio" model="ir.sequence">
+            <field name="name">CRM Claim</field>
+            <field name="code">crm.claim</field>
+            <field name="prefix">RC</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+    </data>
+</openerp>

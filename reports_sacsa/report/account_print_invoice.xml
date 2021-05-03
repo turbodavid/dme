@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="l10n_mx_facturae_report_aeroo_sacsa" model="ir.actions.report.xml">
+           <field name="name">Invoice Report aeroo</field>
+           <field name="type">ir.actions.report.xml</field>
+           <field name="model">account.invoice</field>
+           <field name="report_name">invoice.report.aaero</field>
+           <field name="report_type">aeroo</field>
+           <field name="in_format">oo-odt</field>
+           <field name="out_format" ref="report_aeroo.report_mimetypes_pdf_odt"/>
+           <field name="report_file">reports_sacsa/report/sacsa_factura.odt</field>
+           <field name="report_rml">reports_sacsa/report/sacsa_factura.odt</field>
+           <field name="parser_loc">reports_sacsa/report/account_print_invoice.py</field> 
+           <field name="parser_state">loc</field>
+           <field name="tml_source">file</field>
+       </record>
+    </data>
+</openerp>

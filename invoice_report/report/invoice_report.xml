@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="invoice_report_template_aeroo" model="report.templates.aeroo">
+            <field name="name">Invoice Report Template</field>
+            <field name="model">invoice.report</field>
+            <field name="report_name">invoice.report.aeroo</field>
+            <field name="report_rml">invoice_report/report/invoice_report.ods</field>
+            <field name="tml_source">file</field>
+        </record>
+        
+        <record id="invoice_report_aeroo" model="ir.actions.report.xml">
+            <field name="name">Invoice Report</field>
+            <field name="type">ir.actions.report.xml</field>
+            <field name="model">invoice.report</field>
+            <field name="report_name">invoice.report.aeroo</field>
+            <field name="report_type">aeroo</field>
+            <field name="in_format">oo-ods</field>
+            <field name="out_format" ref="report_aeroo.report_mimetypes_ods_ods" />
+            <field name="aeroo_templates_ids" eval="[(6, 0, [invoice_report_template_aeroo])]" />
+            <field name="tml_source">file</field>
+            <field name="parser_loc">invoice_report/report/invoice_report.py</field>
+            <field name="parser_state">loc</field>
+        </record>    
+    </data>
+</openerp>

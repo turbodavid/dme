@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<openerp>
+    <data>
+        <record model="res.groups" id="group_sync_morsa_partner_product">
+            <field name="name">Sync MORSA Partner/Product</field>
+        </record>
+        <record model="res.groups" id="group_sync_morsa_policy">
+            <field name="name">Sync MORSA Policy</field>
+        </record>
+    </data>
+</openerp>

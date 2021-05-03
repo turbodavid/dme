@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<!-- This starts a new comment.
+	... and this one, end it -->
+	<!-- All data in OpenERP are stored into /openerp/data branch
+	... which means in XML:
+	<openerp>
+	<data>
+	</data>
+	</openerp>
+	-->
+	<!-- Indenting in XML is optional. but
+	please try to stay human readable -->
+	<data>
+		<!-- action windows -->
+		<!-- The following tag is an action definition.
+		Basically, we create a record in model ir.actions.act_window
+		OpenERP will do the rest -->
+		<record model="ir.actions.act_window" id="aicv_list_action">
+			<field name="name">AICV</field>
+			<field name="res_model">aicv</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>   
+            <field name="target">new</field>         
+		</record>
+		<!-- menuitems -->
+		<menuitem id="main_aicv_menu" name="AICV" />
+		<!-- A first level in the left side menu is needed
+		before using action= attribute -->
+		<menuitem id="aicv_menu" name="AICV"
+		parent="main_aicv_menu" />
+		<!-- Full id location:
+			action="openacademy.course_list_action"
+			It is not required when it is the same module -->
+        <!-- Vista tipo Form-->
+		<menuitem id="aicv_submenu" name="AICV"
+		parent="aicv_menu"
+		action="aicv_list_action" />
+
+		<record model="ir.ui.view" id="aicv_form_view">
+			<field name="name">aicv.form</field>
+			<field name="model">aicv</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="AICV Form" version="7.0">
+					<separator string="Module Update Purchase/Sales"/>
+            <group>
+            	<label string="Click on process below to start the process on purchases..."/>
+				<group>
+					<button name="ConfirmarCompras" string="Purchases Confirm" type="object" icon="gtk-apply"/>
+				</group>
+            </group>
+						<footer>
+							
+						</footer>
+			<group>
+				<label string="Click on process below to start the process on sales..."/>
+				<group>
+					<button name="ConfirmarVentas" string="Sales Confirm" type="object" icon="gtk-apply"/>
+					<button name="ForzarDisponibilidad" string="Force Stock" type="object" icon="gtk-apply"/>
+				</group>
+			</group>
+				</form>
+			</field>
+		</record>   		  
+	</data>
+</openerp>

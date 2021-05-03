@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+         <!-- report_name nombre declarado en .py de reports-->
+<!--
+        <record id="invoice_promissory_note_webkit" model="ir.actions.report.xml">
+            <field name="report_type">webkit</field>
+            <field name="report_name">invoice.promissory.note.webkit</field>
+            <field eval="[(6,0,[])]" name="groups_id"/>
+            <field eval="0" name="multi"/>
+            <field eval="0" name="auto"/>
+            <field eval="0" name="header"/>
+            <field name="webkit_header" ref="l10n_mx_facturae.ir_header_webkit"/>
+            <field name="model">account.invoice</field>
+            <field name="type">ir.actions.report.xml</field>
+            <field name="name">Promissory Note</field>
+            <field name="report_rml">reports_sacsa/report/promissory_note.mako</field>
+            <field name="report_file">reports_sacsa/report/promissory_note.mako</field>
+        </record>
+-->
+<!--        <report auto="False"
+            id="invoice_promissory_note_webkit"
+            model="account.invoice"
+            name="invoice.promissory.note.webkit"
+            file="reports_sacsa/report/promissory_note.mako"
+            string="Promissory Note"
+            webkit_header = "l10n_mx_facturae.ir_header_webkit"
+            header = "False"
+            report_type="webkit"/>
+-->
+<!--
+	<report auto="False"
+            id="account_print_check_sacsa_webkit"
+            model="account.voucher"
+            name="account.print.check.sacsa.webkit"
+            file="reports_sacsa/report/check_print_sacsa.mako"
+            string="Check Sacsa"
+            webkit_header = "l10n_mx_facturae.ir_header_webkit"
+            header = "False"
+            report_type="webkit"/>
+-->
+    </data>    
+</openerp>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+         <record id="view_picking_form_default_location" model="ir.ui.view">
+            <field name="name">Stock Picking Form Location</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='move_lines']" position="replace">
+                    <field name="move_lines" string="Stock Move" context="{'move_lines': move_lines, 'active_id': active_id, 'address_in_id': partner_id, 'form_view_ref':'stock.view_move_picking_form', 'tree_view_ref':'stock.view_move_picking_tree', 'picking_type': 'internal'}" options='{"reload_on_button": true}'/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

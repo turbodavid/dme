@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<openerp>
+    <data>
+         <record id="view_product_form_price_unit_readonly" model="ir.ui.view">
+            <field name="name">Product Form Readonly List Price</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="groups_id" eval="[(6, 0, [ref('product_unit_price_disabled.group_product_unit_price_disabled')])]"/>
+            <field name="arch" type="xml">
+                <field name='list_price' position="attributes">
+                    <attribute name="attrs">{'readonly': '1'}</attribute>
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>

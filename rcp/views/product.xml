@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!-- Add instructor field to existing view -->
+        <record model="ir.ui.view" id="product_related_code_form_view">
+            <field name="name">product.related.code</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view" />
+            <field name="arch" type="xml">
+				<notebook position="inside">
+					<page string="Related Codes">
+						<field name="product_related_code_ids">
+							<tree string="" editable="bottom">
+								<field name="code"/>
+							</tree>
+						</field>
+					</page>
+				</notebook>
+            </field>
+        </record>
+    </data>
+</openerp>

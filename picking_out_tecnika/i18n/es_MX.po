@@ -1,0 +1,64 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* picking_out_tecnika
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-30 18:15+0000\n"
+"PO-Revision-Date: 2015-11-30 11:18-0800\n"
+"Last-Translator: Jorge Medina <jorge.medina@dmesoluciones.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: picking_out_tecnika
+#: field:stock.picking,user_received:0
+#: view:stock.picking.out:0
+#: field:stock.picking.out,user_received:0
+msgid "Received"
+msgstr "Recibido"
+
+#. module: picking_out_tecnika
+#: code:addons/picking_out_tecnika/report/account_print_invoice.py:161
+#, python-format
+msgid "Not Vat Number set on partner"
+msgstr "No tiene RFC estabecido en cliente"
+
+#. module: picking_out_tecnika
+#: code:addons/picking_out_tecnika/report/account_print_invoice.py:198
+#, python-format
+msgid "This document is a printed representation od the CFDI"
+msgstr "Este documento es una representación impresa de un CFDI"
+
+#. module: picking_out_tecnika
+#: code:addons/picking_out_tecnika/report/account_print_invoice.py:164
+#, python-format
+msgid "Customer Address Not Invoice Type"
+msgstr "Dirección de cliente no es de tipo Factura"
+
+#. module: picking_out_tecnika
+#: field:stock.picking,user_authorized:0
+#: view:stock.picking.out:0
+#: field:stock.picking.out,user_authorized:0
+msgid "Authorized"
+msgstr "Autorizado"
+
+#. module: picking_out_tecnika
+#: model:ir.model,name:picking_out_tecnika.model_stock_picking
+msgid "Picking List"
+msgstr "Albarán"
+
+#. module: picking_out_tecnika
+#: model:ir.model,name:picking_out_tecnika.model_stock_picking_out
+msgid "Delivery Orders"
+msgstr "Albaranes de salida"
+
+#. module: picking_out_tecnika
+#: model:res.groups,name:picking_out_tecnika.group_manager_tecnika_reports
+msgid "Tecnika Reports"
+msgstr "Reportes Tecnika"
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record model="ir.ui.view" id="view_stock_picking_out_csv_inherit">
+            <field name="name">Stock Picking Out CSV</field>
+            <field name="model">stock.picking.out</field>
+            <field name="inherit_id" ref="stock.view_picking_out_form" />
+            <field name="arch" type="xml">
+				<notebook position="inside">
+					<page string="Export CSV">
+					<button name="generate_csv" type="object" string="CSV" icon="gtk-apply"></button>
+					<group>						
+						<field name="filename" invisible="1" colspan="4"/>
+						<field name="data" nolabel="1" readonly="1" filename="filename" colspan="4"/>
+					</group>						
+					</page>
+                </notebook>
+			</field>
+		</record>
+	</data>
+</openerp>

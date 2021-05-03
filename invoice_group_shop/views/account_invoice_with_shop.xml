@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="view_invoice_line_tree_with_shop">
+			<field name="name">view.invoice.line.tree.with.shop</field>
+			<field name="model">account.invoice</field>
+			<field name="inherit_id" ref="account.invoice_tree"/>
+			<field name="arch" type="xml">
+				<field name="state" position="after">
+				    <field name="shop" invisible="1"/>
+				</field>
+			</field>
+		</record>
+	</data>
+</openerp>

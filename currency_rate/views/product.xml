@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+       <record model="ir.ui.view" id="product_form_view_mrp_density">
+            <field eval="30" name="priority"/>
+            <field name="name">Product MRP Density</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view" />
+            <field name="arch" type="xml">                
+                <field name="uos_id" position="after">
+					<field name="density" on_change="density_change(density)" />
+                </field>
+                <field name="uos_coeff" position="attributes">
+					<attribute name="readonly">True</attribute>
+				</field>
+            </field>
+        </record>
+    </data>
+</openerp>

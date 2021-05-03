@@ -1,0 +1,66 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* make_invoices
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-01 03:31+0000\n"
+"PO-Revision-Date: 2016-10-31 20:37-0800\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. module: make_invoices
+#: selection:warning,type:0
+msgid "Error"
+msgstr "Error"
+
+#. module: make_invoices
+#: selection:warning,type:0
+msgid "Information"
+msgstr "Información"
+
+#. module: make_invoices
+#: field:warning,message:0
+msgid "Message"
+msgstr "Mensaje"
+
+#. module: make_invoices
+#: code:_description:0
+#: model:ir.model,name:make_invoices.model_purchase_order_line_invoice
+#, python-format
+msgid "Purchase Order Line Make Invoice"
+msgstr "Línea de pedido de compra para realizar facturas"
+
+#. module: make_invoices
+#: code:addons/make_invoices/models/purchase_line_invoice.py:64
+#, python-format
+msgid "There are invoices from diferent providers"
+msgstr "Hay facturas de diferentes proveedores"
+
+#. module: make_invoices
+#: field:warning,title:0
+msgid "Title"
+msgstr "Titulo"
+
+#. module: make_invoices
+#: field:warning,type:0
+msgid "Type"
+msgstr "Tipo"
+
+#. module: make_invoices
+#: selection:warning,type:0
+msgid "Warning"
+msgstr "Atención!"
+
+#. module: make_invoices
+#: code:_description:0 model:ir.model,name:make_invoices.model_warning
+#, python-format
+msgid "warning"
+msgstr "Atención!"

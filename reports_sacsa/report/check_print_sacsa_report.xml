@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="ir_header_webkit_cheque_sacsa" model="ir.header_webkit">
+        <field name="name">Cheque SACSA</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">5</field>
+        <field name="margin_bottom">1</field>
+        <field name="margin_left">3</field>
+        <field name="margin_right">3</field>
+        <field name="format">Legal</field>
+        <field name="css" ><![CDATA[
+
+
+body {
+    font-family:arial; 
+}
+
+.act_as_table {
+    display: table;
+    width: 100%;
+    text-align:center; 
+    table-layout: fixed
+}
+
+.act_as_row  {
+    display: table-row;
+}
+
+.act_as_cell {
+    display: table-cell;
+    text-align:left;
+    font-size:10px;
+    padding-right:3px;
+    padding-left:3px;
+    padding-top:5px;
+    padding-bottom:3px;
+    clear:both; 
+}
+
+.act_table,
+.act_as_cell,
+.act_as_row {
+    word-wrap: break-word;
+}
+
+.contenedor {
+    color: red;
+    font-size:100px;
+    padding-top:350px;
+    -webkit-transform: rotate(-45deg);
+}
+
+.contenedor_principal {
+    position: relative;
+    width: 100%;
+}
+
+.contenedor_contenido {
+    position: relative;
+    z-index: 2;
+}
+
+.contenedor_cancelado {
+    position: absolute;
+    top:0px;
+    left:-60px;
+    z-index: 1;
+}
+
+]]>
+
+    </field>
+    <field name="html"><![CDATA[
+    
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+            <script>
+                 function subst() {
+                 var vars = {};
+                 var x = document.location.search.substring(1).split('&');
+                 for (var i in x) { var z = x[i].split('=', 2); vars[z[0]] = unescape(z[1]); }
+                 var x = ['frompage', 'topage', 'page', 'webpage', 'section', 'subsection', 'subsubsection'];
+                 for (var i in x) {
+                 var y = document.getElementsByClassName(x[i]);
+                 for (var j = 0; j < y.length; ++j) y[j].textContent = vars[x[i]];
+                     }
+                 }
+            </script>
+    </head>
+    <body style="border:0; margin: 0;" onload="subst()">
+        <% setLang(lang) %>
+        <table style="border-bottom: 1px solid black; width: 100%">
+            <tr>
+                <td style="text-align:left;font-size:9;font-weight: bold;">
+                    ${company.partner_id.name |entity}
+                </td>
+                <td style="text-align:right;font-size:9;">
+                    ${ formatLang(time.strftime("%Y-%m-%d"), date=True) }&nbsp;&nbsp;${ time.strftime("%H:%M") }&nbsp;&nbsp;-&nbsp;&nbsp;p. <span class="page">1</span> / <span class="topage">1</span>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>          
+]]>
+    </field>
+    <field name="footer_html"><![CDATA[
+
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+            <script>
+                function subst() {
+                    var vars = {};
+                    var x = document.location.search.substring(1).split('&');
+                    for (var i in x) { var z = x[i].split('=', 2); vars[z[0]] = unescape(z[1]); }
+                    var x = ['frompage', 'topage', 'page', 'webpage', 'section', 'subsection', 'subsubsection'];
+                    for (var i in x) {
+                    var y = document.getElementsByClassName(x[i]);
+                    for (var j = 0; j < y.length; ++j) y[j].textContent = vars[x[i]];
+                        }
+                    }
+            </script>
+    </head>
+    <body>
+    </body>
+</html>
+]]>
+            </field>
+        </record>
+    </data>
+
+    <!-- Menu Multi en pantalla form -->
+	<data>		
+		<report auto="False"
+		        id="account_check_writing.account_print_check_bottom"
+		        model="account.voucher"
+		        name="account.print.check.bottom"
+		        file="reports_sacsa/report/check_print_sacsa.mako"
+		        string="Print Check SACSA"
+		        webkit_header = "reports_sacsa.ir_header_webkit_cheque_sacsa"
+		        header = "False"
+		        report_type="webkit"/>
+
+		<report auto="False"
+		        id="account_check_writing.account_print_check_middle"
+		        model="account.voucher"
+		        name="account.print.check.middle"
+		        file="reports_sacsa/report/check_print_middle.rml"
+		        string="Print Check middle"
+		        report_type="pdf"/>
+		
+		<report auto="False"
+		        id="account_check_writing.account_print_check_top"
+		        model="account.voucher"
+		        name="account.print.check.top"
+		        file="reports_sacsa/report/check_print_top.mako"
+		        string="Print Check top"
+		        webkit_header = "reports_sacsa.ir_header_webkit_cheque_sacsa"
+		        header = "False"
+		        report_type="webkit"/>
+    </data>
+</openerp>

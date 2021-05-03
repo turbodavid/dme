@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="partner_account_status_report_wizard" model="ir.ui.view">
+			<field name="name">partner.account.status.report.wizard</field>
+			<field name="model">partner.account.status.report</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Report Options">
+					
+					<group col="2" colspan="2">
+                        <field name="company_id" />
+                        <field name="partner_id" />
+						<field name="date_ini" />
+						<field name="date_fin" />                        
+                        <field name="chk_insoluto" />
+                        <newline />
+                        <button string="Cancel" special="cancel" icon="gtk-cancel" />
+                        <button name="print_report" string="Print" type="object" icon="gtk-print" default_focus="1" />
+                        
+                    </group>
+				</form>
+			</field>
+		</record>
+
+
+
+        <record id="action_partner_account_status_report_wizard" model="ir.actions.act_window">
+            <field name="name">Partner Account Status Report</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">partner.account.status.report</field>
+            <field name="res_model">partner.account.status.report</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+        </record>
+        <menuitem action="action_partner_account_status_report_wizard"
+                  id="res_partner_account_status_submenu"
+                  parent="account_journal_report_sale.reports_journal_sales"
+                  name="Estado de cuenta de cliente" sequence="0" />
+
+
+
+	</data>
+</openerp>

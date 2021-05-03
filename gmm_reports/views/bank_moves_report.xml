@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>     
+        <!-- WIZARD BANK MOVES -->
+        <record id="wizard_bank_moves_report_sc" model="ir.ui.view">
+            <field name="name">Reporte de Movimientos Bancarios</field>
+            <field name="model">bank.moves.report</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Reporte de Movimientos Bancarios">
+                    <sheet> 
+                        <group colspan="2" col="2">
+                            <field name="acc_bank"/>
+                            <field name="date_start" required="True" />
+                            <field name="date_end" required="True" />
+                            <field name="ou"></field>
+                            <field name="isforbank"></field>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button name="execute_report" string="Execute" type="object" default_focus="1" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field> 
+        </record>
+
+        <!--Action-->
+        <record id="bank_moves_report_sc_action" model="ir.actions.act_window">
+            <field name="name">Movimientos Contables</field>
+            <field name="res_model">bank.moves.report</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="wizard_bank_moves_report_sc"></field>
+        </record>
+        <!-- Menu -->
+
+        <menuitem id ="account.menu_finance_gmm_reports" parent="account.menu_finance_reports" name="Informes GMM" sequence="20" />
+        <menuitem id="bank_moves_report_sc_menu" parent="account.menu_finance_gmm_reports" name="Movimientos Bancarios" sequence="5" action="bank_moves_report_sc_action"/>
+    </data>
+</openerp>

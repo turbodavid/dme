@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record model="ir.ui.view" id="view_sale_order_form">
+			<field eval="30" name="priority"/>
+            <field name="name">View Sale Order Form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form" />
+            <field name="arch" type="xml">		
+                <field name="partner_shipping_id" position="replace">
+                    <field name="partner_shipping_id" groups="sale.group_delivery_invoice_address" context="{'default_type':'delivery'}" attrs="{'readonly': 0}"/>
+                </field>
+				<field name="client_order_ref" position="replace">
+					<field name="childs_list" string="Childs" context="{'childs_list': childs_list}" invisible="1"> </field>
+					<field name="client_ref" options="{'limit': 100, 'create': false, 'create_edit': false}" on_change="onchange_client_ref(client_ref)" domain="[('id','in',context.get('childs_list' , False))]" />
+					<field name="client_order_ref"/>
+				</field>
+				<field name="payment_term" position="replace">
+					<field name="payment_term" string="Payment Term" />
+				</field>
+				<field name="payment_term" position="before">
+					<field name="budget_valid" attrs="{'readonly': [('state','not in', ['draft','sent'])]}"/>
+					<field name="freight_destination_v" attrs="{'readonly': [('state','not in', ['draft','sent'])]}"/>
+					<field name="delivery_time" attrs="{'readonly': [('state','not in', ['draft','sent'])]}"/>
+				</field>
+				<notebook position= "inside">
+					<page string= "Information Logistic">
+						<separator string="Logistic" />
+						<group colspan="4" col="4">								
+							<field name= "merchandise_insurance"/>	
+							<field name= "scaffold"/>
+							<field name= "unloading_maneuvers" />
+							<field name= "type_service"/>
+							<field name= "reference" colspan="4"/>
+							<field name= "contact_logistic" colspan="4"/>
+							<field name= "phone_logistic"/>
+						</group>
+						<separator string="Collection Site" />
+						<group colspan="4" col="4">	
+
+							<field name= "contact_site" placeholder="Contact" attrs="{'readonly': [('state','not in', ['draft','sent'])]}"/>
+							<field name= "collection_address_id" placeholder= "Collection Address" attrs="{'readonly': [('state','not in', ['draft','sent'])]}" on_change="onchange_collection_address_id(collection_address_id)"/> 
+							<field name= "phone_collection"/>
+
+						</group>
+					</page>
+				</notebook>
+			</field>
+		</record>
+	</data>
+</openerp>
+
+	

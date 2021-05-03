@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_gmm_cfdi_supplier_payment_form">
+            <field name="name">gmm.cfdi.supplier.payment.form</field>
+            <field name="model">gmm.cfdi.supplier.payment</field>
+            <field name="arch" type="xml">
+                <form string="CFDI Supplier Payment Conciliation" version="7.0" create="false">
+                    <header>
+                        <button name="action_calculate" type="object" string="Calculate" states="draft" class="oe_highlight"/>
+                        <button name="action_calculate" type="object" string="Recalculate" states="process" />
+                        <button name="action_confirm" type="object" string="Confirm" class="oe_highlight" states="process"/>
+                        <button name="action_cancel" type="object" string="Cancel" states="process,done"/>
+                        <button name="action_recover" type="object" string="Draft" class="oe_highlight" states="canceled"/>
+                        <field name="state" select="2" widget="statusbar" statusbar_visible="process,done" statusbar_colors='{"calc_done":"blue","done":"blue","canceled":"red"}'/>
+                    </header>
+                    <label for="name" class="oe_edit_only"/>
+                    <h1>
+                        <field name="partner_id" />
+                    </h1>
+                    <notebook>
+                        <page string="Payment Info">
+                            <group col="4">
+                                <field name="name"/>
+                                <field name="date" />
+                                <field name="uuid" />
+                                <field name="payment_number" />
+                                <field name="amount"/>
+                                <field name="payment_residual"/>
+                                <field name="credits_issued"/>
+                                <field name="residual"/>
+                            </group>
+                            <group>
+                                <group col="1">
+                                    <separator string="Payments Found"/>
+                                    <field name="payment_ids" nolabel="1">
+                                        <tree>
+                                            <field name="move_name" />
+                                            <field name="date"/>
+                                            <field name="amount" string="Amount" />
+                                            <field name="concilied" />
+                                        </tree>
+                                    </field>
+                                </group>
+                                <group col="1">
+                                    <separator string="Credits Found"/>
+                                    <field name="credit_ids" nolabel="1">
+                                        <tree>
+                                            <field name="move_name" />
+                                            <field name="date"/>
+                                            <field name="amount" string="Credit" />
+                                            <field name="concilied" />
+                                        </tree>
+                                    </field>
+                                </group>
+                            </group>
+                        </page>
+                       <page string="Invoices Paid">
+                           <field name="payment_line_invoices" >
+                               <tree>
+                                   <field name="date" />
+                                   <field name="operating_unit_id" />
+                                   <field name="invoice_number"/>
+                                   <field name="uuid" />
+                                   <field name="amount"  />
+                                   <field name="amount_paid" />
+                                   <field name="amount_residual" sum="Total Creditos" />
+                                   <field name="invoice_id" widget="many2onebutton" />
+                               </tree>
+                           </field>
+                        </page>
+                       <page string="Credits Used">
+                           <field name="payment_line_credits" nolabel="1">
+                                <tree>
+                                   <!--field name="date" />
+                                   <field name="operating_unit_id" />
+                                   <field name="invoice_number"/-->
+                                   <field name="credit_number" />
+                                   <field name="uuid" />
+                                   <field name="amount_credit" sum="Total Creditos" />
+                                   <field name="invoices_applied" widget="many2many_tags" />
+                                   <!--field name="amount"  />
+                                   <field name="invoice_number"/>
+                                   <field name="amount_invoice" />
+                                   <field name="amt_inv_residual" />
+                                   <field name="amt_inv_residual_creditapplied" />
+                                   <field name="invoices_applied">
+                                       <form string="Invoices" widget="xmany_counter">
+                                           <tree>
+                                               <field name="date" />
+                                               <field name="operating_unit_id" />
+                                               <field name="invoice_number"/>
+                                               <field name="amount" />
+                                           </tree>
+                                       </form>
+                                   </field-->
+                               </tree>
+                           </field>
+                        </page>
+                     <page string="Credits without Invoices Used">
+                           <field name="payment_line_credits_nr" nolabel="1">
+                                <tree>
+                                   <field name="name" />
+                                    <field name="date" />
+                                   <field name="uuid" />
+                                   <field name="amount" sum="Total Credits" />
+                               </tree>
+                           </field>
+                     </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+
+        <!-- Payments Search View -->
+        <record id="filter_gmm_cfdi_supplier_payment_view" model="ir.ui.view">
+            <field name="name">gmm_cfdi_supplier_payment_search</field>
+            <field name="model">gmm.cfdi.supplier.payment</field>
+            <field name="arch" type="xml">
+                <search string="Search Operations">
+                    <field string="Supplier" help="Supplier" name="partner_id"/>
+                    <field string="Payment Date" help="Payment Date" name="company_paid_date" />
+                    <field string="CFDI Date" help="CFDI Date" name="date" />
+                    <filter name="missing" string="Missing Credits" help="Payments with Missing Credits"
+                            domain="[('residual', '!=', 0.0)]" />
+                    <filter name="surplus" string="Surplus Credits" help="Payments with Surplus Credits"
+                            domain="[('residual', '&lt;', 0.0)]" />
+                    <group expand="0" string="Group By...">
+                        <filter string="Partner" icon="terp-partner" domain="[]" context="{'group_by':'partner_id'}"/>
+                        <filter string="Status" icon="terp-stock_effects-object-colorize" domain="[]"  context="{'group_by':'state'}"/>
+                        <filter string="CFDI Date" icon="terp-go-month" domain="[]"  context="{'group_by':'date'}"/>
+                        <filter string="Company Date" icon="terp-go-month" domain="[]"  context="{'group_by':'company_paid_date'}"/>
+                    </group>
+               </search>
+            </field>
+        </record>
+
+
+        <!-- Supplier Payments tree view -->
+        <record model="ir.ui.view" id="view_gmm_cfdi_supplier_payment_tree">
+            <field name="name">gmm_cfdi_supplier_payment_tree</field>
+            <field name="model">gmm.cfdi.supplier.payment</field>
+            <field name="arch" type="xml">
+                <tree colors="red: residual &lt; 0; blue: residual &gt; 0" string="Supplier Payments" create="false">
+                    <field name="partner_id" select="2" colspan="4"/>
+                    <field name="company_paid_date" select="1"/>
+                    <field name="date" select="1"/>
+                    <field name="payment_number" select="1"/>
+                    <!--field name="uuid" select="1"/-->
+                    <field name="amount" select="2"/>
+                    <field name="payment_residual"/>
+                    <field name="credits_issued"/>
+                    <field name="residual"   />
+                    <field name="state" colspan="4" select="2"/>
+                </tree>
+            </field>
+            <field name="search_view_id" ref="filter_gmm_cfdi_supplier_payment_view"/>
+        </record>
+
+        <!--*** window action ******************************************* -->
+        <record model="ir.actions.act_window" id="action_view_gmm_cfdi_supplier_payment">
+            <field name="name">Supplier Payments</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">gmm.cfdi.supplier.payment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_gmm_cfdi_supplier_payment_tree"/>
+        </record>
+
+        <!-- PARA LOS CREDITOS NO RELACIONADOS -->
+        <record model="ir.ui.view" id="view_gmm_cfdi_supplier_payment_credits_notrel_form">
+            <field name="name">gmm.cfdi.supplier.payment.credits.notrel.form</field>
+            <field name="model">gmm.cfdi.supplier.payment.credits.notrel</field>
+            <field name="arch" type="xml">
+                <form string="CFDI Supplier Credits with no Related Documents" version="7.0" create="false">
+                    <label for="name" class="oe_edit_only"/>
+                    <h1>
+                        <field name="partner_id" />
+                        <field name="name"/>
+                        <field name="date" />
+                        <field name="uuid" />
+                        <field name="serie" />
+                        <field name="number" />
+                        <field name="amount"/>
+                        <field name="payment_id"/>
+                    </h1>
+                 </form>
+            </field>
+        </record>
+
+        <!-- Credits Not Rel Search View -->
+        <record id="filter_gmm_cfdi_supplier_payment_credits_notrel_view" model="ir.ui.view">
+            <field name="name">gmm_cfdi_supplier_payment_credits_notrel_search</field>
+            <field name="model">gmm.cfdi.supplier.payment.credits.notrel</field>
+            <field name="arch" type="xml">
+                <search string="Search Operations">
+                    <field string="Supplier" help="Supplier" name="partner_id"/>
+                    <field string="Credit Date" help="Credit Date" name="date" />
+                    <filter name="related" string="Related" help="Credits that have already related to a Payment"
+                            domain="[('payment_id', '!=', False)]" />
+                    <filter name="notrelated" string="Not Related" help="Credits that have not related to a Payment yet"
+                            domain="[('payment_id', '=', False)]" />
+                    <group expand="0" string="Group By...">
+                        <filter string="Partner" icon="terp-partner" domain="[]" context="{'group_by':'partner_id'}"/>
+                        <filter string="Date" icon="terp-go-month" domain="[]"  context="{'group_by':'date'}"/>
+                    </group>
+               </search>
+            </field>
+        </record>
+
+        <!-- Supplier Credits NotRel tree view -->
+        <record model="ir.ui.view" id="view_gmm_cfdi_supplier_payment_credits_notrel_tree">
+            <field name="name">gmm_cfdi_supplier_payment_credits_notrel_tree</field>
+            <field name="model">gmm.cfdi.supplier.payment.credits.notrel</field>
+            <field name="arch" type="xml">
+                <tree colors="red:payment_id==False" string="Supplier Crediths with no Related Documents"
+                        editable="top" create="false">
+                    <field name="partner_id" select="2" colspan="4" readonly="1"/>
+                    <field name="date" select="1" readonly="1"/>
+                    <field name="name" select="1" readonly="1"/>
+                    <field name="uuid" select="1" readonly="1"/>
+                    <field name="amount" select="2" readonly="1"/>
+                    <field name="payment_id" onchange="onchange_payment_id()"
+                           domain="[('partner_id', '=', partner_id), ('number', '!=', False), ('state', '=', 'process')]"/>
+                </tree>
+            </field>
+            <field name="search_view_id" ref="filter_gmm_cfdi_supplier_payment_credits_notrel_view"/>
+        </record>
+
+        <!--*** window action ******************************************* -->
+        <record model="ir.actions.act_window" id="action_view_gmm_cfdi_supplier_payment_credits_notrel">
+            <field name="name">Credits No Doc Related</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">gmm.cfdi.supplier.payment.credits.notrel</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_gmm_cfdi_supplier_payment_credits_notrel_tree"/>
+        </record>
+
+    </data>
+</openerp>

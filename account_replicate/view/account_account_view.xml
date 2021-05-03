@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <openerp>
+        <data>
+            <record model='ir.ui.view' id='view_account_replicate_form'>
+                <field name='name'>View Account Replicate</field>
+                <field name='model'>account.account</field>
+                <field name='inherit_id' ref='account.view_account_form'/>
+                <field name='type'>form</field>
+                <field name='arch' type='xml'>
+                    <field name="reconcile" position="after">
+                        <field name="replicate"/>
+                    </field>
+                </field>
+           </record>
+        </data>
+    </openerp>

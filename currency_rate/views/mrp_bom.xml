@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+       <record model="ir.ui.view" id="mrp_bom_form_view_mrp_density">
+            <field eval="30" name="priority"/>
+            <field name="name">Product MRP BOM</field>
+            <field name="model">mrp.bom</field>
+            <field name="inherit_id" ref="mrp.mrp_bom_form_view" />
+            <field name="arch" type="xml">
+				<field name="product_qty" position="replace">
+					<field name="product_qty" on_change="onchange_product_qty(product_id, product_qty)" class="oe_inline" />
+				</field>
+				<field name="product_uos_qty" position="before">
+					<field name="density" class="oe_inline" />
+				</field>
+				<label for="product_uos_qty" position="replace">
+                    <label for="density" groups="product.group_uos" />
+				</label>
+            </field>
+        </record>
+    </data>
+</openerp>

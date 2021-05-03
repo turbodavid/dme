@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="mrp_production_form_view_preready" model="ir.ui.view">
+            <field name="name">mrp.production.form.pre.ready</field>
+            <field name="model">mrp.production</field>
+            <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+            <field name="arch" type="xml">
+                <!--<button name="button_preready" states="draft" string="Pre ready" class="oe_highlight"/>-->
+                <xpath expr="/form/header/button[@string='Confirm Production']" position="replace">
+                    <button name="button_confirm" states="pre_ready" string="Confirm Production" class="oe_highlight"/>
+                </xpath>
+                <xpath expr="/form/header/button[@string='Confirm Production']" position="before">
+                    <button name="button_pre_ready" states="draft" string="Pre Production" class="oe_highlight"/>
+                </xpath>
+                <field name="state" position="replace">
+                    <field name="state" widget="statusbar" statusbar_visible="draft,pre_ready, ready,in_production,done" statusbar_colors='{"picking_except":"red","confirmed":"blue"}'/>
+                </field>
+                <xpath expr="/form/sheet/notebook/page[@string='Scheduled Products']" position="replace">
+                    <page string="Scheduled Products">
+                        <button name="action_compute" attrs="{'invisible':[('state','not in', ['draft','pre_ready'])]}"
+                            string="Compute Data" type="object"
+                            icon="terp-stock_format-scientific"/>
+                        <field name="product_lines" attrs="{'readonly':[('state','not in', ['draft','pre_ready'])]}" />
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

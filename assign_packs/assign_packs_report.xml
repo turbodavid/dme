@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report auto="False" id="report_assign_packs" model="assign.packs" name="assign.packs" string="Submit it" rml="assign_packs/report/assign_packs.rml"/>
+    </data>
+</openerp>

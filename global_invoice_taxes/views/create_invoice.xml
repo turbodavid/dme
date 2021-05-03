@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2018 Pc systems
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<openerp>
+<data>
+    <record model="ir.ui.view" id="create_invoice_form_view">
+        <field name="name">create.invoice.form</field>
+        <field name="model">pos.make.invoice</field>
+        <field name="inherit_id" ref="pos_invoice_posted.view_pos_create_invoice"/>
+        <field name="arch" type="xml">
+     		<xpath expr="//button[@name='make_invoices']" position="before">
+     			<button string="Create Invoice Taxes" name="make_invoice_taxes" type="object" default_focus="1" class="oe_highlight"/>
+            </xpath>
+        </field>
+    </record>
+</data>
+</openerp>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!-- CFDI Supplier Payments Generation -->
+        <record id="wizard_gmm_cfdi_supplier_payment" model="ir.ui.view">
+            <field name="name">Supplier CFDI Payments Issued</field>
+            <field name="model">gmm.cfdi.supplier.payment.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="CFDI Payments Issued Registration">
+                    <sheet>
+                        <group colspan="2" col="2">
+                            <field name="partner_id" required="True" />
+                            <field name="date_from" required="True"/>
+                            <field name="date_to" required="True"/>
+                            <field name="credits_to_date"/>
+                            <field name="from_company"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button name="get_supplier_payments" string="Find payments" type="object"
+                                context="{'active_id': active_id}"
+                                default_focus="1" class="oe_highlight"
+                        />
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <!--Action-->
+        <record id="action_gmm_cfdi_supplier_payment_wizard" model="ir.actions.act_window">
+            <field name="name">Find and register Supplier Payments Issued</field>
+            <field name="res_model">gmm.cfdi.supplier.payment.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="wizard_gmm_cfdi_supplier_payment"/>
+        </record>
+
+        <!-- Menu -->
+        <menuitem id="menu_gmm_cfdi_supplier_payment_wizard"
+          parent="menu_gmm_cfdi_supplier_payment_parent"
+          name="Asistente Pagos" sequence="20"
+          action="action_gmm_cfdi_supplier_payment_wizard"
+        />
+
+    </data>
+</openerp>

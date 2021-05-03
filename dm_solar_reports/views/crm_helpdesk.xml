@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="crm_helpdesk_view_form">
+			<field eval="30" name="priority"/>
+			<field name="name">CRM Helpdesk Form View</field>
+			<field name="model">crm.helpdesk</field>
+			<field name="inherit_id" ref="crm_helpdesk.crm_case_form_view_helpdesk" />
+			<field name="arch" type="xml">
+				<xpath expr="//sheet[@string='Helpdesk Support']/group" position="before">
+					<h1>
+						<field name="folio" class="oe_inline" readonly="1"/>
+					</h1>
+				</xpath>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="crm_helpdesk_view_tree">
+			<field eval="30" name="priority"/>
+			<field name="name">CRM Helpdesk Tree View</field>
+			<field name="model">crm.helpdesk</field>
+			<field name="inherit_id" ref="crm_helpdesk.crm_case_tree_view_helpdesk" />
+			<field name="arch" type="xml">
+				<field name="name" position="before">
+					<field name="folio"/>
+				</field>
+			</field>
+		</record>
+	</data>
+</openerp>

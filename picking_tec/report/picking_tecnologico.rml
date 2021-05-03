@@ -1,0 +1,473 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="0.0" y1="57.0" width="538" height="728"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table_Address_detail">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table_Title_String">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Header_Order_Reference_Tbl">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#e6e6e6" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#e6e6e6" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#e6e6e6" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#e6e6e6" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#e6e6e6" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#e6e6e6" start="2,0" stop="2,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#e6e6e6" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#e6e6e6" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#e6e6e6" start="3,0" stop="3,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="3,-1" stop="3,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Content_Order_Reference_Table">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#e6e6e6" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#e6e6e6" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#e6e6e6" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#e6e6e6" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#e6e6e6" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#e6e6e6" start="2,0" stop="2,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#e6e6e6" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#e6e6e6" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#e6e6e6" start="3,0" stop="3,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="3,-1" stop="3,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Move_Line_Header">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="4,-1" stop="4,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="5,-1" stop="5,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Move_Line_Contect_Assign_State">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="4,-1" stop="4,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="5,-1" stop="5,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="4,-1" stop="4,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table3">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Firmas">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="FirmasDet">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="DetallesCliente">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P2" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P3" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P4" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica" fontSize="7.0" leading="9" alignment="JUSTIFY"/>
+    <paraStyle name="P5" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica" fontSize="7.0" leading="9"/>
+    <paraStyle name="P6" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica" fontSize="7.0" leading="9"/>
+    <paraStyle name="P7" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica" fontSize="7.0" leading="9" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P8" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P9" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P10" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica" fontSize="7.0" leading="9" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P11" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica" fontSize="7.0" leading="9" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P12" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica" fontSize="7.0" leading="9" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P13" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P14" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica" fontSize="7.0" leading="9" alignment="CENTER"/>
+    <paraStyle name="P15" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica" fontSize="7.0" leading="9" alignment="LEFT"/>
+    <paraStyle name="P16" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica-Bold" fontSize="7.0" leading="9" alignment="CENTER"/>
+    <paraStyle name="P17" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica-Bold" fontSize="7.0" leading="9" alignment="LEFT"/>
+    <paraStyle name="P18" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="LEFT"/>
+    <paraStyle name="P19" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica" fontSize="7.0" leading="9" alignment="JUSTIFY"/>
+    <paraStyle name="P20" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P21" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica-Oblique" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P22" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT"/>
+    <paraStyle name="P23" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P24" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica" fontSize="2.0" leading="3" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P25" rightIndent="0.0" leftIndent="15.0" fontName="Helvetica" fontSize="2.0" leading="3" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P26" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="Standard" fontName="Helvetica"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Helvetica-Oblique" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Helvetica"/>
+    <paraStyle name="terp_header" fontName="Helvetica-Bold" fontSize="12.0" leading="15" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_header_Centre" fontName="Helvetica-Bold" fontSize="12.0" leading="15" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_8" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Bold_8" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_tblheader_Details" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_tblheader_Details_Centre" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Centre_8" fontName="Helvetica" fontSize="8.0" leading="10" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Centre_9" fontName="Helvetica" fontSize="9.0" leading="11" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_tblheader_General" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_General_Centre" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="Table Contents" fontName="Helvetica"/>
+    <paraStyle name="Footer" fontName="Helvetica"/>
+    <paraStyle name="Table Heading" fontName="Helvetica" alignment="CENTER"/>
+    <paraStyle name="Horizontal Line" fontName="Helvetica" fontSize="6.0" leading="8" spaceBefore="0.0" spaceAfter="14.0"/>
+    <paraStyle name="Heading 9" fontName="Helvetica-Bold" fontSize="75%" leading="NaN" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_General_Right" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_tblheader_Details_Right" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Right_8" fontName="Helvetica" fontSize="8.0" leading="10" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_header_Right" fontName="Helvetica-Bold" fontSize="15.0" leading="19" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_address" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_9" fontName="Helvetica" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Bold_9" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Right_9" fontName="Helvetica" fontSize="9.0" leading="11" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_2" fontName="Helvetica" fontSize="2.0" leading="3" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_5cm_Above_Space" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="6.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_1cm_above_space" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="3.0" spaceAfter="0.0"/>
+    <paraStyle name="Preformatted Text" fontName="Helvetica" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="Header" fontName="Helvetica"/>
+    <images/>
+  </stylesheet>
+  <story>
+    <para style="terp_default_8">[[repeatIn(objects,'picking_tec')]]</para>
+    <para style="terp_default_8">[[picking_tec.type == 'out' and picking_tec.partner_id and setLang(picking_tec.partner_id.lang) or '']]</para>
+    <blockTable colWidths="269.0,269.0" style="Table_Address_detail">
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Customer Address : [[ (picking_tec.type == 'out' or removeParentNode('para')) and '' ]]</para>
+          <para style="P1">[[ (picking_tec.partner_id and picking_tec.partner_id.id and picking_tec.partner_id.title.name) or '' ]] [[ picking_tec.partner_id and picking_tec.partner_id.id and picking_tec.partner_id.name ]]</para>
+          <para style="P1">[[ picking_tec.partner_id and display_address(picking_tec.partner_id) ]]</para>
+          <para style="P1">[[ picking_tec.partner_id.phone or picking_tec.partner_id.email or removeParentNode('para')]]</para>
+          <para style="terp_default_9">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_Bold_9">Contact Address :</para>
+          <para style="P3">[[ picking_tec.partner_id and picking_tec.partner_id.title.name or '' ]] [[ picking_tec.partner_id and picking_tec.partner_id.name or '' ]]</para>
+          <para style="P3">[[ picking_tec.partner_id and display_address(picking_tec.partner_id) ]]</para>
+          <para style="P3">[[ picking_tec.partner_id.phone or picking_tec.partner_id.email or removeParentNode('para') ]]</para>
+          <para style="terp_default_9">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="terp_default_5cm_Above_Space">
+      <font color="white"> </font>
+    </para>
+    <para style="terp_default_5cm_Above_Space">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="538.0" style="Table_Title_String">
+      <tr>
+        <td>
+          <para style="terp_header">Delivery Order : [[ (picking_tec.type == 'out' or removeParentNode('para')) and '' ]] [[ picking_tec.name ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="terp_default_5cm_Above_Space">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="100.0,154.0,161.0,109.0" style="Header_Order_Reference_Tbl">
+      <tr>
+        <td>
+          <para style="terp_tblheader_General_Centre">Journal</para>
+        </td>
+        <td>
+          <para style="terp_tblheader_General_Centre">Order(Origin)</para>
+        </td>
+        <td>
+          <para style="terp_tblheader_General_Centre">Scheduled Date </para>
+        </td>
+        <td>
+          <para style="terp_tblheader_General_Centre">Weight</para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="100.0,154.0,162.0,109.0" style="Content_Order_Reference_Table">
+      <tr>
+        <td>
+          <para style="terp_default_Centre_8">[[ picking_tec.stock_journal_id.name]]</para>
+        </td>
+        <td>
+          <para style="terp_default_Centre_8">[[ picking_tec.origin or '']]</para>
+        </td>
+        <td>
+          <para style="terp_default_Centre_8">[[ formatLang(picking_tec.min_date,date_time = True) ]]</para>
+        </td>
+        <td>
+          <para style="terp_default_Centre_8">[[ 'weight' in picking_tec._columns.keys() and picking_tec.weight or '']]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="terp_default_5cm_Above_Space">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="171.0,70.0,118.0,72.0,40.0,47.0" repeatRows="1" style="Move_Line_Header">
+      <tr>
+        <td>
+          <para style="terp_tblheader_Details">Description</para>
+        </td>
+        <td>
+          <para style="terp_tblheader_Details">Paquete</para>
+        </td>
+        <td>
+          <para style="terp_tblheader_Details_Centre">Serial Number</para>
+        </td>
+        <td>
+          <para style="terp_tblheader_Details_Centre">State</para>
+        </td>
+        <td>
+          <para style="terp_tblheader_Details_Right">Location</para>
+        </td>
+        <td>
+          <para style="terp_tblheader_Details_Right">Quantity</para>
+        </td>
+      </tr>
+    </blockTable>
+    <section>
+      <para style="terp_default_2">[[ repeatIn([line for line in picking_tec.move_lines if (line.state == 'confirmed' or line.state=='done' or line.state=='assigned')],'move_lines') ]]</para>
+      <para style="terp_default_2">[[ (picking_tec.move_lines!=[] and removeParentNode('para')) or removeParentNode('section')]]</para>
+      <blockTable colWidths="172.0,70.0,118.0,61.0,50.0,51.0" style="Move_Line_Contect_Assign_State">
+        <tr>
+          <td>
+            <para style="terp_default_9">[[ get_product_desc(move_lines) ]]</para>
+          </td>
+          <td>
+            <para style="P2">[[ move_lines.tracking_id.name ]]</para>
+          </td>
+          <td>
+            <para style="terp_default_Centre_9">[[ (move_lines.prodlot_id and move_lines.prodlot_id.name) or '' ]]</para>
+          </td>
+          <td>
+            <para style="terp_default_9">Waiting Availability[[ move_lines.state == 'confirmed' and ' ' or removeParentNode('para') ]]</para>
+            <para style="terp_default_9">Done[[ move_lines.state == 'done' and ' ' or removeParentNode('para') ]]</para>
+            <para style="terp_default_9">Available[[ move_lines.state == 'assigned' and ' ' or removeParentNode('para') ]]</para>
+          </td>
+          <td>
+            <para style="terp_default_Right_9">[[ (move_lines.location_id and move_lines.location_id.name) or '' ]] </para>
+          </td>
+          <td>
+            <para style="terp_default_Right_9">[[ formatLang(move_lines.product_qty) ]] [[ move_lines.product_uom.name ]]</para>
+          </td>
+        </tr>
+      </blockTable>
+    </section>
+    <para style="terp_default_Bold_9">[[ ([line for line in picking_tec.move_lines if (line.state == 'draft' or line.state=='waiting' )]) and 'Non Assigned Products:' or removeParentNode('para') ]]</para>
+    <para style="terp_default_2"/>
+    <section>
+      <para style="terp_default_2">[[ repeatIn([line for line in picking_tec.move_lines if (line.state == 'draft' or line.state=='waiting')],'move_lines') ]]</para>
+      <para style="terp_default_2">[[ (picking_tec.move_lines!=[] and removeParentNode('para')) or removeParentNode('section')]]</para>
+      <blockTable colWidths="256.0,74.0,57.0,61.0,72.0" style="Table1">
+        <tr>
+          <td>
+            <para style="terp_default_9">[[ get_product_desc(move_lines) ]]</para>
+          </td>
+          <td>
+            <para style="terp_default_Centre_9">[[ (move_lines.prodlot_id and move_lines.prodlot_id.name) or '' ]]</para>
+          </td>
+          <td>
+            <para style="terp_default_9">[[ move_lines.state ]]</para>
+          </td>
+          <td>
+            <para style="terp_default_Right_9">[[ (move_lines.location_id and move_lines.location_id.name) or '' ]] </para>
+          </td>
+          <td>
+            <para style="terp_default_Right_9">[[ formatLang(move_lines.product_qty) ]] [[ move_lines.product_uom.name ]]</para>
+          </td>
+        </tr>
+      </blockTable>
+    </section>
+    <para style="terp_default_2">
+      <font color="white"> </font>
+    </para>
+    <pageBreak/>
+    <para style="P8">PATRONATO DEL INSTITUTO TECNOLOGICO</para>
+    <para style="P9">DE CULIACAN, A.C.</para>
+    <para style="P10">
+      <font color="white"> </font>
+    </para>
+    <para style="P10">ROSALES Y OBREGON EDIFICIO CLOUTHIER PLANTA BAJA, CULIACAN, SIN.</para>
+    <para style="P10">TELS: 715-52-91, 715-52-92, 713-96-29 Y 713-99-90</para>
+    <para style="P10">
+      <font color="white"> </font>
+    </para>
+    <para style="P13">RECIBO OFICIAL DE DOTACION DE BOLETOS<font color="white"> .........</font><font color="white"> .........</font>(F1)</para>
+    <para style="P13">
+      <font color="white"> </font>
+    </para>
+    <para style="P21">Los números de boletos y/o block's son los siguientes:</para>
+    <para style="P20">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="524.0" style="Table2">
+      <tr>
+        <td>
+          <para style="P24">[[ repeatIn([line for line in picking_tec.move_lines if (line.state == 'confirmed' or line.state=='done' or line.state=='assigned')],'move_lines') ]]</para>
+          <para style="P25">[[ (picking_tec.move_lines!=[] and removeParentNode('para')) or removeParentNode('section')]]</para>
+          <blockTable colWidths="182.0,351.0" style="Table3">
+            <tr>
+              <td>
+                <para style="P23">[[ get_product_desc(move_lines) ]]</para>
+              </td>
+              <td>
+                <para style="P23">[[ move_lines. tracking_id.name ]]</para>
+              </td>
+            </tr>
+          </blockTable>
+          <para style="P25">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P11">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">
+      <font face="Helvetica">POR ESTE PAGARÉ DEBO (EMOS) Y PAGARÉ (MOS) INCONDICIONALMENTE A LA ORDEN DE </font>
+      <font face="Helvetica-Bold">PATRONATO DEL INSTITUTO TECNOLOGICO DE CULIACAN, IAP</font>
+      <font face="Helvetica">, EN </font>
+      <font face="Helvetica">CULIACAN, SINALOA </font>
+      <font face="Helvetica">EL DIA 14 DE DICIEMBRE DEL 2014 LA CANTIDAD DE DE </font>
+      <font face="Helvetica-Bold">$ [[ picking_tec.sale_id.amount_total ]]</font>
+      <font face="Helvetica">SON: ([[ convert_to_words(picking_tec.sale_id.amount_total, picking_tec.sale_id.company_id.currency_id.name) ]])</font>
+    </para>
+    <para style="P19">QUE RECONOZCO ADEUDARLE, VALOR RECIBIDO A MI (NUESTRA) ENTERA SATISFACCIÓN.</para>
+    <para style="P19">
+      <font color="white"> </font>
+    </para>
+    <para style="P4">
+      <font face="Helvetica">QUEDA EXPRESAMENTE CONVENIDO QUE DE NO PAGARSE A SU VENCIMIENTO ESTE DOCUMENTO HASTA EL DIA DE SU LIQUIDACIÓN CAUSARA INTERESES MORATORIOS AL TIPO DE </font>
+      <font face="Helvetica">10</font>
+      <font face="Helvetica">% MENSUAL, PAGADERO EN ESTA CIUDAD JUNTAMENTE CON EL PRINCIPAL. Y QUE ME SOMETO A LA COMPETENCIA DE LOS TRIBUNALES Y JUECES DE ESTA CIUDAD.</font>
+    </para>
+    <para style="P6">
+      <font color="white"> </font>
+    </para>
+    <para style="P5">
+      <font face="Helvetica">CULIACÁN, SINALOA, A </font>
+      <font face="Helvetica">18</font>
+      <font face="Helvetica"> DE </font>
+      <font face="Helvetica">SEPTIEMBRE</font>
+      <font face="Helvetica"> DE </font>
+      <font face="Helvetica">2014</font>
+      <font face="Helvetica">.</font>
+    </para>
+    <para style="P12">Total de Boletos: [[ get_total_tickets(picking_tec.move_lines) ]]</para>
+    <blockTable colWidths="93.0,445.0" style="Firmas">
+      <tr>
+        <td>
+          <para style="P14">
+            <font color="white"> </font>
+          </para>
+          <para style="P14">LOS RECIBOS DE LIQUIDACION QUE SALDEN SU CUENTA DEJAN SIN EFECTO ESTE PAGARE</para>
+        </td>
+        <td>
+          <blockTable colWidths="174.0,265.0" style="FirmasDet">
+            <tr>
+              <td>
+                <para style="P15">
+                  <font color="white"> </font>
+                </para>
+                <para style="P14">
+                  <font color="white"> </font>
+                </para>
+                <para style="P14">
+                  <font color="white"> </font>
+                </para>
+                <para style="P14">
+                  <font color="white"> </font>
+                </para>
+                <para style="P16">____________________________________</para>
+                <para style="P16">FIRMA DEL DEUDOR</para>
+              </td>
+              <td>
+                <blockTable colWidths="146.0,108.0" style="DetallesCliente">
+                  <tr>
+                    <td>
+                      <para style="P15">Nombre: [[ picking_tec.partner_id.name ]]</para>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <para style="P15">Domicilio: [[ display_address(picking_tec.partner_id) ]]</para>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <para style="P15">Telefono: [[ picking_tec.partner_id.phone ]]</para>
+                    </td>
+                    <td>
+                      <para style="P15">Celular: [[ picking_tec.partner_id.mobile ]]</para>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <para style="P15">Culiacán, Sin. a</para>
+                    </td>
+                  </tr>
+                </blockTable>
+                <para style="P17">
+                  <font color="white"> </font>
+                </para>
+              </td>
+            </tr>
+          </blockTable>
+          <para style="P15">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P11">
+      <font color="white"> </font>
+    </para>
+    <para style="P11">
+      <font color="white"> </font>
+    </para>
+    <para style="P11">
+      <font color="white"> </font>
+    </para>
+  </story>
+</document>
+

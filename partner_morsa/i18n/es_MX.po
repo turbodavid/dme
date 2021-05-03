@@ -1,0 +1,206 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* Partner_MORSA
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-20 18:02+0000\n"
+"PO-Revision-Date: 2014-06-20 12:45-0800\n"
+"Last-Translator: yukie\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: Partner_MORSA
+#: field:res.partner,payment_responsible:0
+msgid "Responsible for Payments"
+msgstr "Encargado de Pagos"
+
+#. module: Partner_MORSA
+#: field:res.partner,curp:0
+msgid "CURP"
+msgstr "CURP"
+
+#. module: Partner_MORSA
+#: code:addons/Partner_MORSA/res_partner.py:50
+#, python-format
+msgid "Thursday"
+msgstr "Jueves"
+
+#. module: Partner_MORSA
+#: view:res.partner:0
+msgid "00:00"
+msgstr "00:00"
+
+#. module: Partner_MORSA
+#: field:res.partner,business_name:0
+msgid "Business Name"
+msgstr "Nombre de la Empresa"
+
+#. module: Partner_MORSA
+#: view:res.partner:0
+msgid "Payment Schedule"
+msgstr "Horario de Cobro"
+
+#. module: Partner_MORSA
+#: field:res.partner,photo_authorized_signature:0
+msgid "Photo Authorized Signature"
+msgstr "Foto Firmas Autorizadas"
+
+#. module: Partner_MORSA
+#: field:res.partner,purchasing_manager:0
+msgid "Purchasing Manager"
+msgstr "Encargado de Compras"
+
+#. module: Partner_MORSA
+#: field:res.partner,payment_date:0
+#: field:res.partner,review_date:0
+msgid "Dias"
+msgstr "Dias"
+
+#. module: Partner_MORSA
+#: view:res.partner:0
+msgid "Business"
+msgstr "Empresa"
+
+#. module: Partner_MORSA
+#: code:addons/Partner_MORSA/res_partner.py:51
+#, python-format
+msgid "Friday"
+msgstr "Viernes"
+
+#. module: Partner_MORSA
+#: field:res.partner,payment_morning_hours:0
+msgid "payment in the morning hours"
+msgstr "Horario Matutino"
+
+#. module: Partner_MORSA
+#: view:res.partner:0
+msgid "Photos"
+msgstr "Fotos"
+
+#. module: Partner_MORSA
+#: view:res.partner:0
+msgid "Review Schedule"
+msgstr "Horario de Revisión"
+
+#. module: Partner_MORSA
+#: field:res.partner,payment_afternoon_hours:0
+msgid "payment in the afternoon hours"
+msgstr "Horario en la Tarde"
+
+#. module: Partner_MORSA
+#: field:clasificacion,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: Partner_MORSA
+#: field:res.partner,review_morning_hours:0
+msgid "review in the morning hours"
+msgstr "Horario Matutino"
+
+#. module: Partner_MORSA
+#: field:res.partner,business_manager:0
+msgid "Business Manager"
+msgstr "Encargado del Negocio"
+
+#. module: Partner_MORSA
+#: field:res.partner,birthday_date:0
+msgid "Birthday Date"
+msgstr "Fecha Cumpleaños"
+
+#. module: Partner_MORSA
+#: view:res.partner:0
+msgid "MORSA"
+msgstr "MORSA"
+
+#. module: Partner_MORSA
+#: field:clasificacion,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: Partner_MORSA
+#: model:ir.ui.menu,name:Partner_MORSA.clasificacion_menu
+#: field:res.partner,clasificacion:0
+msgid "Clasificacion"
+msgstr "Clasificación"
+
+#. module: Partner_MORSA
+#: code:addons/Partner_MORSA/res_partner.py:49
+#, python-format
+msgid "Wednesday"
+msgstr "Miercoles"
+
+#. module: Partner_MORSA
+#: field:res.partner,course_business:0
+msgid "Course of Business"
+msgstr "Giro de la Empresa"
+
+#. module: Partner_MORSA
+#: field:res.partner,review_afternoon_hours:0
+msgid "review in the afternoon hours"
+msgstr "Horario en la Tarde"
+
+#. module: Partner_MORSA
+#: view:clasificacion:0
+msgid "Clasificacion Form"
+msgstr "Clasificacion Form"
+
+#. module: Partner_MORSA
+#: field:res.partner,geophysics_address:0
+msgid "Geophysics Address"
+msgstr "Dirección Geofísica"
+
+#. module: Partner_MORSA
+#: code:addons/Partner_MORSA/res_partner.py:47
+#, python-format
+msgid "Monday"
+msgstr "Lunes"
+
+#. module: Partner_MORSA
+#: field:res.partner,commercial_email:0
+msgid "Commercial Email"
+msgstr "Email Comercial"
+
+#. module: Partner_MORSA
+#: model:ir.actions.act_window,name:Partner_MORSA.clasificacion_action
+#: model:ir.model,name:Partner_MORSA.model_clasificacion
+msgid "clasificacion"
+msgstr "Clasificación "
+
+#. module: Partner_MORSA
+#: code:addons/Partner_MORSA/res_partner.py:48
+#, python-format
+msgid "Tuesday"
+msgstr "Martes"
+
+#. module: Partner_MORSA
+#: field:res.partner,photo_business:0
+msgid "Photo Business"
+msgstr "Foto Empresa"
+
+#. module: Partner_MORSA
+#: field:res.partner,photo_IFE:0
+msgid "Photo IFE"
+msgstr "Foto IFE"
+
+#. module: Partner_MORSA
+#: model:ir.model,name:Partner_MORSA.model_res_partner
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: Partner_MORSA
+#: code:addons/Partner_MORSA/res_partner.py:52
+#, python-format
+msgid "Saturday"
+msgstr "Sabado"
+
+#. module: Partner_MORSA
+#: field:res.partner,aniversary_date:0
+msgid "Aniversary Date"
+msgstr "Fecha de Aniversario"
+

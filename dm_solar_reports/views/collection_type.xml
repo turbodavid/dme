@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model= "ir.actions.act_window" id="collection_type_action">
+			<field name="name">Collection Type</field>
+			<field name="res_model">collection.type</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem id="collection_type_menu" name="Collection Type"
+		parent="purchase.menu_purchase_config_purchase"
+		action="collection_type_action" />
+
+        <!-- VISTA FORM -->
+		<record model= "ir.ui.view" id = "collection_type_form_view">
+			<field name="name">collection type form</field>
+			<field name= "model">collection.type</field>
+			<field name="arch" type="xml">
+			<form string="Collection Type" version="7.0">
+				<sheet>	
+                    <separator string= "Collection Type"/>
+					<group>			
+						<field name= "name" placeholder="Name"/>
+						<field name= "supplier_data" placeholder ="Supplier data"/>
+						<field name= "pack_data" placeholder="Pack data" />
+					</group>					
+				</sheet>			
+			</form>
+			</field>
+		</record>
+        <!-- VISTA TREE -->		
+		<record model= "ir.ui.view" id= "collection_type_tree_view">
+			<field name="name">collection type tree</field>
+			<field name= "model">collection.type</field>
+			<field name="arch" type="xml">
+				<tree string= "Collection Type" >
+					<field name= "name"/>
+					<field name= "supplier_data"/>
+                    <field name= "pack_data"/>
+				</tree>
+			</field>
+		</record>
+	</data>
+</openerp>
+		

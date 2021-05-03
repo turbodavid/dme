@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		<report auto="False" id="purchase.report_purchase_quotation" model="purchase.order" 
+                name="purchase.quotation" rml="dm_solar_reports/report/request_quotation.rml"
+                string="Request for Quotation"/>
+        <!--id quit purchase. [translate]-->
+		<report auto="False" id="report_purchase_order" model="purchase.order"
+                name="purchase.order" rml="dm_solar_reports/report/order.rml"
+                usage="default" string="Purchase Order"/>
+		<report auto="False" id="sale.report_sale_order" model="sale.order" name="sale.order"
+                rml="dm_solar_reports/report/sale_order.rml" string="Quotation / Order"/>
+
+		<report id="stock.report_picking_list" model="stock.picking" name="stock.picking.list"
+				rml="dm_solar_reports/report/picking.rml" string="Picking Slip"/>
+        <report id="stock.report_picking_list_in" model="stock.picking.in" name="stock.picking.list.in"
+				rml="dm_solar_reports/report/picking.rml" string="Receipt Slip" />
+
+        <!--id quit stock. [translate]-->
+        <report auto="False" id="report_picking_list_out" model="stock.picking.out" 
+                name="stock.picking.list.out" rml="dm_solar_reports/report/picking.rml" 
+                usage="default" string="Instruction Boarding"/>
+
+    </data>
+</openerp>

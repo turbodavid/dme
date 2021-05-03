@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<openerp>
+    <data>
+        <record id="account_account_type_27" model="account.account.type">
+            <field name="name">Costos</field>
+            <field name="code">cost</field>
+            <field name="close_method">none</field>
+            <field name="report_type">none</field>
+        </record>
+        <record id="account_account_type_28" model="account.account.type">
+            <field name="name">Resultados</field>
+            <field name="code">resu</field>
+            <field name="close_method">none</field>
+            <field name="report_type">none</field>
+        </record>
+        <record id="account_account_type_29" model="account.account.type">
+            <field name="name">Cuentas de Orden</field>
+            <field name="code">orden</field>
+            <field name="close_method">none</field>
+            <field name="report_type">none</field>
+        </record>
+    </data>
+</openerp>
+

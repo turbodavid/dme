@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>     
+        <!-- WIZARD KARDEX -->
+        <record id="wizard_invoice_report_sc" model="ir.ui.view">
+            <field name="name">Invoice Report</field>
+            <field name="model">invoice.report</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Invoice Report">
+                    <sheet> 
+                        <group>
+                            <field name="category_ids" options="{'no_create_edit': True}" widget="many2many_tags"/>
+                            <field name="company_id" required="True" options="{'no_create_edit': True}" />
+                            <field name="date_start" required="True" />
+                            <field name="date_end" required="True" />
+                        </group>                        
+                    </sheet>
+                    <footer>
+                        <button name="execute_report" string="Execute" type="object" default_focus="1" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field> 
+        </record>
+
+        <!--Action-->
+        <record id="invoice_report_sc_action" model="ir.actions.act_window">
+            <field name="name">Invoice Report Action</field>
+            <field name="res_model">invoice.report</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="wizard_invoice_report_sc"></field>
+        </record>
+        <!-- Menu -->
+        <menuitem id="invoice_report_sc_menu" parent="account_journal_report_sale.reports_journal_sales" name="Invoices" sequence="5" action="invoice_report_sc_action"/>
+    </data>
+</openerp>

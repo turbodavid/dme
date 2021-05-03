@@ -1,0 +1,49 @@
+1.- Exportar Cuentas contables completo (Contabilidad/Configuración/Cuentas/Cuentas)
+Id Externo (automático se exporta)
+    * Exportar los siguientes campos
+        * Code (Código)
+        * Reconcile (Permite conciliación)
+        * type (tipo interno)
+        * user_type/id (tipo de cuenta)
+        * name (nombre)
+        * sat_group_id/id (código agrupador)
+        * nature (naturaleza)
+        * parent_id/id (padre)
+
+*************************************************
+**** NO ES NECESARIO UTILIZAR TIPO DE CUENTA ****
+*************************************************
+2. Exportar Tipo de Cuentas (Contabilidad/Configuración/Cuentas/Tipos de Cuentas)
+    * Exportar los siguientes campos
+        * Id (automático se exporta)
+        * name (tipo de cuenta)
+        * code (codigo)
+        * close_method (metodo de cierre)
+
+2.- Copiar los archivos exportados a la carpeta del modulo "csv2xml"
+
+3.- Abrir y editar el archivo csv2xml.py el modulo "csv2xml"
+    * _ACCOUNT_ACCOUNT = "NOMBRE DEL ARCHIVO CUENTAS CONTABLES"
+    ###* _ACCOUNT_ACCOUNT_TYPE = 'NOMBRE DEL ARCHIVO DE TIPOS DE CUENTA'
+    * _NAME = "NOMBRE DE PLANTILLA ej. 'tecnika', 'morsa', 'sacsa'..."
+    * _CTA_BANCARIA = Cuenta bancaria
+    * _CTA_A_COBRAR = Cuenta por Cobrar
+    * _CTA_A_PAGAR = Cuenta por Pagar 
+    * _CAT_GASTOS = Cuenta para categoría de gastos
+    * _CAT_INGRESOS = Cuenta para categoría de ingresos
+
+4.- Una vez configurado ejecutar el archivo de "csv2xml" con la siguiente instrucción:
+    * python csv2xml
+
+5.- Copiar el archivo generado en csv2xml/plantilla/account_template_"NAME".xml y el archivo account_tax.xml, este archivo hay que renombrarlo como account_tax_"NAME".xml para hacer el par.
+
+6.- El archivo account_tax_"NAME".xml se creará manual, son los impuestos que se quieren tener en la plantilla
+* El último de cada tipo venta/compra se toma como default
+
+7.- Crear un módulo con la siguiente estructura que al instalar creará la plantilla disponible
+    * __init__.py
+    * __openerp__.py
+    * data
+        copiar en esta carpeta los archivos generado en el punto 5
+
+8.- En base de datos nuevas se deberá instalar el módulo de la plantilla primero, este en automático se carga el "l10n_mx".

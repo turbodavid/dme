@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+       <record model="ir.ui.view" id="sales_res_partner_form">
+            <field eval="30" name="priority"/>
+            <field name="name">Sales Team Res Partner</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="arch" type="xml">
+				<field name="user_id" position = "attributes">
+					<attribute name = "on_change">onchange_user_id(user_id)</attribute>
+				</field>
+           </field>
+        </record>
+    </data>
+</openerp>

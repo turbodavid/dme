@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record model="ir.ui.view" id="crm_lead_tree_view_state">
+			<field eval="30" name="priority"/>
+            <field name="name">CRM Lead Tree State</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_case_tree_view_leads" />
+            <field name="arch" type="xml">
+				<xpath expr="//tree[@string='Leads']" position="attributes">
+                    <attribute name="colors">orange:state in ('done'); blue:state in ('draft'); green:state in ('open');red:state in ('cancel')</attribute>
+                </xpath>
+				<field name="state" position="replace">
+					<field name="state" />
+				</field>
+				<field name="state" position="before">
+					<field name="create_user"/>
+				</field>
+			</field>
+        </record>
+		<record model="ir.ui.view" id="crm_lead_form">
+			<field name="name">crm.lead.view.form</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_leads" />
+			<field name="arch" type="xml">
+				<field name="contact_name" position="before">					
+					<field name="unready"/>
+				</field>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="crm_lead_view_tree">
+			<field name="name">crm.lead.view</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_case_tree_view_leads" />
+			<field name="arch" type="xml">
+				<field name="contact_name" position="before">
+					<field name="partner_name" />
+				</field>
+				<field name="contact_name" position="after">
+					<field name="departament_name"/>
+				</field>		
+			</field>
+		</record>
+    </data>
+</openerp>

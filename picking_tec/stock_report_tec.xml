@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!--<report id="report_picking_list" model="pickingtec" name="stock.picking.list" string="Picking Slip" rml="picking_tec/report/picking_tecnologico.rml"/>
+        <report id="report_picking_list_in" model="pickingtec.in" name="stock.picking.list.in" string="Receipt Slip" rml="picking_tec/report/picking_tecnologico.rml"/>-->
+        <report auto="False" id="report_picking_list_out" model="picking.tec" name="stock.picking.list" string="Delivery Slip" rml="picking_tec/report/picking_tecnologico.rml" usage="default"/>
+    </data>
+</openerp>

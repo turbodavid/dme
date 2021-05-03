@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_vendor_payment_check_form_inherit_sacsa_reports">
+            <field name="name">account.voucher.payment.check.form.sacsa.reports</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_check_writing.view_vendor_payment_check_form" />
+            <field name="arch" type="xml">
+                <button name="print_check" position="after">
+                    <button name="print_payment" icon="gtk-print" string="Print Payment" type="object" attrs="{'invisible':['|',('allow_check','==',True),('state','!=','posted') ]}" class="oe_highlight"/>
+                </button>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_vendor_receipt_form_inherit_sacsa_reports">
+            <field name="name">account.vendor.receipt.form.sacsa.reports</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_vendor_receipt_form" />
+            <field name="arch" type="xml">
+                <button name="proforma_voucher" position="after">
+                    <button name="print_payment" icon="gtk-print" string="Print Payment" type="object" attrs="{'invisible':[('state','!=','posted')]}" class="oe_highlight"/>
+                </button>
+            </field>
+        </record>
+    </data>
+</openerp>

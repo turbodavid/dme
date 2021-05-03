@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <openerp>
+        <data noupdate="0">
+            <record id="MOD97_POS1" model="mod97">
+                <field name="name">MOD97_POS1</field>
+                <field name="value">23</field>
+            </record>
+            <record id="MOD97_POS10" model="mod97">
+                <field name="name">MOD97_POS10</field>
+                <field name="value">31</field>
+            </record>
+            <record id="MOD97_POS11" model="mod97">
+                <field name="name">MOD97_POS11</field>
+                <field name="value">37</field>
+            </record>
+             <record id="MOD97_POS12" model="mod97">
+                <field name="name">MOD97_POS12</field>
+                <field name="value">19</field>
+            </record>
+             <record id="MOD97_POS13" model="mod97">
+                <field name="name">MOD97_POS13</field>
+                <field name="value">23</field>
+            </record>
+             <record id="MOD97_POS14" model="mod97">
+                <field name="name">MOD97_POS14</field>
+                <field name="value">29</field>
+            </record>
+             <record id="MOD97_POS15" model="mod97">
+                <field name="name">MOD97_POS15</field>
+                <field name="value">31</field>
+            </record>
+             <record id="MOD97_POS16" model="mod97">
+                <field name="name">MOD97_POS16</field>
+                <field name="value">37</field>
+            </record>
+             <record id="MOD97_POS17" model="mod97">
+                <field name="name">MOD97_POS17</field>
+                <field name="value">1</field>
+            </record>
+             <record id="MOD97_POS18" model="mod97">
+                <field name="name">MOD97_POS18</field>
+                <field name="value">2</field>
+            </record>
+             <record id="MOD97_POS19" model="mod97">
+                <field name="name">MOD97_POS19</field>
+                <field name="value">3</field>
+            </record>
+             <record id="MOD97_POS2" model="mod97">
+                <field name="name">MOD97_POS2</field>
+                <field name="value">29</field>
+            </record>
+             <record id="MOD97_POS20" model="mod97">
+                <field name="name">MOD97_POS20</field>
+                <field name="value">5</field>
+            </record>
+             <record id="MOD97_POS21" model="mod97">
+                <field name="name">MOD97_POS21</field>
+                <field name="value">7</field>
+            </record>
+             <record id="MOD97_POS22" model="mod97">
+                <field name="name">MOD97_POS22</field>
+                <field name="value">11</field>
+            </record>
+             <record id="MOD97_POS23" model="mod97">
+                <field name="name">MOD97_POS23</field>
+                <field name="value">13</field>
+            </record>
+             <record id="MOD97_POS24" model="mod97">
+                <field name="name">MOD97_POS24</field>
+                <field name="value">17</field>
+            </record>
+             <record id="MOD97_POS25" model="mod97">
+                <field name="name">MOD97_POS25</field>
+                <field name="value">19</field>
+            </record>
+             <record id="MOD97_POS26" model="mod97">
+                <field name="name">MOD97_POS26</field>
+                <field name="value">23</field>
+            </record>
+             <record id="MOD97_POS27" model="mod97">
+                <field name="name">MOD97_POS27</field>
+                <field name="value">29</field>
+            </record>
+             <record id="MOD97_POS28" model="mod97">
+                <field name="name">MOD97_POS28</field>
+                <field name="value">31</field>
+            </record>
+             <record id="MOD97_POS29" model="mod97">
+                <field name="name">MOD97_POS29</field>
+                <field name="value">37</field>
+            </record>
+             <record id="MOD97_POS3" model="mod97">
+                <field name="name">MOD97_POS3</field>
+                <field name="value">31</field>
+            </record>
+             <record id="MOD97_POS4" model="mod97">
+                <field name="name">MOD97_POS4</field>
+                <field name="value">37</field>
+            </record>
+             <record id="MOD97_POS5" model="mod97">
+                <field name="name">MOD97_POS5</field>
+                <field name="value">13</field>
+            </record>
+             <record id="MOD97_POS6" model="mod97">
+                <field name="name">MOD97_POS6</field>
+                <field name="value">17</field>
+            </record>
+            <record id="MOD97_POS7" model="mod97">
+                <field name="name">MOD97_POS7</field>
+                <field name="value">19</field>
+            </record>
+            <record id="MOD97_POS8" model="mod97">
+                <field name="name">MOD97_POS8</field>
+                <field name="value">23</field>
+            </record>
+            <record id="MOD97_POS9" model="mod97">
+                <field name="name">MOD97_POS9</field>
+                <field name="value">29</field>
+            </record>
+        </data>
+    </openerp>

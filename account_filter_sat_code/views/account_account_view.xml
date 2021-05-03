@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <openerp>
+        <data>
+           <record model='ir.ui.view' id='account_view_filter_sat_code'>
+                <field name='name'>account view filter sat code</field>
+                <field name='model'>account.account</field>
+                <field name='inherit_id' ref='l10n_mx.view_account_eaccounting_form'/>
+                <field name='type'>form</field>
+                <field name='arch' type='xml'>
+                    <field name="sat_group_id" position="replace">
+                        <field name="sat_group_id" context="{'special_display_name': True}"/>
+                    </field>
+                </field>
+            </record>
+        </data>
+    </openerp>

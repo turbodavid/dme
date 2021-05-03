@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <!--MRP Production-->
+        <record model="ir.ui.view" id="mrp_standard_production_cost">
+            <field eval="30" name="priority"/>
+            <field name="name">MRP Production</field>
+            <field name="model">mrp.production</field>
+            <field name="inherit_id" ref="mrp.mrp_production_form_view" />
+            <field name="arch" type="xml">
+                <field name="date_planned" position="before">
+                    <field name="standard_price" attrs="{'invisible':[('state', '!=', 'done')]}" />
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>

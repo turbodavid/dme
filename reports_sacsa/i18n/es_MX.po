@@ -1,0 +1,214 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* reports_sacsa
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-21 19:01+0000\n"
+"PO-Revision-Date: 2016-06-21 13:02-0800\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. module: reports_sacsa
+#: field:res.partner.mod,mod_cuenta:0
+msgid "Account Mod"
+msgstr "Cuenta Mod"
+
+#. module: reports_sacsa
+#: code:addons/reports_sacsa/models/account_voucher.py:79
+#, python-format
+msgid "Account Voucher Check Print"
+msgstr "Impresión de Cheque"
+
+#. module: reports_sacsa
+#: code:_description:0 model:ir.model,name:reports_sacsa.model_account_voucher
+#, python-format
+msgid "Accounting Voucher"
+msgstr "Comprobante contable"
+
+#. module: reports_sacsa
+#: field:account.journal,partner_address_id:0
+msgid "Address"
+msgstr "Dirección"
+
+#. module: reports_sacsa
+#: field:res.partner.mod,name:0
+msgid "Bank"
+msgstr "Banco"
+
+#. module: reports_sacsa
+#: field:account.voucher,account_bank_statement_id:0
+msgid "Bank Statement"
+msgstr "Registro de Caja"
+
+#. module: reports_sacsa
+#: field:account.voucher.wizard,name:0
+msgid "Beneficiary Name"
+msgstr "Nombre Beneficiario"
+
+#. module: reports_sacsa
+#: field:res.partner.mod,mod_sucursal:0
+msgid "Branch Mod"
+msgstr "Sucursal Mod"
+
+#. module: reports_sacsa
+#: field:res.partner.mod,de_clabe:0
+msgid "CLABE"
+msgstr "CLABE"
+
+#. module: reports_sacsa
+#: code:_description:0 model:ir.model,name:reports_sacsa.model_res_company
+#, python-format
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: reports_sacsa
+#: field:res.partner.mod,company_id:0
+msgid "Company"
+msgstr "Compañía"
+
+#. module: reports_sacsa
+#: code:addons/reports_sacsa/report/account_print_invoice.py:172
+#, python-format
+msgid "Customer Address Not Invoice Type"
+msgstr "Dirección Cliente no es tipo Factura"
+
+#. module: reports_sacsa
+#: help:account.voucher,payment_beneficiary:0
+msgid ""
+"Determine if shows the legend 'Amount to pay the beneficiary' on report."
+msgstr ""
+"Determina si se debe mostrar la leyenda 'Para abono en cuenta del "
+"beneficiario' en el reporte."
+
+#. module: reports_sacsa
+#: help:account.voucher,print_legend_policy:0
+#: code:addons/reports_sacsa/models/account_voucher.py:37
+#, python-format
+msgid ""
+"Determine if shows the legend 'Amount to pay the beneficiary' only in policy."
+msgstr ""
+"Determina si muestra la leyenda 'Para abono en cuenta del beneficiario' "
+"solamente en la poliza."
+
+#. module: reports_sacsa
+#: field:res.partner.mod,mod_empresa:0
+msgid "Enterprise Mod"
+msgstr "Empresa Mod"
+
+#. module: reports_sacsa
+#: code:addons/reports_sacsa/report/account_print_invoice.py:211
+#, python-format
+msgid "Factura"
+msgstr "Factura"
+
+#. module: reports_sacsa
+#: code:_description:0 model:ir.model,name:reports_sacsa.model_account_journal
+#, python-format
+msgid "Journal"
+msgstr "Diario"
+
+#. module: reports_sacsa
+#: field:res.company,res_partner_mod_ids:0
+msgid "Mods"
+msgstr "Mods"
+
+#. module: reports_sacsa
+#: code:addons/reports_sacsa/report/account_print_invoice.py:169
+#, python-format
+msgid "Not Vat Number set on partner"
+msgstr "Sin RFC en Cliente"
+
+#. module: reports_sacsa
+#: code:addons/reports_sacsa/report/account_print_invoice.py:208
+#, python-format
+msgid "Nota Cargo"
+msgstr "Nota Cargo"
+
+#. module: reports_sacsa
+#: code:addons/reports_sacsa/report/account_print_invoice.py:213
+#, python-format
+msgid "Nota Crédito"
+msgstr "Nota Crédito"
+
+#. module: reports_sacsa
+#: field:account.voucher,payment_beneficiary:0
+msgid "Payment to the beneficiary"
+msgstr "Abono al Beneficiario"
+
+#. module: reports_sacsa
+#: view:account.voucher.wizard:0
+msgid "Print Check"
+msgstr "Imprimir Cheque"
+
+#. module: reports_sacsa
+#: field:account.voucher,print_legend_policy:0
+msgid "Print Legend in Policy"
+msgstr "Imprimir leyenda en póliza"
+
+#. module: reports_sacsa
+#: view:account.voucher:0
+msgid "Print Payment"
+msgstr "Imprimir Pago"
+
+#. module: reports_sacsa
+#: model:ir.actions.report.xml,name:reports_sacsa.invoice_promissory_note_webkit
+msgid "Promissory Note"
+msgstr "Pagaré"
+
+#. module: reports_sacsa
+#: code:addons/reports_sacsa/report/account_print_invoice.py:206
+#, python-format
+msgid "This document is a printed representation od the CFDI"
+msgstr "Este documento es una representación impresa de un CFDI"
+
+#. module: reports_sacsa
+#: code:_description:0
+#: model:ir.model,name:reports_sacsa.model_account_voucher_wizard
+#, python-format
+msgid "account.voucher.wizard"
+msgstr "account.voucher.wizard"
+
+#. module: reports_sacsa
+#: view:account.voucher.wizard:0
+msgid "cancel"
+msgstr "Cancelar"
+
+#. module: reports_sacsa
+#: code:_description:0 model:ir.model,name:reports_sacsa.model_mod97
+#, python-format
+msgid "mod97"
+msgstr "mod97"
+
+#. module: reports_sacsa
+#: field:mod97,name:0
+msgid "name"
+msgstr "Nombre"
+
+#. module: reports_sacsa
+#: view:account.voucher.wizard:0
+msgid "or"
+msgstr "o"
+
+#. module: reports_sacsa
+#: view:account.voucher.wizard:0
+msgid "print"
+msgstr "Imprimir"
+
+#. module: reports_sacsa
+#: code:_description:0 model:ir.model,name:reports_sacsa.model_res_partner_mod
+#, python-format
+msgid "res.partner.mod"
+msgstr "res.partner.mod"
+
+#. module: reports_sacsa
+#: field:mod97,value:0
+msgid "value"
+msgstr "Valor"

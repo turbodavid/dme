@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="account.view_account_invoice_filter_with_category">
+			<field name="name">account.view.account.invoice.filter.with.category</field>
+			<field name="model">account.invoice</field>
+			<field name="inherit_id" ref="account.view_account_invoice_filter"/>
+			<field name="arch" type="xml">
+				<group expand="0" string="Group By...">
+                    <filter string="Partner" icon="terp-partner" domain="[]" context="{'group_by':'partner_id'}"/>
+					<filter string="Category" icon="terp-partner" domain="[]" context="{'group_by':'categories_group'}"/>
+                </group>
+            </field>
+		</record>
+	</data>
+</openerp>

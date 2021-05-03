@@ -1,0 +1,176 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* validacion_bitam
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0rc12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-22 18:46+0000\n"
+"PO-Revision-Date: 2018-03-22 11:47-0700\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_MX\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#. module: validacion_bitam
+#: code:addons/validacion_bitam/models/validacion_bitam.py:104
+#: code:addons/validacion_bitam/models/validacion_bitam.py:108
+#, python-format
+msgid "Abonos"
+msgstr "Abonos"
+
+#. module: validacion_bitam
+#: view:validation.bitam:validacion_bitam.validacion_bitam_view
+#: view:validation.bitam:validacion_bitam.validacion_bitam_view_data
+msgid "Cancel"
+msgstr "Cancel"
+
+#. module: validacion_bitam
+#: code:addons/validacion_bitam/models/validacion_bitam.py:104
+#: code:addons/validacion_bitam/models/validacion_bitam.py:108
+#, python-format
+msgid "Cargos"
+msgstr "Cargos"
+
+#. module: validacion_bitam
+#: field:validation.bitam,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: validacion_bitam
+#: field:validation.bitam,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: validacion_bitam
+#: field:validation.bitam,display_name:0
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: validacion_bitam
+#: view:validation.bitam:validacion_bitam.validacion_bitam_view
+msgid "Execute"
+msgstr "Ejecutar"
+
+#. module: validacion_bitam
+#: field:validation.bitam,data:0
+msgid "File"
+msgstr "File"
+
+#. module: validacion_bitam
+#: field:validation.bitam,filename:0
+msgid "File name"
+msgstr "File name"
+
+#. module: validacion_bitam
+#: code:addons/validacion_bitam/models/validacion_bitam.py:104
+#: code:addons/validacion_bitam/models/validacion_bitam.py:108
+#, python-format
+msgid "Final"
+msgstr "Final"
+
+#. module: validacion_bitam
+#: field:validation.bitam,financial_report:0
+msgid "Financial report"
+msgstr "Reporte Financiero"
+
+#. module: validacion_bitam
+#: field:validation.bitam,fiscal_year:0
+msgid "Fiscal year"
+msgstr "Ejercicio Fiscal"
+
+#. module: validacion_bitam
+#: field:validation.bitam,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: validacion_bitam
+#: code:addons/validacion_bitam/models/validacion_bitam.py:104
+#: code:addons/validacion_bitam/models/validacion_bitam.py:108
+#, python-format
+msgid "Inicial"
+msgstr "Inicial"
+
+#. module: validacion_bitam
+#: field:validation.bitam,__last_update:0
+msgid "Last Modified on"
+msgstr "Last Modified on"
+
+#. module: validacion_bitam
+#: field:validation.bitam,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: validacion_bitam
+#: field:validation.bitam,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: validacion_bitam
+#: code:addons/validacion_bitam/models/validacion_bitam.py:162
+#, python-format
+msgid "No se encontro informacion en los parametros seleccionados"
+msgstr "No se encontro informacion en los parametros seleccionados"
+
+#. module: validacion_bitam
+#: code:addons/validacion_bitam/models/validacion_bitam.py:104
+#: code:addons/validacion_bitam/models/validacion_bitam.py:108
+#, python-format
+msgid "Nombre Cuenta"
+msgstr "Nombre Cuenta"
+
+#. module: validacion_bitam
+#: field:validation.bitam,period_id:0
+msgid "Period id"
+msgstr "Periodo"
+
+#. module: validacion_bitam
+#: code:addons/validacion_bitam/models/validacion_bitam.py:104
+#: code:addons/validacion_bitam/models/validacion_bitam.py:108
+#, python-format
+msgid "Periodo"
+msgstr "Periodo"
+
+#. module: validacion_bitam
+#: field:validation.bitam,report_type:0
+msgid "Report type"
+msgstr "Tipo de Reporte"
+
+#. module: validacion_bitam
+#: selection:validation.bitam,report_type:0
+msgid "Reporte Acumulado"
+msgstr "Reporte Acumulado"
+
+#. module: validacion_bitam
+#: selection:validation.bitam,report_type:0
+msgid "Reporte Detallado del ejercicio"
+msgstr "Reporte Detallado del ejercicio"
+
+#. module: validacion_bitam
+#: code:addons/validacion_bitam/models/validacion_bitam.py:149
+#: model:ir.actions.act_window,name:validacion_bitam.validacion_bitam_action
+#, python-format
+msgid "Reporte Validacion Bitam"
+msgstr "Reporte Validacion Bitam"
+
+#. module: validacion_bitam
+#: selection:validation.bitam,report_type:0
+msgid "Reporte detallado por periodo"
+msgstr "Reporte detallado por periodo"
+
+#. module: validacion_bitam
+#: model:ir.ui.menu,name:validacion_bitam.validacion_bitam_action_submenu
+#: view:validation.bitam:validacion_bitam.validacion_bitam_view
+#: view:validation.bitam:validacion_bitam.validacion_bitam_view_data
+msgid "Validacion Bitam"
+msgstr "Validacion Bitam"
+
+#. module: validacion_bitam
+#: view:validation.bitam:validacion_bitam.validacion_bitam_view
+msgid "or"
+msgstr "or"

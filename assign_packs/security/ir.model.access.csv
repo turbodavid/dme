@@ -1,0 +1,3 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_assign_packs,access_assign_packs,model_assign_packs,group_manager_assign_packs,1,1,1,1
+access_assign_packs_rel,access_assign_packs_rel,model_assign_packs_rel,group_manager_assign_packs,1,1,1,1

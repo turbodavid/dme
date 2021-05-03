@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<openerp>
+<data>
+    <!--
+    <record id="edores_acum_mes_ventas" model="account.balance.reporting.template.line.excel">
+        <field name="template_line_id">95</field>
+        <field name="name">Ventas</field>
+        <field name="sheet_acum">Edo. de Res. Cons. Acum. y Mens</field>
+        <field name="sheet_month">Edo. de Res. Cons. Acum. y Mens</field>
+        <field name="cell_acum_current">G94</field>
+        <field name="cell_acum_previous">D94</field>
+        <field name="cell_month_current">H11</field>
+        <field name="cell_month_previous">D11</field>
+    </record>
+
+    <record id="edores_acum_mes_dev_ventas" model="account.balance.reporting.template.line.excel">
+        <field name="template_line_id">94</field>
+        <field name="name">Devoluciones Sobre Ventas</field>
+        <field name="sheet_acum">Edo. de Res. Cons. Acum. y Mens</field>
+        <field name="sheet_month">Edo. de Res. Cons. Acum. y Mens</field>
+        <field name="cell_acum_current">H96</field>
+        <field name="cell_acum_previous">D96</field>
+        <field name="cell_month_current">H13</field>
+        <field name="cell_month_previous">D13</field>
+    </record>
+
+    <record id="edores_acum_mes_bondesc_ventas" model="account.balance.reporting.template.line.excel">
+        <field name="template_line_id">94</field>
+        <field name="name">Bonificacions y Descuentos Sobre Ventas</field>
+        <field name="sheet_acum">Edo. de Res. Cons. Acum. y Mens</field>
+        <field name="sheet_month">Edo. de Res. Cons. Acum. y Mens</field>
+        <field name="cell_acum_current">H97</field>
+        <field name="cell_acum_previous">G97</field>
+        <field name="cell_month_current">H14</field>
+        <field name="cell_month_previous">D14</field>
+    </record>
+
+    <record id="balance_receivables" model="account.balance.reporting.template.line.excel">
+        <field name="template_line_id">55</field>
+        <field name="name">Cuentas por Cobrar</field>
+        <field name="sheet_acum">Balance</field>
+        <field name="cell_acum_current">G12</field>
+        <field name="cell_acum_previous">D12</field>
+    </record>
+
+    <record id="balance_inventories" model="account.balance.reporting.template.line.excel">
+        <field name="template_line_id">56</field>
+        <field name="name">Inventarios</field>
+        <field name="sheet_acum">Balance</field>
+        <field name="cell_acum_current">G19</field>
+        <field name="cell_acum_previous">D19</field>
+    </record>
+    -->
+ </data>
+</openerp>

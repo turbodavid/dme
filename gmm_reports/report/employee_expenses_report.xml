@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="employee_expenses_report_template_aeroo" model="report.templates.aeroo">
+            <field name="name">Gastos Acumulados de Empleados</field>
+            <field name="model">employee.expenses.report</field>
+            <field name="report_name">employee.expenses.report.aeroo</field>
+            <field name="report_rml">gmm_reports/report/ViaticosAcumulados.ods</field>
+            <field name="tml_source">file</field>
+        </record>
+        
+        <record id="employee_expenses_report_aeroo" model="ir.actions.report.xml">
+            <field name="name">Gastos Acumulados de Empleados</field>
+            <field name="type">ir.actions.report.xml</field>
+            <field name="model">employee.expenses.report</field>
+            <field name="report_name">employee.expenses.report.aeroo</field>
+            <field name="report_type">aeroo</field>
+            <field name="in_format">oo-ods</field>
+            <field name="out_format" ref="report_aeroo.report_mimetypes_xls_odt" />
+            <field name="aeroo_templates_ids" eval="[(6, 0, [employee_expenses_report_template_aeroo])]" />
+            <field name="tml_source">file</field>
+            <field name="parser_loc">gmm_reports/report/generic_parser_report.py</field>
+            <field name="parser_state">loc</field>
+        </record>
+    </data>
+</openerp>

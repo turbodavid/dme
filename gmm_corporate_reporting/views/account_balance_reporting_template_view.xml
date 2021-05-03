@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!--
+#
+#    OpenERP - Account balance reporting engine
+#    Copyright (C) 2009 Pexego Sistemas Informáticos. All Rights Reserved
+#    $Id$
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+-->
+<!--
+Views for the account balance reporting templates and its lines.
+
+Author: Borja López Soilán (Pexego) - borjals@pexego.es
+-->
+<openerp>
+    <data>
+
+        <!-- Template Line Excel View tree view -->
+        <record model="ir.ui.view" id="view_account_balance_reporting_template_line_excel_form">
+            <field name="name">account.balance.reporting.template.line.excel.form</field>
+            <field name="model">account.balance.reporting.template.line.excel</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Excel Concept Definition" version="7.0">
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="corporate_expense"/>
+                        </group>
+                        <group  string="Acumulative Balances">
+                            <field name="sheet_acum"></field>
+                            <field name="cell_acum_current"></field>
+                            <field name="cell_acum_previous"></field>
+                        </group>
+                        <group string="Monthly Balances">
+                            <field name="sheet_month"></field>
+                            <field name="cell_month_current"></field>
+                            <field name="cell_month_previous"></field>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="operating_unit_ids"  context ="{'default_excel_id': active_id, 'excel_id': active_id}" nolabel="1">
+                            <tree string="Operating Units">
+                                <field name="operating_unit_id"></field>
+                            </tree>
+                        </field>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!--record model="ir.ui.view" id="view_account_balance_reporting_template_line">
+            <field name="name">template_line_excel_concepts</field>
+            <field name="model">account.balance.reporting.template.line</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+				<form string="Excel Concepts" version="7.0">
+					<field name="template_line_excel_ids" widget="one2many_list" colspan="4" nolabel="1">
+						<tree editable='bottom'>
+							<field name="fn_concepts"></field>
+						</tree>
+					</field>
+					<footer>
+						<button name="save_uuid_line" type="object" string="Save UUID" class="oe_highlight" />
+						<button string="Cancel" class="oe_link" special="cancel" />
+					</footer>
+				</form>
+            </field>
+        </record-->
+
+        <record model="ir.ui.view" id="view_account_balance_reporting_template_line_excel_tree">
+            <field name="name">account.balance.reporting.template.line.excel.tree</field>
+            <field name="model">account.balance.reporting.template.line.excel</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <tree string="Form">
+                    <field name="name"></field>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Excel for Template Line form view -->
+        <record model="ir.ui.view" id="view_template_line_excel_form">
+            <field name="name">Template Line Excel Form</field>
+            <field name="model">account.balance.reporting.template</field>
+            <field name="inherit_id" ref="account_balance_reporting.view_account_balance_reporting_template_form" />
+            <field name="arch" type="xml">
+ 				<field name="report_xml_id"  position="replace">
+					<field name="use_materialized_view"/>
+				</field>
+				<xpath expr="//field[@name='line_ids']/tree//field[@name='code']" position="after">
+					<button name="excel_concepts" string="Excel" class="oe_highlight oe_right" icon="STOCK_OPEN" type="object"  context="{'active_id': active_id}" />
+				</xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>

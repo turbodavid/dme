@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<openerp><data><record id="account_account_type_27" model="account.account.type"><field name="name">costo</field><field name="code">cost</field><field name="close_method">detail</field></record></data></openerp>

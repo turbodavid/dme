@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!--Windows-->
+        <record model="ir.ui.view" id="sync_gmm_form_view_pp">
+            <field name="name">Sync MORSA Form Partner/Product</field>
+            <field name="model">sync.morsa</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Sync MORSA Form" version="7.0">
+                    <separator string="Module Sync Info Partner/Product"/>
+                    <group>
+                        <label string="Click on process below to Create..."/>
+                        <group>
+                            <button name="action_sync_partner" string="Partner" type="object" icon="gtk-apply"/>
+                            <!--<button name="action_sync_product" string="Product" type="object" icon="gtk-apply"/>-->
+                        </group>
+                    </group>
+                    <group>
+                        <label string="Click on process below to Update..."/>
+                        <group>
+                            <button name="action_sync_update_partner" string="Partner" type="object" icon="gtk-apply"/>
+                            <!--<button name="action_sync_update_product" string="Product" type="object" icon="gtk-apply"/>-->
+                        </group>
+                    </group>
+                    <footer>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="sync_gmm_form_view_policy">
+            <field name="name">Sync MORSA Form Policy</field>
+            <field name="model">sync.morsa.policy</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Sync MORSA Form" version="7.0">
+                    <separator string="Module Sync Policy"/>
+                    <group colspan="2" col="2">
+                        <field name="period" attrs="{'required':1}"></field>
+                        <field name="enterprise" attrs="{'required':1}"></field>
+                           <field name="records"></field>
+                 </group>
+                    <footer>
+                        <button name="action_sync_policy" string="Sync" type="object" icon="gtk-apply"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+       <record model="ir.ui.view" id="sync_gmm_form_view_hr_payroll_policy">
+            <field name="name">Sync MORSA Form Hr Payroll Policy</field>
+            <field name="model">sync.morsa.hr</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Sync MORSA Form Hr Payroll" version="7.0">
+                    <separator string="Module Sync Payroll Policy"/>
+                    <group colspan="2" col="2">
+                        <field name="period" attrs="{'required':1}"></field>
+                        <field name="enterprise" attrs="{'required':1}"></field>
+                        <field name="file_zip"> </field>
+                        <field name="checkbox" attrs="{'False':1}"></field>
+                    </group>
+                    <footer>
+                        <button name="action_sync_hr" string="Sync NOMNINA" type="object" icon="gtk-apply" attrs="{'invisible' : [('checkbox' , '=' , True )]}"/>
+                        <button name='action_sync_hr_usus' string="Payroll SUA" type="object" icon="gtk-apply" attrs="{'invisible' : [('checkbox' , '=' , False )]}"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="sync_gmm_form_view_expenses_newportal">
+            <field name="name">Sync MORSA Form Expenses New Portal</field>
+            <field name="model">sync.morsa.expense.newportal</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Sync MORSA Form Expense New Portal" version="7.0">
+                    <separator string="Module Sync Expense New Portal"/>
+                    <group colspan="2" col="2">
+                        <field name="enterprise" attrs="{'required':1}"></field>
+                        <field name="dFechaIni"></field>
+                        <field name="dFechaFin"></field>
+                    </group>
+                    <footer>
+                        <button name="action_sync_expense_newportal" string="Sync Expenses New Portal" type="object" icon="gtk-apply"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="sync_gmm_form_view_sales">
+            <field name="name">Sync MORSA Form Sales</field>
+            <field name="model">sync.morsa.sales</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Sync MORSA Form Sale" version="7.0">
+                    <separator string="Module Sync Sales"/>
+                    <group colspan="2" col="2">
+                        <field name="fecha_inicial"></field>
+                        <field name="fecha_final"></field>
+                        <field name="cuenta_ventas_contado"></field>
+                        <field name="cuenta_ventas_credito"></field>
+                        <field name="cuenta_ventas_pr"></field>
+                        <field name="cliente_pr"></field>
+                        <field name="impuesto"></field>
+                        <field name="unit_process"></field>
+                        <field name="ou" widget="many2many_tags" placeholder="Seleccione las unidades operativas"
+                        attrs="{'invisible' : [('unit_process', '=', True)]}"></field>
+                        <field name="num_registros"></field>
+                    </group>
+                    <footer>
+                        <button name="action_sync_sales" string="Sync Sales" type="object" icon="gtk-apply"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+         <!-- action windows -->
+        <record model="ir.actions.act_window" id="sync_morsa_list_action_pp">
+            <field name="name">Sync MORSA Partner/Product</field>
+            <field name="res_model">sync.morsa</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="sync_gmm_form_view_pp"/>
+        </record>
+
+        <record model="ir.actions.act_window" id="sync_morsa_list_action_policy">
+            <field name="name">Sync MORSA Policy</field>
+            <field name="res_model">sync.morsa.policy</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="sync_gmm_form_view_policy"/>
+        </record>
+
+       <record model="ir.actions.act_window" id="sync_morsa_list_action_hr_payroll_policy">
+            <field name="name">Journal Entries</field>
+            <field name="res_model">sync.morsa.hr</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="sync_gmm_form_view_hr_payroll_policy"/>
+        </record>
+
+        <record model="ir.actions.act_window" id="sync_morsa_list_action_expense_newportal">
+            <field name="name">Invoice Supplier</field>
+            <field name="res_model">sync.morsa.expense.newportal</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="sync_gmm_form_view_expenses_newportal"/>
+        </record>
+
+        <record model="ir.actions.act_window" id="sync_morsa_list_action_sales">
+            <field name="name">Invoice Customers</field>
+            <field name="res_model">sync.morsa.sales</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="sync_gmm_form_view_sales"/>
+        </record>
+
+        <!--MORSA SYNC LOG-->
+        <record model= "ir.actions.act_window" id="sync_morsa_log_type_action">
+            <field name="name">sync MORSA Log</field>
+            <field name="res_model">sync.morsa.log</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree</field>
+        </record>
+        <!-- VISTA TREE MORSA SYNC LOG -->
+        <record model= "ir.ui.view" id= "sync_morsa_log_tree_view">
+            <field name="name">Sync MORSA Log</field>
+            <field name= "model">sync.morsa.log</field>
+            <field name="arch" type="xml">
+                <tree string= "Policy Log" create="false"> <!-- delete="false">-->
+                    <field name= "period"/>
+                    <field name= "folio"/>
+                    <field name= "message"/>
+                    <field name= "account_contpaq"/>
+                    <field name= "db"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--GMM SYNC SALES LOG-->
+        <record model= "ir.actions.act_window" id="sync_gmm_sales_log_type_action">
+            <field name="name">sync GMM Sales Log</field>
+            <field name="res_model">sync.sales.log</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree</field>
+        </record>
+        <!-- VISTA TREE GMM SYNC SALES LOG -->
+        <record model= "ir.ui.view" id= "sync_gmm_sales_log_tree_view">
+            <field name="name">Sync GMM  Sales Log</field>
+            <field name= "model">sync.sales.log</field>
+            <field name="arch" type="xml">
+                <tree string= "Unit Sales Log" create="false"> <!-- delete="false">-->
+                    <field name= "operating_unit"/>
+                    <field name= "message"/>
+                    <field name= "ip_addres"/>
+                    <field name= "data_base"/>
+                    <field name= "write_date"/>
+                </tree>
+            </field>
+        </record>
+
+         <!-- SEARCH GMM SYNC SALES LOG-->
+        <record id="view_sync_gmm_sales_log_search" model="ir.ui.view">
+        <field name="name">Sync GMM SALES LOG Search</field>
+        <field name="model">sync.sales.log</field>
+        <field name="arch" type="xml">
+            <search string="Search Sync GMM Sales Log">
+                <!--<field name="order_id"/>
+                <field name="partner_id" string="Supplier" filter_domain="[('partner_id', 'child_of', self)]"/>-->
+                <group expand="1" string="Group By...">
+                <filter icon="terp-gtk-jump-to-rtl" string="Unidad Operativa" domain="[]" context="{'group_by' :'operating_unit'}"/>
+                <filter string="Fecha" icon="terp-partner" domain="[]" context="{'group_by' : 'write_date'}" />
+                </group>
+            </search>
+        </field>
+        </record>
+
+        <!-- SEARCH MORSA SYNC LOG-->
+        <record id="view_sync_morsa_log_search" model="ir.ui.view">
+        <field name="name">Sync MORSA LOG Search</field>
+        <field name="model">sync.morsa.log</field>
+        <field name="arch" type="xml">
+            <search string="Search Sync MORSA Log">
+                <!--<field name="order_id"/>
+                <field name="partner_id" string="Supplier" filter_domain="[('partner_id', 'child_of', self)]"/>-->
+                <group expand="1" string="Group By...">
+                <filter icon="terp-gtk-jump-to-rtl" string="db" domain="[]" context="{'group_by' :'db'}"/>
+                <filter string="period" icon="terp-partner" domain="[]" context="{'group_by' : 'period'}" />
+                <filter string="folio" icon="terp-partner" domain="[]" context="{'group_by' : 'folio'}" />
+                <filter string="message" icon="terp-partner" domain="[]" context="{'group_by' : 'message'}" />
+                <filter string="account contpaq" icon="terp-partner" domain="[]" context="{'group_by' : 'account_contpaq'}" />
+                </group>
+            </search>
+        </field>
+        </record>
+        <!--MORSA SYNC LOG GENERIC-->
+        <record model= "ir.actions.act_window" id="sync_morsa_log_generic_type_action">
+            <field name="name">Log MORSA</field>
+            <field name="res_model">sync.morsa.log.generic</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree</field>
+        </record>
+        <!-- VISTA TREE MORSA SYNC LOG GENERIC-->
+        <record model= "ir.ui.view" id= "sync_morsa_log_generic_tree_view">
+            <field name="name">Log MORSA</field>
+            <field name= "model">sync.morsa.log.generic</field>
+            <field name="arch" type="xml">
+                <tree string= "Log" create="false">
+                    <field name= "morsa_code"/>
+                    <field name= "openerp_code"/>
+                    <field name= "name"/>
+                    <field name= "message"/>
+                </tree>
+            </field>
+        </record>
+        <!--MORSA SYNC ACCOUNTS-->
+        <record model= "ir.actions.act_window" id="sync_morsa_accounts_type_action">
+            <field name="name">Sync Account</field>
+            <field name="res_model">sync.morsa.account</field>
+            <field name="view_type">form</field>
+           <field name="view_mode">tree,form</field>
+        </record>
+         <!-- VISTA FORM MORSA ACCOUNT -->
+		<record model= "ir.ui.view" id = "sync_morsa_accounts_form_view">
+			<field name="name">Sync Account Form</field>
+			<field name= "model">sync.morsa.account</field>
+			<field name="arch" type="xml">
+			<form string="Sync Account" version="7.0">
+				<header>
+					<button name="action_confirm" type="object" string="Confirm" states="draft" class="oe_highlight" />
+					<button name="action_save" type="object" string="Save Sync" states="done" class="oe_highlight" />
+					<button name="action_undo" type="object" string="Unconfirm" states="done" class="oe_highlight" />
+					<field name="state" widget="statusbar"></field>
+				</header>
+				<sheet>
+					<group>
+						<field name= "folio" attrs="{'readonly':[('state','=','done')]}" required = "1"/>
+						<field name= "name" attrs="{'readonly':[('state','=','done')]}" required = "1"/>
+						<field name= "account_contpaq"  attrs="{'readonly':[('state','=','done')]}" required = "1"/>
+						<field name= "account_openerp_sync" attrs="{'readonly':1}"/>
+						<field name= "account_openerp" attrs="{'readonly':[('state','=','done')]}" required = "1"/>
+						<field name= "partner_id" attrs="{'readonly':[('state','=','done')] }"/>
+						<field name= "account_analytic_id" attrs="{'readonly':[('state','=','done')]}"/>
+                        <field name= "operating_unit_id" attrs="{'readonly':[('state','=','done')]}"/>
+						<field name= "enterprise"/>
+					</group>
+				</sheet>
+			</form>
+			</field>
+		</record>
+        <!-- VISTA TREE MORSA ACCOUNT -->
+        <record model= "ir.ui.view" id= "sync_morsa_accounts_tree_view">
+            <field name="name">Sync Account Tree</field>
+            <field name= "model">sync.morsa.account</field>
+            <field name="arch" type="xml">
+                <tree string= "Sync Account"> <!--create="false">-->
+					<field name= "folio" />
+					<field name= "name"/>
+                    <field name= "account_contpaq"/>
+                    <field name= "account_openerp"/>
+                    <field name= "partner_id"/>
+                    <field name= "account_analytic_id"/>
+                    <field name= "state"/>
+                </tree>
+            </field>
+        </record>
+        <!-- menuitems -->
+        <menuitem id="sync_MORSA_menu"
+            name ="Sync MORSA"
+            parent="base.menu_config"/>
+        <menuitem id="sync_MORSA_menu_partner_product" name="Partner/Product"
+            parent="sync_MORSA_menu"
+            action="sync_morsa_list_action_pp" />
+		<menuitem id="sync_MORSA_menu_log" name="Log Partner/Product"
+            parent="sync_MORSA_menu"
+            action="sync_morsa_log_generic_type_action" />
+        <menuitem id="sync_MORSA_menu_policy" name="Policy"
+            parent="sync_MORSA_menu"
+            action="sync_morsa_list_action_policy" />
+       <menuitem id="sync_MORSA_menu_hr_payroll_policy" name="Hr Payroll Policy"
+            parent="sync_MORSA_menu"
+            action="sync_morsa_list_action_hr_payroll_policy" />
+	   <menuitem id="sync_MORSA_menu_expense" name="Sync Expenses New Portal"
+	        parent="sync_MORSA_menu"
+	        action="sync_morsa_list_action_expense_newportal" />
+	   <menuitem id="sync_MORSA_menu_sales" name="Sync Sales"
+            parent="sync_MORSA_menu"
+            action="sync_morsa_list_action_sales" />
+        <menuitem id="sync_MORSA_menu_policy_log" name="Log Policy"
+            parent="sync_MORSA_menu"
+            action="sync_morsa_log_type_action" />
+            <menuitem id="sync_GMM_menu_sales_log" name="Sales Log"
+            parent="sync_MORSA_menu"
+            action="sync_gmm_sales_log_type_action" />
+        <menuitem id="sync_MORSA_menu_sync_accounts" name="Sync Accounts"
+            parent="sync_MORSA_menu"
+            action="sync_morsa_accounts_type_action" />
+    </data>
+</openerp>

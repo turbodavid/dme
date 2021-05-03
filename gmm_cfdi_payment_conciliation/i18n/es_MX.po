@@ -1,0 +1,723 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* gmm_cfdi_payment_conciliation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0rc21\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-12 17:58+0000\n"
+"PO-Revision-Date: 2020-06-14 19:09-0600\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_MX\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_form
+#: field:gmm.cfdi.supplier.payment.invoices,amount:0
+#: field:gmm.cfdi.supplier.payment.line,amount:0
+msgid "Amount"
+msgstr "Importe"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.invoices,amount_paid:0
+msgid "Amount Paid"
+msgstr "Imp. Pagado"
+
+#. module: gmm_cfdi_payment_conciliation
+#: model:ir.ui.menu,name:gmm_cfdi_payment_conciliation.menu_gmm_cfdi_supplier_payment_wizard
+msgid "Asistente Pagos"
+msgstr "Asistente Pagos"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,residual:0
+msgid "Balance Difference"
+msgstr "Diferencia"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_view
+msgid "CFDI Date"
+msgstr "Fecha CFDI"
+
+#. module: gmm_cfdi_payment_conciliation
+#: model:ir.ui.menu,name:gmm_cfdi_payment_conciliation.menu_gmm_cfdi_supplier_payment_parent
+msgid "CFDI Pagos"
+msgstr "CFDI Pagos"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment.wizard:gmm_cfdi_payment_conciliation.wizard_gmm_cfdi_supplier_payment
+msgid "CFDI Payments Issued Registration"
+msgstr "Registro de CFDI de Pagos Emitidos"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment.credits.notrel:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_credits_notrel_form
+msgid "CFDI Supplier Credits with no Related Documents"
+msgstr "CFDI de Creditos sin Documentos Relacionados"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_form
+msgid "CFDI Supplier Payment Conciliation"
+msgstr "Conciliación de CFDI de Pagos a Proveedores"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment,uuid:0
+msgid "CFDI UUID"
+msgstr "CFDI UUID"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_form
+msgid "Calculate"
+msgstr "Calcular"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_form
+#: view:gmm.cfdi.supplier.payment.wizard:gmm_cfdi_payment_conciliation.wizard_gmm_cfdi_supplier_payment
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: gmm_cfdi_payment_conciliation
+#: selection:gmm.cfdi.supplier.payment,state:0
+msgid "Canceled"
+msgstr "Cancelado"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.wizard,from_company:0
+msgid "Check if you need to look for Payments done by Company instead of the Suppliers Issued date"
+msgstr "Seleccionar para considerar los Pagos realizados por GMM en lugar de los CFDIs de Pagos emitidos por el Proveedor"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment,name:0
+msgid "Comments about this payment"
+msgstr "Comentarios de Pago"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,company_paid_date:0
+msgid "Company Paid Date"
+msgstr "Fecha Pago (GMM)"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_form
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,create_uid:0
+#: field:gmm.cfdi.supplier.payment.credits,create_uid:0
+#: field:gmm.cfdi.supplier.payment.credits.notrel,create_uid:0
+#: field:gmm.cfdi.supplier.payment.invoices,create_uid:0
+#: field:gmm.cfdi.supplier.payment.line,create_uid:0
+#: field:gmm.cfdi.supplier.payment.wizard,create_uid:0
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,create_date:0
+#: field:gmm.cfdi.supplier.payment.credits,create_date:0
+#: field:gmm.cfdi.supplier.payment.credits.notrel,create_date:0
+#: field:gmm.cfdi.supplier.payment.invoices,create_date:0
+#: field:gmm.cfdi.supplier.payment.line,create_date:0
+#: field:gmm.cfdi.supplier.payment.wizard,create_date:0
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_form
+#: field:gmm.cfdi.supplier.payment.credits,credit_number:0
+#: selection:gmm.cfdi.supplier.payment.line,type:0
+msgid "Credit"
+msgstr "Credito"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.credits.notrel,amount:0
+msgid "Credit Amount"
+msgstr "Importe NC"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.credits.notrel,amount:0
+msgid "Credit Amount Issued"
+msgstr "CFDI Importe NC"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.credits,amount_credit:0
+msgid "Credit Amt"
+msgstr "Importe NC"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment.credits.notrel:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_credits_notrel_view
+msgid "Credit Date"
+msgstr "Fecha NC"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.credits.notrel,name:0
+msgid "Credit Name"
+msgstr "Folio NC"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.credits,credit_id:0
+msgid "Credit Note Number"
+msgstr "Folio NC\t"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.credits,number:0
+#: help:gmm.cfdi.supplier.payment.credits.notrel,number:0
+msgid "Credit Number"
+msgstr "Folio NC"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.credits,serie:0
+#: help:gmm.cfdi.supplier.payment.credits.notrel,serie:0
+msgid "Credit Serie"
+msgstr "NC Serie"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.credits,amount_credit:0
+msgid "Credit Total Amount"
+msgstr "Total NC"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.credits,uuid:0
+#: help:gmm.cfdi.supplier.payment.credits.notrel,uuid:0
+msgid "Credit UUID"
+msgstr "NC UUID"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.invoices,credits_applied:0
+msgid "Credits"
+msgstr "Creditos"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_form
+msgid "Credits Found"
+msgstr "NC Encontradas"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.credits.notrel,partner_id:0
+msgid "Credits Issued by this Supplier"
+msgstr "Creditos Emitidos"
+
+#. module: gmm_cfdi_payment_conciliation
+#: model:ir.model,name:gmm_cfdi_payment_conciliation.model_gmm_cfdi_supplier_payment_credits_notrel
+msgid "Credits Issued wihtout Related Documents"
+msgstr "Creditos Emitidos sin Documentos Relacionados"
+
+#. module: gmm_cfdi_payment_conciliation
+#: model:ir.actions.act_window,name:gmm_cfdi_payment_conciliation.action_view_gmm_cfdi_supplier_payment_credits_notrel
+msgid "Credits No Doc Related"
+msgstr "Creditos Sin Documentos Relacionados"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_form
+#: field:gmm.cfdi.supplier.payment,credit_ids:0
+msgid "Credits Used"
+msgstr "NC Utilizadas"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,payment_line_credits:0
+msgid "Credits Used for this Payment"
+msgstr "Creditos utilizados en el Pago"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.wizard,credits_to_date:0
+msgid "Credits date"
+msgstr "Fecha NC"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment.credits.notrel:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_credits_notrel_view
+msgid "Credits that have already related to a Payment"
+msgstr "Creditos relacionados a un Pago"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment.credits.notrel:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_credits_notrel_view
+msgid "Credits that have not related to a Payment yet"
+msgstr "Creditos sin relacionarse a un Pago"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_form
+msgid "Credits without Invoices Used"
+msgstr "Creditos sin Facturas utilizados"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_view
+#: view:gmm.cfdi.supplier.payment.credits.notrel:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_credits_notrel_view
+#: field:gmm.cfdi.supplier.payment.invoices,date:0
+#: field:gmm.cfdi.supplier.payment.line,date:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.credits.notrel,date:0
+msgid "Date Issued"
+msgstr "Fecha CFDI"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.credits.notrel,date:0
+msgid "Date issued by Supplier"
+msgstr "Fecha CFDI"
+
+#. module: gmm_cfdi_payment_conciliation
+#: model:ir.model,name:gmm_cfdi_payment_conciliation.model_gmm_cfdi_supplier_payment_credits
+msgid "Detailed Credits Used by this Payment."
+msgstr "NC usadas en el Pago"
+
+#. module: gmm_cfdi_payment_conciliation
+#: model:ir.model,name:gmm_cfdi_payment_conciliation.model_gmm_cfdi_supplier_payment_invoices
+msgid "Detailed Invoices paid by the CFDI Issued."
+msgstr "Facturas pagadas por el CFDI"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment,residual:0
+msgid "Difference: Balance - Credits"
+msgstr "Differencia: Saldo - Creditos"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,display_name:0
+#: field:gmm.cfdi.supplier.payment.credits,display_name:0
+#: field:gmm.cfdi.supplier.payment.credits.notrel,display_name:0
+#: field:gmm.cfdi.supplier.payment.invoices,display_name:0
+#: field:gmm.cfdi.supplier.payment.line,display_name:0
+#: field:gmm.cfdi.supplier.payment.wizard,display_name:0
+msgid "Display Name"
+msgstr "Nombre a desplegar"
+
+#. module: gmm_cfdi_payment_conciliation
+#: selection:gmm.cfdi.supplier.payment,state:0
+msgid "Done"
+msgstr "Hecho"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_form
+#: selection:gmm.cfdi.supplier.payment,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:account.move.line,payments_line_ids:0
+#: field:gmm.cfdi.supplier.payment,payment_line_ids:0
+msgid "ERP Moves Payments related"
+msgstr "Asientos del Pago"
+
+#. module: gmm_cfdi_payment_conciliation
+#: model:ir.actions.act_window,name:gmm_cfdi_payment_conciliation.action_gmm_cfdi_supplier_payment_wizard
+msgid "Find and register Supplier Payments Issued"
+msgstr "Buscar y registrar Pagos de Proveedores emitidos"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment.wizard:gmm_cfdi_payment_conciliation.wizard_gmm_cfdi_supplier_payment
+msgid "Find payments"
+msgstr "Buscar Pagos"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.wizard,date_from:0
+msgid "From Date"
+msgstr "Desde"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_view
+#: view:gmm.cfdi.supplier.payment.credits.notrel:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_credits_notrel_view
+msgid "Group By..."
+msgstr "Agrupar por..."
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,id:0
+#: field:gmm.cfdi.supplier.payment.credits,id:0
+#: field:gmm.cfdi.supplier.payment.credits.notrel,id:0
+#: field:gmm.cfdi.supplier.payment.invoices,id:0
+#: field:gmm.cfdi.supplier.payment.line,id:0
+#: field:gmm.cfdi.supplier.payment.wizard,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.credits,credit_id:0
+#: field:gmm.cfdi.supplier.payment.invoices,invoice_id:0
+#: field:gmm.cfdi.supplier.payment.invoices,invoice_number:0
+#: field:gmm.cfdi.supplier.payment.invoices,name:0
+#: model:ir.model,name:gmm_cfdi_payment_conciliation.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.invoices,number:0
+msgid "Invoice Number"
+msgstr "Num Factura"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:account.invoice,payment_line_invoices:0
+msgid "Invoice Payments related"
+msgstr "Facturas del Pago"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.invoices,serie:0
+msgid "Invoice Serie"
+msgstr "Fac. Serie"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.invoices,amount:0
+msgid "Invoice Total"
+msgstr "Total Fac."
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.invoices,uuid:0
+msgid "Invoice UUID"
+msgstr "UUID Fac."
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.credits,invoices_applied:0
+msgid "Invoices"
+msgstr "Facturas"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_form
+msgid "Invoices Paid"
+msgstr "Facturas pagadas"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,payment_line_invoices:0
+msgid "Invoices Paid in this CFDI"
+msgstr "Fac Pagadas en el CFDI"
+
+#. module: gmm_cfdi_payment_conciliation
+#: model:ir.model,name:gmm_cfdi_payment_conciliation.model_gmm_cfdi_supplier_payment
+msgid "It stores the payments made and the CFDIs issuedd by the Supplier on a period of time"
+msgstr "Registra los pagos realizados y los CFDI emitidos por el Proveedor en un periodo de tiempo"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.line,move_line_id:0
+msgid "Journal Entry"
+msgstr "Asiento Contable"
+
+#. module: gmm_cfdi_payment_conciliation
+#: model:ir.model,name:gmm_cfdi_payment_conciliation.model_account_move_line
+msgid "Journal Items"
+msgstr "Póliza"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.invoices,date:0
+msgid "Keep empty to use the current date"
+msgstr "Dejarlo en blanco para utilizar el día de hoy"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,__last_update:0
+#: field:gmm.cfdi.supplier.payment.credits,__last_update:0
+#: field:gmm.cfdi.supplier.payment.credits.notrel,__last_update:0
+#: field:gmm.cfdi.supplier.payment.invoices,__last_update:0
+#: field:gmm.cfdi.supplier.payment.line,__last_update:0
+#: field:gmm.cfdi.supplier.payment.wizard,__last_update:0
+msgid "Last Modified on"
+msgstr "Modificado el"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,write_uid:0
+#: field:gmm.cfdi.supplier.payment.credits,write_uid:0
+#: field:gmm.cfdi.supplier.payment.credits.notrel,write_uid:0
+#: field:gmm.cfdi.supplier.payment.invoices,write_uid:0
+#: field:gmm.cfdi.supplier.payment.line,write_uid:0
+#: field:gmm.cfdi.supplier.payment.wizard,write_uid:0
+msgid "Last Updated by"
+msgstr "Modificado por"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,write_date:0
+#: field:gmm.cfdi.supplier.payment.credits,write_date:0
+#: field:gmm.cfdi.supplier.payment.credits.notrel,write_date:0
+#: field:gmm.cfdi.supplier.payment.invoices,write_date:0
+#: field:gmm.cfdi.supplier.payment.line,write_date:0
+#: field:gmm.cfdi.supplier.payment.wizard,write_date:0
+msgid "Last Updated on"
+msgstr "Modificado el"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.wizard,credits_to_date:0
+msgid "Look for Credits up to this date"
+msgstr "Fecha límite para Créditos"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.line,concilied:0
+msgid "Matched"
+msgstr "Coincide"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_view
+msgid "Missing Credits"
+msgstr "Creditos Faltantes"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.line,type:0
+msgid "Move Type"
+msgstr "Tipo de Mov"
+
+#. module: gmm_cfdi_payment_conciliation
+#: model:ir.ui.menu,name:gmm_cfdi_payment_conciliation.menu_gmm_cfdi_supplier_payment_credits_notrel
+msgid "NC Sin Doctos"
+msgstr "NC Sin Doctos"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment.credits.notrel:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_credits_notrel_view
+msgid "Not Related"
+msgstr "No Relacionados"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,payment_line_credits_nr:0
+msgid "Not Related Credits Used for this Payment"
+msgstr "Creidtos sin Facturas relacionadas utilizados en este Pago"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,name:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,number:0
+#: field:gmm.cfdi.supplier.payment,payment_number:0
+#: field:gmm.cfdi.supplier.payment.credits,number:0
+#: field:gmm.cfdi.supplier.payment.credits.notrel,number:0
+#: field:gmm.cfdi.supplier.payment.invoices,number:0
+msgid "Number"
+msgstr "Numero"
+
+#. module: gmm_cfdi_payment_conciliation
+#: model:ir.ui.menu,name:gmm_cfdi_payment_conciliation.menu_gmm_cfdi_supplier_payment
+msgid "Pagos"
+msgstr "Pagos"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.invoices,amount_paid:0
+msgid "Paid"
+msgstr "Pagado"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_view
+#: view:gmm.cfdi.supplier.payment.credits.notrel:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_credits_notrel_view
+msgid "Partner"
+msgstr "Proveedor"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.credits,payment_id:0
+#: field:gmm.cfdi.supplier.payment.invoices,payment_id:0
+#: field:gmm.cfdi.supplier.payment.line,payment_id:0
+#: selection:gmm.cfdi.supplier.payment.line,type:0
+msgid "Payment"
+msgstr "Pago"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,amount:0
+msgid "Payment Amount"
+msgstr "Pago CFDI"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_view
+#: field:gmm.cfdi.supplier.payment,date:0
+msgid "Payment Date"
+msgstr "Fecha CFDI"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_form
+msgid "Payment Info"
+msgstr "Info del Pago"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment,number:0
+msgid "Payment Number"
+msgstr "#Pago"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment,serie:0
+msgid "Payment Serie"
+msgstr "Pago Serie"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,payment_ids:0
+msgid "Payment registered"
+msgstr "Pago registrado"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.credits.notrel,payment_id:0
+msgid "Payment where this Credit is applied"
+msgstr "Pago que utiliza este Credito"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_form
+msgid "Payments Found"
+msgstr "Pagos encontrados"
+
+#. module: gmm_cfdi_payment_conciliation
+#: model:ir.model,name:gmm_cfdi_payment_conciliation.model_gmm_cfdi_supplier_payment_line
+msgid "Payments done by date. Each linea is payment that its included in the CFID Issued by the Supplier."
+msgstr "Pagos realizados por día. Cada línea es un Pago que esta incluido en el CFDI emitido por el Proveedor."
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment,partner_id:0
+msgid "Payments done by this Supplier"
+msgstr "Pagos realizados al Proveedor"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_view
+msgid "Payments with Missing Credits"
+msgstr "Pagos con Creditos Faltantes"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_view
+msgid "Payments with Surplus Credits"
+msgstr "Pagos con Creditos Sobrantes"
+
+#. module: gmm_cfdi_payment_conciliation
+#: selection:gmm.cfdi.supplier.payment,state:0
+msgid "Processed"
+msgstr "Procesado"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.invoices,invoice_id:0
+msgid "Purchase Invoice Number"
+msgstr "#Fac. Compra"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_form
+msgid "Recalculate"
+msgstr "Recalcular"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.line,move_name:0
+msgid "Ref"
+msgstr "Refeferencia"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment.credits.notrel:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_credits_notrel_view
+msgid "Related"
+msgstr "Related"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.invoices,amount_residual:0
+msgid "Residual"
+msgstr "Saldo"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.invoices,amount_residual:0
+msgid "Residual Amount"
+msgstr "Saldo"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_view
+#: view:gmm.cfdi.supplier.payment.credits.notrel:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_credits_notrel_view
+msgid "Search Operations"
+msgstr "Busqueda..."
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.wizard,partner_id:0
+msgid "Select Supplier to find CFDI Payment (left blank for all)"
+msgstr "Selecciona el Proveedor para encontrar los pagos realizados (deajr en blanco para todos)"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,serie:0
+#: field:gmm.cfdi.supplier.payment.credits,serie:0
+#: field:gmm.cfdi.supplier.payment.credits.notrel,serie:0
+#: field:gmm.cfdi.supplier.payment.invoices,serie:0
+msgid "Serie"
+msgstr "Serie"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_view
+msgid "Status"
+msgstr "Estatus"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,credits_issued:0
+msgid "Sum of Credits Issued by Supplier"
+msgstr "Creditos Emitidos"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,payment_residual:0
+msgid "Sum of Invoices Balance"
+msgstr "Saldo Facturas"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_view
+#: field:gmm.cfdi.supplier.payment,partner_id:0
+#: view:gmm.cfdi.supplier.payment.credits.notrel:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_credits_notrel_view
+#: field:gmm.cfdi.supplier.payment.credits.notrel,partner_id:0
+#: field:gmm.cfdi.supplier.payment.wizard,partner_id:0
+msgid "Supplier"
+msgstr "Proveedor"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.wizard,date_from:0
+msgid "Supplier CFDIs issued from this Date"
+msgstr " CFDIs emitidos desde esta Fecha"
+
+#. module: gmm_cfdi_payment_conciliation
+#: help:gmm.cfdi.supplier.payment.wizard,date_to:0
+msgid "Supplier CFDIs issued up to this Date"
+msgstr " CFDIs emitidos hasta esta Fecha"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment.credits.notrel:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_credits_notrel_tree
+msgid "Supplier Crediths with no Related Documents"
+msgstr "CFDI de Creditos sin Documentos Relacionados"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.credits.notrel,payment_id:0
+msgid "Supplier Payment"
+msgstr "Pago Relacionado"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_tree
+#: model:ir.actions.act_window,name:gmm_cfdi_payment_conciliation.action_view_gmm_cfdi_supplier_payment
+msgid "Supplier Payments"
+msgstr "Pagos a proveedores"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.filter_gmm_cfdi_supplier_payment_view
+msgid "Surplus Credits"
+msgstr "Creditos Sobrantes"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.wizard,from_company:0
+msgid "Take Payments done by Company"
+msgstr " Considerar Pagos realizados por GMM"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.wizard,date_to:0
+msgid "To Date"
+msgstr "Hasta"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_form
+msgid "Total Creditos"
+msgstr "Total Creditos"
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment:gmm_cfdi_payment_conciliation.view_gmm_cfdi_supplier_payment_form
+msgid "Total Credits"
+msgstr "Total Creditos"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment,uuid:0
+#: field:gmm.cfdi.supplier.payment.credits,uuid:0
+#: field:gmm.cfdi.supplier.payment.credits.notrel,uuid:0
+#: field:gmm.cfdi.supplier.payment.invoices,uuid:0
+msgid "UUID"
+msgstr "UUID"
+
+#. module: gmm_cfdi_payment_conciliation
+#: field:gmm.cfdi.supplier.payment.invoices,operating_unit_id:0
+msgid "Unit"
+msgstr "Unidad"
+
+#. module: gmm_cfdi_payment_conciliation
+#: model:ir.model,name:gmm_cfdi_payment_conciliation.model_gmm_cfdi_supplier_payment_wizard
+msgid "Wizard to find Supplier's CFDIs"
+msgstr "Asistente para buscar CFDI's de Pagos del Proveedor "
+
+#. module: gmm_cfdi_payment_conciliation
+#: view:gmm.cfdi.supplier.payment.wizard:gmm_cfdi_payment_conciliation.wizard_gmm_cfdi_supplier_payment
+msgid "or"
+msgstr "o"

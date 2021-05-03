@@ -1,0 +1,386 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* gmm_corporate_reporting
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0rc21\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-25 22:49+0000\n"
+"PO-Revision-Date: 2019-10-25 17:03-0600\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_MX\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#. module: gmm_corporate_reporting
+#: model:ir.model,name:gmm_corporate_reporting.model_account_balance_reporting_line
+msgid "Account balance report line / Accounting concept. One line of detail of the balance report representing an accounting concept with its values. The accounting concepts follow a parent-children hierarchy. Its values (current and previous) are calculated based on the 'value' formula of the linked template line."
+msgstr "Account balance report line / Accounting concept. One line of detail of the balance report representing an accounting concept with its values. The accounting concepts follow a parent-children hierarchy. Its values (current and previous) are calculated based on the 'value' formula of the linked template line."
+
+#. module: gmm_corporate_reporting
+#: model:ir.model,name:gmm_corporate_reporting.model_account_balance_reporting_template_line_excel
+msgid "Account balance report template line / Accounting concept template Adds the Excel cell where the balances of this line will be show."
+msgstr "Account balance report template line / Accounting concept template Adds the Excel cell where the balances of this line will be show."
+
+#. module: gmm_corporate_reporting
+#: model:ir.model,name:gmm_corporate_reporting.model_account_balance_reporting_template_line
+msgid "Account balance report template line / Accounting concept template One line of detail of the balance report representing an accounting concept with the formulas to calculate its values. The accounting concepts follow a parent-children hierarchy."
+msgstr "Account balance report template line / Accounting concept template One line of detail of the balance report representing an accounting concept with the formulas to calculate its values. The accounting concepts follow a parent-children hierarchy."
+
+#. module: gmm_corporate_reporting
+#: model:ir.model,name:gmm_corporate_reporting.model_account_balance_reporting_template
+msgid "Account balance report template. It stores the header fields of an account balance report template, and the linked lines of detail with the formulas to calculate the accounting concepts of the report."
+msgstr "Account balance report template. It stores the header fields of an account balance report template, and the linked lines of detail with the formulas to calculate the accounting concepts of the report."
+
+#. module: gmm_corporate_reporting
+#: view:account.balance.reporting.template.line.excel:gmm_corporate_reporting.view_account_balance_reporting_template_line_excel_form
+msgid "Acumulative Balances"
+msgstr "Saldos Acumulados"
+
+#. module: gmm_corporate_reporting
+#: view:account.balance.reporting.excel.wizard:gmm_corporate_reporting.wizard_account_balance_reporting_excel
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.template.line.excel,cell_acum_current:0
+msgid "Cell (row/col) position for the current balance"
+msgstr "Celda (renglón/columna) para el saldo actual"
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.template.line.excel,cell_month_current:0
+msgid "Cell (row/col) position for the current balance, empty if there's no monthly balance"
+msgstr "Celda (renglón/columna) para el saldo actual, dejar en blanco sino se utiliza"
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.template.line.excel,cell_acum_previous:0
+msgid "Cell (row/col) position for the previous balance"
+msgstr "Celda (renglón/columna) para el saldo "
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.template.line.excel,cell_month_previous:0
+msgid "Cell (row/col) position for the previous balance, empty if there's no monthly balance"
+msgstr "Celda (renglón/columna) para el saldo actual, dejar en blanco sino se utiliza"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.template.line.excel,cell_month_current:0
+msgid "Cell for current month balance"
+msgstr "Celda (renglón/columna) para el saldo del mes actual"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.template.line.excel,cell_acum_current:0
+msgid "Cell for current period balance"
+msgstr "Celda (renglón/columna) para el saldo acumulado actual"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.template.line.excel,cell_month_previous:0
+msgid "Cell for previous month balance"
+msgstr "Celda (renglón/columna) para el saldo del mes previo"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.template.line.excel,cell_acum_previous:0
+msgid "Cell for previous period balance"
+msgstr "Celda (renglón/columna) para el saldo acumulado previo"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.template.line.excel,name:0
+msgid "Concept"
+msgstr "Concepto"
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.template.line.excel,name:0
+msgid "Concept name that will be showed"
+msgstr "Concepto que se utilizará"
+
+#. module: gmm_corporate_reporting
+#: view:account.balance.reporting.excel.wizard:gmm_corporate_reporting.wizard_account_balance_reporting_excel
+msgid "Corporate Reports to Generate in Excel"
+msgstr "Reporte Corporativos para Generar en Excel"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.excel.wizard,create_uid:0
+#: field:account.balance.reporting.template.line.excel,create_uid:0
+#: field:account.balance.reporting.template.line.excel.ou,create_uid:0
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.excel.wizard,create_date:0
+#: field:account.balance.reporting.template.line.excel,create_date:0
+#: field:account.balance.reporting.template.line.excel.ou,create_date:0
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.excel.wizard,upto_current_period:0
+msgid "Current"
+msgstr "Actual"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.excel.wizard,display_name:0
+#: field:account.balance.reporting.template.line.excel,display_name:0
+#: field:account.balance.reporting.template.line.excel.ou,display_name:0
+msgid "Display Name"
+msgstr "Nombre a desplegar"
+
+#. module: gmm_corporate_reporting
+#: view:account.balance.reporting.template:gmm_corporate_reporting.view_template_line_excel_form
+msgid "Excel"
+msgstr "Excel"
+
+#. module: gmm_corporate_reporting
+#: view:account.balance.reporting.template.line.excel:gmm_corporate_reporting.view_account_balance_reporting_template_line_excel_form
+msgid "Excel Concept Definition"
+msgstr "Definición del Concepto en Excel"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.template.line.excel.ou,excel_id:0
+msgid "Excel Concept ID"
+msgstr "Excel Concept ID"
+
+#. module: gmm_corporate_reporting
+#: code:addons/gmm_corporate_reporting/models/account_balance_reporting_excel.py:118
+#, python-format
+msgid "Excel Concepts"
+msgstr "Conceptos para Excel"
+
+#. module: gmm_corporate_reporting
+#: model:ir.ui.menu,name:gmm_corporate_reporting.menu_account_balance_reporting_excel
+msgid "Excel Corporate Reports"
+msgstr "Inf Corp en Excel"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.excel.wizard,report:0
+msgid "Excel Template File"
+msgstr "Plantilla de Excel"
+
+#. module: gmm_corporate_reporting
+#: model:ir.actions.act_window,name:gmm_corporate_reporting.action_account_balance_reporting_excel
+msgid "Excel for Corporate Rerports"
+msgstr "Informes Corporativos en Excel"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.excel.wizard,filename:0
+msgid "File Name"
+msgstr "Archivo"
+
+#. module: gmm_corporate_reporting
+#: view:account.balance.reporting.template.line.excel:gmm_corporate_reporting.view_account_balance_reporting_template_line_excel_tree
+msgid "Form"
+msgstr "Forma"
+
+#. module: gmm_corporate_reporting
+#: view:account.balance.reporting.excel.wizard:gmm_corporate_reporting.wizard_account_balance_reporting_excel
+msgid "Generate Excel"
+msgstr "Generar Excel"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.excel.wizard,id:0
+#: field:account.balance.reporting.template.line.excel,id:0
+#: field:account.balance.reporting.template.line.excel.ou,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: gmm_corporate_reporting
+#: model:ir.actions.act_window,name:gmm_corporate_reporting.action_wizard_account_balance_reporting_excel_more_form
+#: model:ir.actions.act_window,name:gmm_corporate_reporting.action_wizard_account_balance_reporting_excel_more_tree
+msgid "Informe Corporativo"
+msgstr "Informe Corporativo"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.template.line.excel,corporate_expense:0
+msgid "Is a Corporate Expense?"
+msgstr "Es Gasto Corporativo?"
+
+#. module: gmm_corporate_reporting
+#: model:ir.model,name:gmm_corporate_reporting.model_account_balance_reporting
+msgid "It stores the configuration/header fields of an account balance report, and the linked lines of detail with the values of the accounting concepts (values generated from the selected template lines of detail formulas)"
+msgstr "It stores the configuration/header fields of an account balance report, and the linked lines of detail with the values of the accounting concepts (values generated from the selected template lines of detail formulas)"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.excel.wizard,__last_update:0
+#: field:account.balance.reporting.template.line.excel,__last_update:0
+#: field:account.balance.reporting.template.line.excel.ou,__last_update:0
+msgid "Last Modified on"
+msgstr "Modificado el"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.excel.wizard,write_uid:0
+#: field:account.balance.reporting.template.line.excel,write_uid:0
+#: field:account.balance.reporting.template.line.excel.ou,write_uid:0
+msgid "Last Updated by"
+msgstr "Modificado por"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.excel.wizard,write_date:0
+#: field:account.balance.reporting.template.line.excel,write_date:0
+#: field:account.balance.reporting.template.line.excel.ou,write_date:0
+msgid "Last Updated on"
+msgstr "Modificado el"
+
+#. module: gmm_corporate_reporting
+#: view:account.balance.reporting.template.line.excel:gmm_corporate_reporting.view_account_balance_reporting_template_line_excel_form
+msgid "Monthly Balances"
+msgstr "Saldos Mensuales"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.template.line.excel,operating_unit_ids:0
+#: field:account.balance.reporting.template.line.excel.ou,operating_unit_id:0
+msgid "OUs"
+msgstr "Unidades Operativas"
+
+#. module: gmm_corporate_reporting
+#: code:addons/gmm_corporate_reporting/models/account_balance_reporting_excel.py:83
+#, python-format
+msgid "Only one Code per Operating Unit can be assigned!"
+msgstr "El código sólo puede pertenecer a una Unidad Operativa!"
+
+#. module: gmm_corporate_reporting
+#: model:ir.model,name:gmm_corporate_reporting.model_account_balance_reporting_template_line_excel_ou
+msgid "Operating Unit that limits the Excel Concept."
+msgstr "Unidades que se incluyen en el Concepto de Excel."
+
+#. module: gmm_corporate_reporting
+#: view:account.balance.reporting.template.line.excel:gmm_corporate_reporting.view_account_balance_reporting_template_line_excel_form
+msgid "Operating Units"
+msgstr "Unidades Operativas"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.excel.wizard,upto_previous_period:0
+msgid "Previous"
+msgstr "Anterior"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.excel.wizard,corporate_report_id:0
+msgid "Report for Corporate Expenses"
+msgstr "Informe de Gastos Corporativos"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.excel.wizard,expenses_report_id:0
+msgid "Report for Detailed Expenses"
+msgstr "Informe para los Gastos Detallados"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.excel.wizard,balance_report_id:0
+msgid "Report for General Balance"
+msgstr "Informe para Balance"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.excel.wizard,profitloss_report_id:0
+msgid "Report for Profit/Loss"
+msgstr "Informe para Edo Res"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.excel.wizard,profitloss_by_branch_report_id:0
+msgid "Report for Profit/Loss by branch"
+msgstr "Informe para Edo Res por Sucursal"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.excel.wizard,any_report_id:0
+msgid "Report to fill in Excel"
+msgstr "Archivo de Excel para el (los) informe(s) "
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.template,use_materialized_view:0
+msgid "Select if a Report with this Template will use Materialized View for processing"
+msgstr "Seleccionar si esta plantilla utilizará Vistas Materializadas para  la generación del Excel"
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.template.line.excel,corporate_expense:0
+msgid "Select if this Concept is a Corporate Expense"
+msgstr "Seleccionar si es un Gasto Corporativo"
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.excel.wizard,corporate_report_id:0
+msgid "Select the Corporate Expenses Report for Excel generation"
+msgstr "Selecciona el Informe generado para los Gastos Corporativos"
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.excel.wizard,expenses_report_id:0
+msgid "Select the Detailed Expenses Report for Excel generation"
+msgstr "Selecciona el Informe generado para los Gastos detallados"
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.excel.wizard,report:0
+msgid "Select the Excel File to fill"
+msgstr "Selecciona el archivo que de Excel que se llenará con los datos del(los) informe(s)"
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.excel.wizard,balance_report_id:0
+msgid "Select the General Balance Report for Excel generation"
+msgstr "Selecciona el Informe de Balance para gener en Excel"
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.excel.wizard,profitloss_report_id:0
+msgid "Select the Profit/Loss Report for Excel generation"
+msgstr "Selecciona el Informe de Edo Res para gener en Excel"
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.excel.wizard,profitloss_by_branch_report_id:0
+msgid "Select the Profit/Loss by branch Report for Excel generation"
+msgstr "Selecciona el Informe generado para el Edo Res por Sucursal"
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.excel.wizard,any_report_id:0
+msgid "Select the Report for Excel generation"
+msgstr "Selecciona el Informe para procesar y generar el Excel"
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.excel.wizard,upto_current_period:0
+msgid "Select up to current period to process"
+msgstr "Selecciona hasa que periodo se procesará el Informe Actual"
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.excel.wizard,upto_previous_period:0
+msgid "Select up to previous period to process"
+msgstr "Selecciona hasa que periodo se procesará el Informe Previo"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.template.line.excel,sheet_acum:0
+msgid "Sheet Name for Acumulative Balance"
+msgstr "Hoja para Saldos Acumulados"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.template.line.excel,sheet_month:0
+msgid "Sheet Name for Monthly Balance"
+msgstr "Hoja para Saldos Mensuales"
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.template.line.excel,sheet_acum:0
+msgid "Sheet Name where the Acumulative Balance will be showed"
+msgstr "Nombre de la Hoja donde se mostraran los Saldos Acumulados"
+
+#. module: gmm_corporate_reporting
+#: help:account.balance.reporting.template.line.excel,sheet_month:0
+msgid "Sheet Name where the Monthly Balance will be showed, empty if there's no monthly balance"
+msgstr "Nombre de la Hoja donde se mostraran los Saldos Mensuales, dejar en blanco sino se utilizan"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.template.line,template_line_excel_ids:0
+msgid "Template Excel ID"
+msgstr "ID de Plantilla en Excel"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.template.line.excel,template_line_id:0
+msgid "Template Line"
+msgstr "Linea de Plantilla"
+
+#. module: gmm_corporate_reporting
+#: view:account.balance.reporting.excel.wizard:gmm_corporate_reporting.wizard_account_balance_reporting_excel
+msgid "Up to Periods"
+msgstr "Considerar Periodos hasta"
+
+#. module: gmm_corporate_reporting
+#: field:account.balance.reporting.template,use_materialized_view:0
+msgid "Use Materialized View"
+msgstr "Utilizar Vista Materializada"
+
+#. module: gmm_corporate_reporting
+#: view:account.balance.reporting.excel.wizard:gmm_corporate_reporting.wizard_account_balance_reporting_excel
+msgid "or"
+msgstr "o"

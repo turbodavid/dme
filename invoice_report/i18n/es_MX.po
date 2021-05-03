@@ -1,0 +1,198 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* invoice_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0rc7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-06 20:01+0000\n"
+"PO-Revision-Date: 2018-08-09 15:54-0600\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_MX\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#. module: invoice_report
+#: view:invoice.report:invoice_report.wizard_invoice_report_sc
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: invoice_report
+#: field:invoice.report,category_ids:0
+msgid "Category"
+msgstr "Categoria"
+
+#. module: invoice_report
+#: field:invoice.report.detail,client_name:0
+msgid "Client Name"
+msgstr "Nombre Cliente"
+
+#. module: invoice_report
+#: field:invoice.report,company_id:0
+msgid "Company"
+msgstr "Compañia"
+
+#. module: invoice_report
+#: field:invoice.report,create_uid:0 field:invoice.report.detail,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: invoice_report
+#: field:invoice.report,create_date:0 field:invoice.report.detail,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: invoice_report
+#: field:invoice.report.detail,credit_type:0
+msgid "Credit Type"
+msgstr "Tipo Crédito"
+
+#. module: invoice_report
+#: field:invoice.report,date_end:0
+msgid "Date End"
+msgstr "Fecha Final"
+
+#. module: invoice_report
+#: field:invoice.report,date_start:0
+msgid "Date Start"
+msgstr "Fecha Inicial"
+
+#. module: invoice_report
+#: field:invoice.report.detail,days:0
+msgid "Days"
+msgstr "Días"
+
+#. module: invoice_report
+#: field:invoice.report,detail_ids:0
+msgid "Details"
+msgstr "Detalles"
+
+#. module: invoice_report
+#: field:invoice.report,display_name:0
+#: field:invoice.report.detail,display_name:0
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: invoice_report
+#: view:invoice.report:invoice_report.wizard_invoice_report_sc
+msgid "Execute"
+msgstr "Ejecutar"
+
+#. module: invoice_report
+#: field:invoice.report.detail,family:0
+msgid "Family"
+msgstr "Familia"
+
+#. module: invoice_report
+#: field:invoice.report,id:0 field:invoice.report.detail,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: invoice_report
+#: field:invoice.report.detail,invoice_date:0
+msgid "Invoice Date"
+msgstr "Fecha Factura"
+
+#. module: invoice_report
+#: field:invoice.report.detail,invoice_folio:0
+msgid "Invoice Folio"
+msgstr "Folio Factura"
+
+#. module: invoice_report
+#: field:invoice.report.detail,invoice_payment_date:0
+msgid "Invoice Payment Date"
+msgstr "Fecha Pago Factura"
+
+#. module: invoice_report
+#: field:invoice.report.detail,invoice_refund_date:0
+msgid "Invoice Refund Date"
+msgstr "Fecha Nota Crédito"
+
+#. module: invoice_report
+#: field:invoice.report.detail,invoice_refund_folio:0
+msgid "Invoice Refund Folio"
+msgstr "Folio Nota de Crédito"
+
+#. module: invoice_report
+#: view:invoice.report:invoice_report.wizard_invoice_report_sc
+#: field:invoice.report.detail,invoice_report_id:0
+#: model:ir.actions.report.xml,name:invoice_report.invoice_report_aeroo
+#: model:ir.model,name:invoice_report.model_invoice_report
+msgid "Invoice Report"
+msgstr "Reporte Detalle Ventas x Factura"
+
+#. module: invoice_report
+#: model:ir.actions.act_window,name:invoice_report.invoice_report_sc_action
+msgid "Invoice Report Action"
+msgstr "Detalle Ventas x Factura"
+
+#. module: invoice_report
+#: field:invoice.report.detail,invoice_amount:0
+msgid "Invoice amount"
+msgstr "Monto Factura"
+
+#. module: invoice_report
+#: field:invoice.report.detail,invoice_refund_amount:0
+msgid "Invoice refund amount"
+msgstr "Monto Nota de Crédito"
+
+#. module: invoice_report
+#: model:ir.ui.menu,name:invoice_report.invoice_report_sc_menu
+msgid "Invoices"
+msgstr "Detalle Ventas x Factura"
+
+#. module: invoice_report
+#: field:invoice.report,__last_update:0
+#: field:invoice.report.detail,__last_update:0
+msgid "Last Modified on"
+msgstr "Last Modified on"
+
+#. module: invoice_report
+#: field:invoice.report,write_uid:0 field:invoice.report.detail,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: invoice_report
+#: field:invoice.report,write_date:0 field:invoice.report.detail,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: invoice_report
+#: field:invoice.report.detail,line:0
+msgid "Line"
+msgstr "Linea"
+
+#. module: invoice_report
+#: field:invoice.report.detail,net_sale:0
+msgid "Net sale"
+msgstr "Venta Neta"
+
+#. module: invoice_report
+#: field:invoice.report.detail,product:0
+msgid "Product"
+msgstr "Producto"
+
+#. module: invoice_report
+#: field:invoice.report.detail,sale_name:0
+msgid "Sale Name"
+msgstr "Vendedor"
+
+#. module: invoice_report
+#: field:invoice.report.detail,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: invoice_report
+#: field:invoice.report.detail,supplier:0
+msgid "Supplier"
+msgstr "Proveedor"
+
+#. module: invoice_report
+#: view:invoice.report:invoice_report.wizard_invoice_report_sc
+msgid "or"
+msgstr "o"

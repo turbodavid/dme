@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_post_journal_entry" model="ir.ui.view">
+            <field name="name">Wizard Post Journal Entries</field>
+            <field name="model">journal.entry.validate</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Post Journal Entries" version="7.0">
+		    <group colspan="4" width="615" height="250">
+                    	<separator string="Are you sure want to validate these entries?" colspan="4"/>
+                        	<newline/>
+                    		<label string="Please note that: &#10; &#10; Only entries with draft status will be validate. &#10; " colspan="4"/>
+                    		<newline/><newline/>
+		    </group>
+                    <footer>
+                        <button string="Validate" name="journal_entries_validate" type="object" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+               </form>
+            </field>
+        </record>
+	
+	<act_window id="action_post_journal_entry"
+		name="Validate Post Journal Entries"
+		src_model="account.move"
+		res_model="journal.entry.validate"
+		view_mode="form"
+		target="new"
+		key2="client_action_multi"
+		multi="True"/>
+    </data>
+</openerp>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+       <record model="ir.ui.view" id="mrp_bom_form_view_mrp_change_location">
+            <field eval="30" name="priority"/>
+            <field name="name">Product MRP BOM Location</field>
+            <field name="model">mrp.bom</field>
+            <field name="inherit_id" ref="mrp.mrp_bom_form_view" />
+            <field name="arch" type="xml">
+                <xpath expr="/form/notebook" position="inside">
+                    <page string="Locations">
+                        <group>
+                            <field name="location_src_id"/>
+                            <field name="location_dest_id"/>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

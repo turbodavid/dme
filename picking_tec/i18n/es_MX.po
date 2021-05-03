@@ -1,0 +1,197 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* picking_tec
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-19 16:52+0000\n"
+"PO-Revision-Date: 2014-09-19 16:52+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "DE CULIACAN, A.C."
+msgstr "DE CULIACAN, A.C."
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "........."
+msgstr "........."
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Telefono:"
+msgstr "Telefono:"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Customer Address :"
+msgstr "Dirección del cliente :"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "State"
+msgstr "State"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Domicilio:"
+msgstr "Domicilio:"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: picking_tec
+#: model:ir.actions.report.xml,name:picking_tec.report_picking_list_out
+msgid "Delivery Slip"
+msgstr "Vale de entrega"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Waiting Availability"
+msgstr "Esperando disponibilidad"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Available"
+msgstr "Reservado"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Scheduled Date"
+msgstr "Scheduled Date"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "RECIBO OFICIAL DE DOTACION DE BOLETOS"
+msgstr "RECIBO OFICIAL DE DOTACION DE BOLETOS"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Contact Address :"
+msgstr "Dirección de contacto :"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Journal"
+msgstr "Diario"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Serial Number"
+msgstr "Nº de serie"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "LOS RECIBOS DE LIQUIDACION QUE SALDEN SU CUENTA DEJAN SIN EFECTO ESTE PAGARE"
+msgstr "LOS RECIBOS DE LIQUIDACION QUE SALDEN SU CUENTA DEJAN SIN EFECTO ESTE PAGARE"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "FIRMA DEL DEUDOR"
+msgstr "FIRMA DEL DEUDOR"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "QUE RECONOSCO ADEUDARLE, ASI COMO LOS INTERESES MORATORIOS AL ____ % MENSUAL EN CASO DE INCUMPLIMIENTO ME SOMETO A LOS TRIBUNALES QUE ELIJA EL ACREEDOR"
+msgstr "QUE RECONOSCO ADEUDARLE, ASI COMO LOS INTERESES MORATORIOS AL ____ % MENSUAL EN CASO DE INCUMPLIMIENTO ME SOMETO A LOS TRIBUNALES QUE ELIJA EL ACREEDOR"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Nombre:"
+msgstr "Nombre:"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Los números de boletos y/o block's son los siguientes:"
+msgstr "Los números de boletos y/o block's son los siguientes:"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "AUTORIZO EXPRESAEMNTE A PATRONATO DEL INSTITUTO TECNOLOGICO DE CULIACAN, A.C. PARA QUE A MI NOMBRE GESTIONE Y OBTENGA UNA POLIZA DE FIANZA HASTA POR EL IMPORTE TOTAL DE LOS BOLETOS RECIBIDOS QUE GARANTICE EL VALOR DE LOS MISMOS."
+msgstr "AUTORIZO EXPRESAEMNTE A PATRONATO DEL INSTITUTO TECNOLOGICO DE CULIACAN, A.C. PARA QUE A MI NOMBRE GESTIONE Y OBTENGA UNA POLIZA DE FIANZA HASTA POR EL IMPORTE TOTAL DE LOS BOLETOS RECIBIDOS QUE GARANTICE EL VALOR DE LOS MISMOS."
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Delivery Order :"
+msgstr "Orden de entrega :"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "PATRONATO DEL INSTITUTO TECNOLOGICO"
+msgstr "PATRONATO DEL INSTITUTO TECNOLOGICO"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "TELS: 715-52-91, 715-52-92, 713-96-29 Y 713-99-90"
+msgstr "TELS: 715-52-91, 715-52-92, 713-96-29 Y 713-99-90"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "POR ESTE PAGARE ME OBLIGO A PAGAR INCONDICIONALMENTE A PATRONATO DEL INSTITUTO TECNOLOGICO DE CULIACAN, A.C. EN CULIACAN, SINALOA, EL DIA"
+msgstr "POR ESTE PAGARE ME OBLIGO A PAGAR INCONDICIONALMENTE A PATRONATO DEL INSTITUTO TECNOLOGICO DE CULIACAN, A.C. EN CULIACAN, SINALOA, EL DIA"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Celular:"
+msgstr "Celular:"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Weight"
+msgstr "Peso"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "importe con letra M.N."
+msgstr "importe con letra M.N."
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "ROSALES Y OBREGON EDIFICIO CLOUTHIER PLANTA BAJA, CULIACAN, SIN."
+msgstr "ROSALES Y OBREGON EDIFICIO CLOUTHIER PLANTA BAJA, CULIACAN, SIN."
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Done"
+msgstr "Realizado"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Order(Origin)"
+msgstr "Pedido (origen)"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Total de Boletos:"
+msgstr "Total de Boletos:"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "LA CANTIDAD DE"
+msgstr "LA CANTIDAD DE"
+
+#. module: picking_tec
+#: report:stock.picking.list:0
+msgid "Culiacán, Sin. a"
+msgstr "Culiacán, Sin. a"
+

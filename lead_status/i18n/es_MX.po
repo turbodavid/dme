@@ -1,0 +1,198 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* lead_status
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-28 18:41+0000\n"
+"PO-Revision-Date: 2016-09-28 13:39-0600\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. module: lead_status
+#: selection:crm.lead,status_operation:0
+msgid " Contrato Recibido Correcto"
+msgstr " Contrato Recibido Correcto"
+
+#. module: lead_status
+#: selection:crm.lead,status_credit:0
+msgid " Línea Autorizada"
+msgstr " Línea Autorizada"
+
+#. module: lead_status
+#: selection:crm.lead,contract_type:0
+msgid "Arrendamiento de Valor de Mercado"
+msgstr "Arrendamiento de Valor de Mercado"
+
+#. module: lead_status
+#: field:crm.lead,contract_type:0
+msgid "Contract Type"
+msgstr "Tipo de Contrato"
+
+#. module: lead_status
+#: selection:crm.lead,status_operation:0
+msgid "Contrato Facturado"
+msgstr "Contrato Facturado"
+
+#. module: lead_status
+#: selection:crm.lead,status_operation:0
+msgid "Contrato Fondeado"
+msgstr "Contrato Fondeado"
+
+#. module: lead_status
+#: selection:crm.lead,status_operation:0
+msgid "Contrato Generado"
+msgstr "Contrato Generado"
+
+#. module: lead_status
+#: selection:crm.lead,status_operation:0
+msgid "Contrato Pagado"
+msgstr "Contrato Pagado"
+
+#. module: lead_status
+#: selection:crm.lead,status_operation:0
+msgid "Contrato Recibido Incorrecto"
+msgstr "Contrato Recibido Incorrecto"
+
+#. module: lead_status
+#: selection:crm.lead,status_operation:0
+msgid "Contrato en Firma"
+msgstr "Contrato en Firma"
+
+#. module: lead_status
+#: selection:crm.lead,status_operation:0
+msgid "Contrato en Tránsito"
+msgstr "Contrato en Tránsito"
+
+#. module: lead_status
+#: selection:crm.lead,status_sales:0
+msgid "Cotización Aceptada"
+msgstr "Cotización Aceptada"
+
+#. module: lead_status
+#: selection:crm.lead,status_sales:0
+msgid "Cotización Enviada"
+msgstr "Cotización Enviada"
+
+#. module: lead_status
+#: selection:crm.lead,status_sales:0
+msgid "Cotización Especial"
+msgstr "Cotización Especial"
+
+#. module: lead_status
+#: field:crm.lead,currency_lead:0
+msgid "Currency"
+msgstr "Moneda(*)"
+
+#. module: lead_status
+#: selection:crm.lead,status_credit:0
+msgid "Expediente Completo"
+msgstr "Expediente Completo"
+
+#. module: lead_status
+#: selection:crm.lead,status_credit:0
+msgid "Expediente Incompleto"
+msgstr "Expediente Incompleto"
+
+#. module: lead_status
+#: selection:crm.lead,status_credit:0
+msgid "Expediente en Crédito"
+msgstr "Expediente en Crédito"
+
+#. module: lead_status
+#: selection:crm.lead,contract_type:0
+msgid "FMV Full Pay Out"
+msgstr "FMV Full Pay Out"
+
+#. module: lead_status
+#: code:_description:0 model:ir.model,name:lead_status.model_crm_lead
+#, python-format
+msgid "Lead/Opportunity"
+msgstr "Inicaitiva / Oportunbidad"
+
+#. module: lead_status
+#: selection:crm.lead,status_credit:0
+msgid "Línea Rechazada"
+msgstr "Línea Rechazada"
+
+#. module: lead_status
+#: selection:crm.lead,status_sales:0
+msgid "Oportunidad No Standard"
+msgstr "Oportunidad No Standard"
+
+#. module: lead_status
+#: selection:crm.lead,status_sales:0
+msgid "Oportunidad Standard"
+msgstr "Oportunidad Standard"
+
+#. module: lead_status
+#: selection:crm.lead,status_operation:0
+msgid "Propuesta Aprobada por Crédito"
+msgstr "Propuesta Aprobada por Crédito"
+
+#. module: lead_status
+#: selection:crm.lead,status_operation:0
+msgid "Propuesta Aprobada por Ventas"
+msgstr "Propuesta Aprobada por Ventas"
+
+#. module: lead_status
+#: selection:crm.lead,status_operation:0
+msgid "Propuesta No Standard Cargada"
+msgstr "Propuesta No Standard Cargada"
+
+#. module: lead_status
+#: selection:crm.lead,status_operation:0
+msgid "Propuesta Standard Cargada"
+msgstr "Propuesta Standard Cargada"
+
+#. module: lead_status
+#: selection:crm.lead,contract_type:0
+msgid "Préstamo"
+msgstr "Préstamo"
+
+#. module: lead_status
+#: selection:crm.lead,status_credit:0
+msgid "Requiere Aval"
+msgstr "Requiere Aval"
+
+#. module: lead_status
+#: selection:crm.lead,status_sales:0
+msgid "Revision de Cotización"
+msgstr "Revision de Cotización"
+
+#. module: lead_status
+#: selection:crm.lead,status_credit:0
+msgid "Solicitud de Expediente"
+msgstr "Solicitud de Expediente"
+
+#. module: lead_status
+#: field:crm.lead,status_credit:0
+msgid "Status Credit"
+msgstr "Estado de Credito"
+
+#. module: lead_status
+#: field:crm.lead,status_operation:0
+msgid "Status Operation"
+msgstr "Estado de Operacion"
+
+#. module: lead_status
+#: field:crm.lead,status_sales:0
+msgid "Status Sales"
+msgstr "Estado de Venta "
+
+#. module: lead_status
+#: selection:crm.lead,contract_type:0
+msgid "Sucripción"
+msgstr "Suscripción"
+
+#. module: lead_status
+#: selection:crm.lead,status_operation:0
+msgid "VAL Liberado"
+msgstr "VAL Liberado"

@@ -1,0 +1,79 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* mrp_density
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-22 23:50+0000\n"
+"PO-Revision-Date: 2016-07-22 18:00-0800\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. module: mrp_density
+#: code:addons/mrp_density/models/product.py:45 help:product.product,density:0
+#, python-format
+msgid "Apparent Density (Convertion Factor)"
+msgstr "Densidad Aparente (Factor de Conv.)"
+
+#. module: mrp_density
+#: code:_description:0 model:ir.model,name:mrp_density.model_mrp_bom
+#, python-format
+msgid "Bill of Material"
+msgstr "Lista de material"
+
+#. module: mrp_density
+#: field:product.product,density:0
+msgid "Density"
+msgstr "Densidad"
+
+#. module: mrp_density
+#: model:ir.model,name:mrp_density.model_mrp_production
+msgid "Manufacturing Order"
+msgstr "Orden de fabricación"
+
+#. module: mrp_density
+#: code:addons/mrp_density/models/stock_move.py:44
+#, python-format
+msgid "Operation Forbidden!"
+msgstr "Operation Forbidden!"
+
+#. module: mrp_density
+#: code:_description:0 model:ir.model,name:mrp_density.model_product_product
+#, python-format
+msgid "Product"
+msgstr "Producto"
+
+#. module: mrp_density
+#: code:_description:0
+#, python-format
+msgid "Production"
+msgstr "Producción"
+
+#. module: mrp_density
+#: code:addons/mrp_density/models/stock_move.py:45
+#, python-format
+msgid ""
+"Quantities, Units of Measure, Products and Locations cannot be modified on "
+"stock moves %s that have already been processed(except by the Stock Manager)."
+msgstr ""
+"Cantidades, Unidades de Medida, Productos y Ubicaciones no pueden ser "
+"modificadas en movimientos de existencia %s que ya ha sido procesados "
+"(excepto por el Administrador de existencias)."
+
+#. module: mrp_density
+#: code:_description:0 model:ir.model,name:mrp_density.model_stock_move
+#, python-format
+msgid "Stock Move"
+msgstr "Movimiento Inválido"
+
+#. module: mrp_density
+#: view:product.product:0
+msgid "True"
+msgstr "Verdadero"

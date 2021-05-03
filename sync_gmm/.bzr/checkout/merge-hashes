@@ -1,0 +1,39 @@
+BZR merge-modified list format 1
+file_id: ir.model.access.csv-20160506222433-xu2ofxtv5sxntit2-3
+hash: a286357b2e62bd82f5d696bf77e75d1b42f97b4c
+
+file_id: sync_view.xml-20150328005729-kt3m9jvgffbs9mwi-5
+hash: 65f74c0335a8921695c0812b9040394c07e1f50e
+
+file_id: sync_morsa_purchases-20190215004419-w4onlc1uty3czdxp-2
+hash: 11d2c55d771b47819deb945cda4657188421a716
+
+file_id: account_voucher_stat-20190509171235-4m08ou7bhb32k2wp-5
+hash: 0b19e670e5aeff33275319a44c1c8631622dd841
+
+file_id: account_voucher.xml-20190509171235-4m08ou7bhb32k2wp-3
+hash: e7540ecf179637f9bbbbba1ae7dd54c25f543729
+
+file_id: __init__.py-20190509171235-4m08ou7bhb32k2wp-4
+hash: e42460560829c7c491c1ffd9751c4336a71b5725
+
+file_id: account_voucher.py-20190509171235-4m08ou7bhb32k2wp-2
+hash: 860e585835e1d8ed09249c4f3534a6666440fb78
+
+file_id: sync_morsa_payments.-20190215004419-w4onlc1uty3czdxp-1
+hash: b466b45d7f50b3faee7c71d6d521ee4502c71a6a
+
+file_id: sync_sales.py-20180807180417-4f2nqkag126udy3p-1
+hash: 9e0ab6fdca146a89662df97d52536b9945aabab2
+
+file_id: __openerp__.py-20150328005729-kt3m9jvgffbs9mwi-2
+hash: 970490361fb3d6b60b9694ae6ce4946e5a75967a
+
+file_id: account_voucher_stat-20190509171235-4m08ou7bhb32k2wp-6
+hash: 3b6be3e613c0e01c1cad87eca5fb568d66bb0edb
+
+file_id: sync_morsa_incomes.p-20190413001636-cd54adtcjuf4eywy-2
+hash: de3324d28df7b0857b66c8d953ec1dc5ff9e1fb8
+
+file_id: sync_expenses_newpor-20190107050117-k17j5t4b1bm3zqfa-2
+hash: 05269aaf8448463cf26b0ea24718173c1c37e938

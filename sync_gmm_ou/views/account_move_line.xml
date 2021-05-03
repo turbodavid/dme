@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="wizard_account_move_line_uuid">
+            <field name="name">Account Move Line UUID</field>
+            <field name="model">account.move.line</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+				<form string="UUID" version="7.0">		
+					<!-- <field name="account_move_line_ids" widget="one2many_list" colspan="4" nolabel="1" attrs="{'readonly':1}"> -->
+					<field name="account_move_line_ids" widget="one2many_list" colspan="4" nolabel="1">
+						<tree editable='bottom'>
+							<field name="uuid"></field>
+						</tree>
+					</field>
+					<footer>
+						<button name="save_uuid_line" type="object" string="Save UUID" class="oe_highlight" />
+						<button string="Cancel" class="oe_link" special="cancel" />
+					</footer>
+				</form>
+            </field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="account_moves_report_template_aeroo" model="report.templates.aeroo">
+            <field name="name">Plantilla de Movimientos Contables</field>
+            <field name="model">bank.moves.report</field>
+            <field name="report_name">account.moves.report.aeroo</field>
+            <field name="report_rml">gmm_reports/report/account_moves_report.ods</field>
+            <field name="tml_source">file</field>
+        </record>
+        
+        <record id="account_moves_report_aeroo" model="ir.actions.report.xml">
+            <field name="name">Movimientos Contables</field>
+            <field name="type">ir.actions.report.xml</field>
+            <field name="model">bank.moves.report</field>
+            <field name="report_name">account.moves.report.aeroo</field>
+            <field name="report_type">aeroo</field>
+            <field name="in_format">oo-ods</field>
+            <field name="out_format" ref="report_aeroo.report_mimetypes_xls_odt" />
+            <field name="aeroo_templates_ids" eval="[(6, 0, [account_moves_report_template_aeroo])]" />
+            <field name="tml_source">file</field>
+            <field name="parser_loc">gmm_reports/report/bank_moves_report.py</field>
+            <field name="parser_state">loc</field>
+        </record>
+
+        <record id="bank_moves_report_template_aeroo" model="report.templates.aeroo">
+            <field name="name">Plantilla de Movimientos Bancarios</field>
+            <field name="model">bank.moves.report</field>
+            <field name="report_name">bank.moves.report.aeroo</field>
+            <field name="report_rml">gmm_reports/report/bank_moves_report.ods</field>
+            <field name="tml_source">file</field>
+        </record>
+
+        <record id="bank_moves_report_aeroo" model="ir.actions.report.xml">
+            <field name="name">Movimientos Bancarios</field>
+            <field name="type">ir.actions.report.xml</field>
+            <field name="model">bank.moves.report</field>
+            <field name="report_name">bank.moves.report.aeroo</field>
+            <field name="report_type">aeroo</field>
+            <field name="in_format">oo-ods</field>
+            <field name="out_format" ref="report_aeroo.report_mimetypes_xls_odt" />
+            <field name="aeroo_templates_ids" eval="[(6, 0, [bank_moves_report_template_aeroo])]" />
+            <field name="tml_source">file</field>
+            <field name="parser_loc">gmm_reports/report/bank_moves_report.py</field>
+            <field name="parser_state">loc</field>
+        </record>
+
+    </data>
+</openerp>

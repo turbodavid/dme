@@ -1,0 +1,37 @@
+<openerp>
+	<data>
+
+		<record model= "ir.actions.act_window" id="clasificacion_action">
+			<field name="name">clasificacion</field>
+			<field name="res_model">clasificacion</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem id="clasificacion_menu" name="Clasificacion"
+		parent="base.menu_config_address_book"
+		action="clasificacion_action" />
+		
+
+<!--Vista Form-->
+		
+			<record model= "ir.ui.view" id="clasificacion_form_view">
+				<field name="name">clasificacion.form</field>
+				<field name= "model">clasificacion</field>
+				<field name="arch" type="xml">
+				<form string="Clasificacion Form" version="7.0">
+
+										
+					<sheet>	
+						<group colspan="2" col="2">			
+							<field name="name"/>
+							<field name="active"/>
+						</group>					
+					</sheet>			
+			
+				</form>
+				</field>
+			</record>
+		
+	</data>
+</openerp>
